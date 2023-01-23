@@ -17,11 +17,12 @@
                   <h2 class="footer__widget-title">Looking For</h2>
                   <div class="footer-linkss">
                     <ul class="col-m-6 footer__link">
-                    <!-- <li><a><router-link to="">Lead Generation</router-link></a></li> -->
-                    <li><a>Lead Generation</a></li>
+                    <li><a><router-link to="">Lead Generation</router-link></a></li>
+                    <!-- <li><a>Lead Generation</a></li> -->
                   </ul>
                   <ul class="col-m-6 footer__link" >
-                    <li><a>Search Engine Optimiation</a></li>
+                    <!-- <li><a>Search Engine Optimiation</a></li> -->
+                    <li><a><router-link to="">Search Engine Optimiation</router-link></a></li>
         
                   </ul>
                   
