@@ -23,7 +23,7 @@
                 <h3 class="sub-title-anim-top animation__word_come">Don't be afraid man ! <br>say hello</h3>
                 <ul>
                   <li><a href="tel:+97143210710">+971 4 321 0710</a></li>
-                  <li><a href="mailto:hello@example.com">contact@wisoftsolutions.com</a></li>
+                  <li><a href="mailto:contact@wisoftsolutions.com">contact@wisoftsolutions.com</a></li>
                   <li><span>Curve Building,Sheik Zayed Road <br> Dubai</span></li>
                 </ul>
               </div>
@@ -138,3 +138,15 @@ $("#close_offcanvas").click(function () {
     // offcanvs
 //  }
 </script>
+
+<style>
+.offcanvas__close button {
+    font-size: 30px;
+    width: 55px;
+}
+@media screen and (max-width:375px){
+  #close_offcanvas{
+    display:none;
+  }
+}
+</style>

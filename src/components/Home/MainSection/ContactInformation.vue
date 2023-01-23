@@ -10,24 +10,27 @@
   <!-- Tab 3 -->
   <input type="radio" name="tabset" id="tab3" aria-controls="dunkles">
   <label for="tab3" class="head">USA</label>
+    <!-- Tab 4 -->
+    <input type="radio" name="tabset" id="tab3" aria-controls="dunkles">
+  <label for="tab3" class="head">KSA</label>
   
   
   <div class="tab-panels">
     <section id="marzen" class="tab-panel">
       <!-- <h2>6A. Märzen</h2> -->
       <p><strong><i class="fa-brands fas fa-phone"></i> +971 43210710</strong></p>
-      <p><strong><i class="fa-brands fas fa-envelope"></i>Contact@wisoftsolutions.com</strong></p>
+      <p><strong><i class="fa-brands fas fa-envelope"></i><a class="mail-clas" href="mailto:contact@wisoftsolutions.com">contact@wisoftsolutions.com</a></strong></p>
       <p><strong><i class="fa-brands  fas fa-address-card"></i>P.O Box:237159, office M-38,<br>Curve Building, Sheikh Zayed Road, Dubai</strong></p>
   </section>
     <section id="rauchbier" class="tab-panel">
       <!-- <h2>6B. Rauchbier</h2> -->
       <p><strong><i class="fa-brands fas fa-phone"></i> +91 44 45092400</strong></p>
-      <p><strong><i class="fa-brands fas fa-envelope"></i>Contact@wisoftsolutions.com</strong></p>
+      <p><strong><i class="fa-brands fas fa-envelope"></i><a class="mail-clas" href="mailto:contact@wisoftsolutions.com">contact@wisoftsolutions.com</a></strong></p>
       <p><strong><i class="fa-brands  fas fa-address-card"></i>WISOFTDIGI SERVICES Pvt Ltd,<br>Cenotaph Road, Alwarpet, Chennai</strong></p>
     </section>
     <section id="dunkles" class="tab-panel">
         <p><strong><i class="fa-brands fas fa-phone"></i> +1.407.550.0301 x701</strong></p>
-      <p><strong><i class="fa-brands fas fa-envelope"></i>Contact@wisoftsolutions.com</strong></p>
+      <p><strong><i class="fa-brands fas fa-envelope"></i><a class="mail-clas" href="mailto:contact@wisoftsolutions.com">contact@wisoftsolutions.com</a></strong></p>
       <p><strong><i class="fa-brands  fas fa-address-card"></i>Wisoft Solution USA LLC<br>101 S Garland Avenue Ste108 Orlando</strong></p>
     </section>
   </div>
@@ -77,6 +80,7 @@ body {
   border: 1px solid transparent;
   border-bottom: 0;
   cursor: pointer;
+  
   font-weight: 600;
 }
 
@@ -105,6 +109,12 @@ body {
   border-color: #ccc;
   border-bottom: 1px solid #fff;
   margin-bottom: -1px;
+}
+.mail-clas{
+  color:grey
+}
+.mail-clas:hover{
+  color:#ffffff
 }
 
 .tab-panel {
