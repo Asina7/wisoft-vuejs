@@ -36,7 +36,7 @@
       position:fixed;
       width:60px;
       height:60px;
-      bottom:40px;
+      bottom:100px;
       right:40px;
       background-color:#256a8f;
       color:#FFF;
@@ -56,7 +56,7 @@
       position:fixed;
       width:60px;
       height:60px;
-      bottom:40px;
+      bottom:100px;
       left:40px;
       background-color:#256a8f;
       color:#FFF;
