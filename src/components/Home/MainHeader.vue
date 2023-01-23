@@ -187,7 +187,7 @@
               ><img
                 src="@/assets/imgs/logo/wisoft-logo1.png"
                 alt="Offcanvas Logo"
-                style="width: 90%; height: 50px"
+                style="width: 60%; height: 50px"
             /></a>
           </div>
 
