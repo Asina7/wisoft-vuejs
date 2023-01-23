@@ -393,7 +393,7 @@ export default {
   border: 1px solid black;
   width: 120px;
   border-radius: 30px;
-  padding: 3px;
+  padding: 2px;
 }
 .list-menu button:hover {
   background-color: black;
