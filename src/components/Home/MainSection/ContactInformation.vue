@@ -26,7 +26,7 @@
       <!-- <h2>6B. Rauchbier</h2> -->
       <p><strong><i class="fa-brands fas fa-phone"></i> +91 44 45092400</strong></p>
       <p><strong><i class="fa-brands fas fa-envelope"></i><a class="mail-clas" href="mailto:contact@wisoftsolutions.com">contact@wisoftsolutions.com</a></strong></p>
-      <p><strong><i class="fa-brands  fas fa-address-card"></i>WISOFTDIGI SERVICES Pvt Ltd,<br>Cenotaph Road, Alwarpet, Chennai</strong></p>
+      <p><strong><i class="fa-brands  fas fa-address-card"></i>wisoftdigi Services Pvt Ltd,<br>Cenotaph Road, Alwarpet, Chennai</strong></p>
     </section>
     <section id="dunkles" class="tab-panel">
         <p><strong><i class="fa-brands fas fa-phone"></i> +1.407.550.0301 x701</strong></p>
@@ -111,7 +111,7 @@ body {
   margin-bottom: -1px;
 }
 .mail-clas{
-  color:grey
+  color:grey;
 }
 .mail-clas:hover{
   color:#ffffff
