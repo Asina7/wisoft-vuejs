@@ -43,7 +43,7 @@
             <a><router-link to="/Contact">CONTACT</router-link></a>
           </li> -->
             <li><router-link to="/Contact"><button>Let's Talk</button></router-link></li>
-            <li><a href=""><i class="fa-solid fa-phone"> </i> (00000000)</a></li>
+            <li><a href="tel:+971 4 321 0710"><i class="fa-solid fa-phone"> </i>+971 4 321 0710</a></li>
             
             
           </ul>

@@ -2538,7 +2538,7 @@ img {
 .main-menu-3 li a {
   display: block;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 19px;
   line-height: 16px;
   color: var(--black-2);
   padding: 27px 0;
@@ -4524,7 +4524,7 @@ img {
   z-index: 9999;
   border: 1px solid white;
   background-color: white;
-  height: 80px;
+  height: 90px;
   
 }
 .header__area-3.sticky-3 {

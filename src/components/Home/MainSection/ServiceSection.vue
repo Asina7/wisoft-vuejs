@@ -389,8 +389,8 @@
   padding-top: 75px;
 }
 .service__area-6 .service__title-6{
-  margin-top: 180px !important;
-  padding-bottom: 10px;
+  margin-top: 85px !important;
+  padding-bottom: 15px;
 }
 .service__area-6 {
   background-color: white;
