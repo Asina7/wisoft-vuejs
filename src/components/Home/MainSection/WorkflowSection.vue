@@ -119,7 +119,7 @@
                     <p class="cta__sub-title-2">Have you project in mind?</p>
                     <h2 class="cta__title-2">Let’s make something great together!</h2>
                     <div id="btn_wrapper">
-                      <router-link to="/Contact"><a href="/contact" class="wc-btn-black btn-hover btn-item"><span></span>Contact <br>with
+                      <router-link to="/Contact"><a href="/Contact" class="wc-btn-black btn-hover btn-item"><span></span>Contact <br>with
                         us <i class="fa-solid fa-arrow-right"></i></a></router-link>
                     </div>
                   </div>
