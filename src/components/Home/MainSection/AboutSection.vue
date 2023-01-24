@@ -41,12 +41,76 @@
     </div>
 </template>
 <script> 
-// export default{
+ import $ from "jquery";
+    import { gsap } from 'gsap';
+     import { scrollTrigger } from 'gsap';
+     import { SplitText } from 'gsap'
+   export default {
+    name: 'AboutSection',
+    data () {
+      return {
+        
+      }
+    },
+    methods: {
+      AboutSectionAnimation: function(){
+        let splitTitleLines = gsap.utils.toArray(".title-anim");
 
-// }
-// mounted(){
-//   this.aboutAnimate()
-// }
+    splitTitleLines.forEach(splitTextLine => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: splitTextLine,
+          start: 'top 90%',
+          end: 'bottom 60%',
+          scrub: false,
+          markers: false,
+          toggleActions: 'play none none none'
+        }
+      });
+
+      const itemSplitted = new SplitText(splitTextLine, { type: "words, lines" });
+      gsap.set(splitTextLine, { perspective: 400 });
+      itemSplitted.split({ type: "lines" })
+      tl.from(itemSplitted.lines, { duration: 1, delay: 0.3, opacity: 0, rotationX: -80, force3D: true, transformOrigin: "top center -50", stagger: 0.1 });
+    });
+    /////////////////////////////////////////////////////
+
+
+    /////////////////////////////////////////////////////
+    // 26. Title Animation Top
+
+    /////////////////////////////////////////////////////
+
+
+    /////////////////////////////////////////////////////
+    // 27. Text Animation
+    let splitTextLines = gsap.utils.toArray(".text-anim p");
+
+    splitTextLines.forEach(splitTextLine => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: splitTextLine,
+          start: 'top 90%',
+          duration: 2,
+          end: 'bottom 60%',
+          scrub: false,
+          markers: false,
+          toggleActions: 'play none none none'
+        }
+      });
+
+      const itemSplitted = new SplitText(splitTextLine, { type: "lines" });
+      gsap.set(splitTextLine, { perspective: 400 });
+      itemSplitted.split({ type: "lines" })
+      tl.from(itemSplitted.lines, { duration: 1, delay: 0.5, opacity: 0, rotationX: -80, force3D: true, transformOrigin: "top center -50", stagger: 0.1 });
+    });
+    /////////////////////////////////////////////////////
+
+
+
+    }
+  }
+}
 </script>
 
    

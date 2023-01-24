@@ -9,13 +9,10 @@
             <div class="col-xxl-12">
               <div class="hero__inner-3">
                 <!-- Main Title -->
-                  <div class="sec-title-wrapper">
-                    <h2 class="sec-sub-title">UAE #1</h2>
-                    <!-- <h3 class="sec-title title-left">Digital Marketing Agecy</h3> -->
-                    <!-- <h6 class="sec-title">&nbsp;&nbsp;&nbsp; Create Business Everyday</h6> -->
-                    <!-- <h3 class="sec-title title-right">eting</h3> -->
-                    <h3 class="sec-title main-titlee title-anim">Digital Marketing Agency<br> Create Business Everyday</h3>
-                     
+                  <div class="sec-title-wrapper ">
+                    <h2 class="sec-sub-title ">UAE #1</h2>
+                    <h3 class="sec-title main-titlee title-anim shin-anim">Digital Marketing Agency<br>
+                      Create Business Everyday</h3>
                   </div>
                  
                   
@@ -76,50 +73,9 @@
         
       }
     },
-    mounted () {
-      this.HeroSectionAnimation()
-    },
     methods: {
       HeroSectionAnimation: function(){
         
-          // Service Page hero Animation 
-        // let word_up = document.querySelector(".animation__word_up")
-        // let split_word_up = new SplitText(word_up, { type: "words", position: "absolute" })
-        // gsap.from(split_word_up.words, { duration: 1, y: 50, autoAlpha: 0, stagger: 0.05 });
-
-        // Service Page hero Animation   
-        // let word_come = document.querySelectorAll(".animation__word_come")
-        // word_come.forEach((word_come) => {
-        //   let split_word_come = new SplitText(word_come, { type: "chars words", position: "absolute" })
-        //   gsap.from(split_word_come.words, { duration: 1, x: 50, autoAlpha: 0, stagger: 0.05 });
-        // })
-
-        // Service Page hero Animation   
-        // let word_come_long = document.querySelectorAll(".animation__word_come_long")
-        // word_come_long.forEach((word_come_long) => {
-        //   let split_word_come_long = new SplitText(word_come_long, { type: "chars words", position: "absolute" })
-        //   gsap.from(split_word_come_long.words, { duration: 1, x: 50, autoAlpha: 0, stagger: 0.5 });
-        // })
-    //     let splitTitleLines = gsap.utils.toArray(".title-anim");
-
-    //   splitTitleLines.forEach(splitTextLine => {
-    //   const tl = gsap.timeline({
-    //     scrollTrigger: {
-    //       trigger: splitTextLine,
-    //       start: 'top 90%',
-    //       end: 'bottom 60%',
-    //       scrub: false,
-    //       markers: false,
-    //       toggleActions: 'play none none none'
-    //     }
-    //   });
-
-    //   const itemSplitted = new SplitText(splitTextLine, { type: "words, lines" });
-    //   gsap.set(splitTextLine, { perspective: 400 });
-    //   itemSplitted.split({ type: "lines" })
-    //   tl.from(itemSplitted.lines, { duration: 1, delay: 0.3, opacity: 0, rotationX: -80, force3D: true, transformOrigin: "top center -50", stagger: 0.1 });
-    // });
- 
 
     }
   }
@@ -130,7 +86,7 @@
 
 
 .sec-title-wrapper .main-titlee{
-  font-size: 64px !important;
+  font-size: 54px !important;
   color: rgb(0, 0, 0);
 }
 
@@ -160,5 +116,43 @@
   background-color:rgb(0, 0, 0);
   color: antiquewhite;
 }
+/* text anim */
 
+.shin-anim {
+  color: hsl(0, 0%, 28%);
+  font-size: 60px;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 7px;
+  cursor: pointer;
+  /* text-transform: uppercase; */
+}
+
+.shin-anim {
+  /* padding: 64px; */
+  background: linear-gradient(to right, hsl(0, 0%, 30%) 0, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 30%) 20%, hsl(0, 0%, 30%) 0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 4s infinite linear;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+ 
+  60% {
+    background-position: 600px;
+  }
+ 
+  100% {
+    background-position: 900px;
+  }
+}
+@media screen and (max-width: 740px){
+  .shin-anim{
+    animation:none;
+    -webkit-text-fill-color:rgb(67, 64, 64);
+  }
+}
 </style>

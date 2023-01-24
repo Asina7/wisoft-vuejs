@@ -155,7 +155,7 @@
               </li>
               <li><a href="career.html">Career</a></li>
               <li>
-                <a><router-link to="/Blog">Blog</router-link></a>
+                <a><router-link to="/blog">Blog</router-link></a>
               </li>
             </ul>
           </div>

@@ -7,28 +7,28 @@ const routes = [
     component: () => import("../views/Main_Page.vue"),
   },
   {
-    path: "/About",
+    path: "/about",
     name: "AboutPage",
     component: () => import("../views/AboutPage.vue"),
   },
 // changed this file
   {
-    path: "/Contact",
+    path: "/contact",
     name: "ContactPage",
     component: () => import("../views/ContactPage.vue"),
   },
   {
-    path: "/Team",
+    path: "/team",
     name: "TeamPage",
     component: () => import("../views/TeamPage.vue"),
   },
   {
-    path: "/Blog",
+    path: "/blog",
     name: "BlogPage",
     component: () => import("../views/BlogPage.vue"),
   },
   {
-    path: "/Services",
+    path: "/services",
     name: "ServicePage",
     component: () => import("../views/ServicePage.vue"),
   },

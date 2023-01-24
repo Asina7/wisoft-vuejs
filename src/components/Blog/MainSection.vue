@@ -1,130 +1,57 @@
 <template>
     <div>
          <!-- Blog area start -->
-         <section class="blog__area-3 blog-v3 blog__animation">
-          <div class="container line">
-            <div class="line-3"></div>
-            <div class="row ">
-              <div class="col-xxl-12">
-                <div class="sec-title-wrapper text-anim pt-130">
-                  <h2 class="sec-sub-title">Recent Blog</h2>
-                  <h3 class="sec-title title-anim">Read Updated <br>Journal</h3>
-                  <p>Read our blog and try to see everything from every perspective. Our passion lies in making
-                    everything
-                    accessible and aesthetic for everyone. </p>
+         <section class="blog__area-6 blog__animation">
+          <div class="container g-0 line pt-110 pb-110">
+            <span class="line-3"></span>
+            <div class="row pb-130">
+              <div class="col-xxl-8 col-xl-7 col-lg-6 col-md-6">
+                <div class="sec-title-wrapper">
+                  <h2 class="sec-title-2 animation__char_come">BLOG</h2>
+                </div>
+              </div>
+              <div class="col-xxl-4 col-xl-5 col-lg-6 col-md-6">
+                <div class="blog__text">
+                  <p>Crafting new bright brands, unique visual systems and digital experience focused on a wide range of
+                    original collabs. </p>
                 </div>
               </div>
             </div>
 
-            <div class="row">
-              <div class="col-xxl-6 col-xl-6 col-lg-6">
-                <article class="blog__item-3">
-                  <div class="blog__img-wrapper-3">
+            <div class="row reset-grid">
+              <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4" v-for="commentIndex in commentsToShow" v-bind:key="commentIndex.id">
+                <article class="blog__item" >
+                  <div class="blog__img-wrapper" >
                     <a href="blog-details.html">
                       <div class="img-box">
-                        <img class="image-box__item" src="@/assets/imgs/blog/3/1.jpg" alt="Blog Thumbnail">
-                        <img class="image-box__item" src="@/assets/imgs/blog/3/1.jpg" alt="BLog Thumbnail">
+                        <img class="image-box__item" src="@/assets/imgs/blog/2.jpg" alt="Blog Thumbnail">
+                        <img class="image-box__item" src="@/assets/imgs/blog/2.jpg" alt="BLog Thumbnail">
                       </div>
                     </a>
                   </div>
-                  <div class="blog__info-3">
-                    <h4 class="blog__meta"><a href="category.html">UI Design</a> . 02 May 2019</h4>
-                    <h5><a href="blog-details.html" class="blog__title-3">How to bring fold to your startup
-                        company with
-                        Axtra</a></h5>
-                    <a href="blog-details.html" class="blog__btn">Read More <span><i
-                          class="fa-solid fa-arrow-right"></i></span></a>
-                  </div>
+                  <h4 class="blog__meta"><a href="category.html">UI Design</a>{{blogData[commentIndex].date}}</h4>
+                  <h5><a href="blog-details.html" class="blog__title">{{blogData[commentIndex].title}}</a></h5>
+                  <a href="blog-details.html" class="blog__btn">Read More <span><i
+                        class="fa-solid fa-arrow-right"></i></span></a>
                 </article>
               </div>
 
-              <div class="col-xxl-6 col-xl-6 col-lg-6">
-                <article class="blog__item-3">
-                  <div class="blog__img-wrapper-3">
-                    <a href="blog-details.html">
-                      <div class="img-box">
-                        <img class="image-box__item" src="@/assets/imgs/blog/3/2.jpg" alt="Blog Thumbnail">
-                        <img class="image-box__item" src="@/assets/imgs/blog/3/2.jpg" alt="BLog Thumbnail">
-                      </div>
-                    </a>
-                  </div>
-                  <div class="blog__info-3">
-                    <h4 class="blog__meta"><a href="category.html">UI Design</a> . 02 May 2019</h4>
-                    <h5><a href="blog-details.html" class="blog__title-3">How to manage a talented and
-                        successful design
-                        team</a></h5>
-                    <a href="blog-details.html" class="blog__btn">Read More <span><i
-                          class="fa-solid fa-arrow-right"></i></span></a>
-                  </div>
-                </article>
-              </div>
-              <div class="col-xxl-6 col-xl-6 col-lg-6">
-                <article class="blog__item-3">
-                  <div class="blog__img-wrapper-3">
-                    <a href="blog-details.html">
-                      <div class="img-box">
-                        <img class="image-box__item" src="@/assets/imgs/blog/3/1.jpg" alt="Blog Thumbnail">
-                        <img class="image-box__item" src="@/assets/imgs/blog/3/1.jpg" alt="BLog Thumbnail">
-                      </div>
-                    </a>
-                  </div>
-                  <div class="blog__info-3">
-                    <h4 class="blog__meta"><a href="category.html">UI Design</a> . 02 May 2019</h4>
-                    <h5><a href="blog-details.html" class="blog__title-3">How to bring fold to your startup
-                        company with
-                        Axtra</a></h5>
-                    <a href="blog-details.html" class="blog__btn">Read More <span><i
-                          class="fa-solid fa-arrow-right"></i></span></a>
-                  </div>
-                </article>
-              </div>
-
-              <div class="col-xxl-6 col-xl-6 col-lg-6">
-                <article class="blog__item-3">
-                  <div class="blog__img-wrapper-3">
-                    <a href="blog-details.html">
-                      <div class="img-box">
-                        <img class="image-box__item" src="@/assets/imgs/blog/3/2.jpg" alt="Blog Thumbnail">
-                        <img class="image-box__item" src="@/assets/imgs/blog/3/2.jpg" alt="BLog Thumbnail">
-                      </div>
-                    </a>
-                  </div>
-                  <div class="blog__info-3">
-                    <h4 class="blog__meta"><a href="category.html">UI Design</a> . 02 May 2019</h4>
-                    <h5><a href="blog-details.html" class="blog__title-3">How to manage a talented and
-                        successful design
-                        team</a></h5>
-                    <a href="blog-details.html" class="blog__btn">Read More <span><i
-                          class="fa-solid fa-arrow-right"></i></span></a>
-                  </div>
-                </article>
-              </div>
             </div>
+            <button @click="commentsToShow += 3">Show More</button>
+            
           </div>
+          
         </section>
         <!-- Blog area end -->
+        <div class="offcanvas__close">
+        <router-link :to="{ path: '/' }">
+          <button type="button" id="close_offcanvas">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </router-link>
+        </div>
 
-
-        <!-- CTA area start -->
-        <section class="cta__area">
-          <div class="container line pb-110">
-            <div class="line-3"></div>
-            <div class="row">
-              <div class="col-xxl-12">
-                <div class="cta__content">
-                  <p class="cta__sub-title">Work with us</p>
-                  <h2 class="cta__title title-anim">We would love to hear more about your project</h2>
-                  <div id="btn_wrapper">
-                    <a href="contact.html" class="wc-btn-primary btn-item btn-hover"><span></span>Let’s talk us <i
-                        class="fa-solid fa-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <floating-whatsapp></floating-whatsapp>
-        </section>
-        <!-- CTA area end -->
+        
         <div class="float-icon">
           
         </div>
@@ -138,6 +65,110 @@ import FloatingWhatsapp from '../Home/FloatingWhatsapp.vue';
     name : 'MainSection',
     components :{
       FloatingWhatsapp
-    }
+    },
+    data(){
+  return{
+    blogData :
+            [
+              {
+                id:"1",
+              date:". 02 May 2019",
+              title:"How to bring fold to your startup company with Axtra",
+            },
+            {
+              id:"2",
+              date:". 02 May 2019",
+              title:"How to manage a talented and successful de sign team",
+            },
+            {
+              id:"3",
+              date:". 02 May 2019",
+              title:"How to bring fold to your startup company with Axtra",
+            },
+            {
+              id:"4",
+              date:". 02 May 2019",
+              title:"How to bring fold to your startup company with Axtra",
+            },
+            {
+              id:"5",
+              date:". 02 May 2019",
+              title:"How to bring fold to your startup company with Axtra",
+            },
+            {
+              id:"6",
+              date:". 02 May 2019",
+              title:"How to bring fold to your startup company with Axtra",
+            },
+            {
+              id:"7",
+              date:". 02 May 2019",
+              title:"How to bring fold to your startup company with Axtra",
+            },
+            {
+              id:"8",
+              date:". 02 May 2019",
+              title:"How to bring fold to your startup company with Axtra",
+            },
+            {
+              id:"9",
+              date:". 02 May 2019",
+              title:"How to bring fold to your startup company with Axtra",
+            },
+            {
+              id:"10",
+              date:". 02 May 2019",
+              title:"How to bring fold to your startup company with Axtra",
+            },
+           
+          ],
+          commentsToShow: 3
+  }
+},
+methods:{
+  offcanvascontact(){
+  $("#open_offcanvas").click(function () {
+  $('.offcanvas__area').css('opacity', '1');
+  $('.offcanvas__area').css('visibility', 'visible');
+});
+$("#close_offcanvas").click(function () {
+  $('.offcanvas__area').css('opacity', '0');
+  $('.offcanvas__area').css('visibility', 'hidden');
+});
+},
+}
+
   }
 </script>
+<style scoped>
+button{
+  /* display:block; */
+  color:rgb(255, 255, 255);
+  margin:0 auto;
+  line-height:50px;
+  width:10%;
+  border-radius:30px;
+  text-decoration:none;
+  border:3px #161616 solid;
+  background:#000000;
+  opacity:0.7;
+  margin-bottom:50px;
+  /* padding-left: 12px; */
+}
+
+button:hover{
+  opacity:1;
+}
+.line{
+  /* display: none!important; */
+}
+.offcanvas__close button {
+    font-size: 30px;
+    width: 55px;
+}
+@media screen and (max-width:375px){
+  #close_offcanvas{
+    display:none;
+  }
+}
+</style>
