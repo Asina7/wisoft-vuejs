@@ -37,7 +37,7 @@
               </div>
 
             </div>
-            <button @click="commentsToShow += 3">Show More</button>
+            <button class="btn btn-primary" @click="commentsToShow += 3">Show More</button>
             
           </div>
           
@@ -141,24 +141,7 @@ $("#close_offcanvas").click(function () {
   }
 </script>
 <style scoped>
-button{
-  /* display:block; */
-  color:rgb(255, 255, 255);
-  margin:0 auto;
-  line-height:50px;
-  width:10%;
-  border-radius:30px;
-  text-decoration:none;
-  border:3px #161616 solid;
-  background:#000000;
-  opacity:0.7;
-  margin-bottom:50px;
-  /* padding-left: 12px; */
-}
 
-button:hover{
-  opacity:1;
-}
 .line{
   /* display: none!important; */
 }
