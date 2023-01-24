@@ -30,14 +30,17 @@
                     </a>
                   </div>
                   <h4 class="blog__meta"><a href="category.html">UI Design</a>{{blogData[commentIndex].date}}</h4>
-                  <h5><a href="blog-details.html" class="blog__title">{{blogData[commentIndex].title}}</a></h5>
-                  <a href="blog-details.html" class="blog__btn">Read More <span><i
+                  <h5><a href="/" class="blog__title">{{blogData[commentIndex].title}}</a></h5>
+                  <a href="/" class="blog__btn">Read More <span><i
                         class="fa-solid fa-arrow-right"></i></span></a>
                 </article>
               </div>
 
             </div>
-            <button class="btn btn-primary" @click="commentsToShow += 3">Show More</button>
+            <div class="m-auto">
+              <button class="btn btn-primary" @click="commentsToShow += 3">Show More</button>
+            </div>
+            
             
           </div>
           
@@ -55,7 +58,7 @@
         <div class="float-icon">
           
         </div>
-        
+        <FloatingWhatsapp></FloatingWhatsapp>
     </div>
 </template>
 
