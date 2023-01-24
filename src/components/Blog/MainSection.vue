@@ -30,9 +30,16 @@
                     </a>
                   </div>
                   <h4 class="blog__meta"><a href="category.html">UI Design</a>{{blogData[commentIndex].date}}</h4>
-                  <h5><a href="/" class="blog__title">{{blogData[commentIndex].title}}</a></h5>
-                  <a href="/" class="blog__btn">Read More <span><i
+                  <h5><a href="" class="blog__title">{{blogData[commentIndex].title}}</a></h5>
+                  <a href="/blogdetail" class="blog__btn">Read More<span><i
                         class="fa-solid fa-arrow-right"></i></span></a>
+                        <!-- <a>
+                          <router-link v-bind:to="{name: blogData.component}" class="blog__btn">Read More<span><i class="fa-solid fa-arrow-right"></i></span></router-link>
+                        </a>
+                   -->
+
+                 
+
                 </article>
               </div>
 
@@ -67,7 +74,8 @@ import FloatingWhatsapp from '../Home/FloatingWhatsapp.vue';
   export default{
     name : 'MainSection',
     components :{
-      FloatingWhatsapp
+      FloatingWhatsapp,
+      
     },
     data(){
   return{
@@ -77,26 +85,31 @@ import FloatingWhatsapp from '../Home/FloatingWhatsapp.vue';
               id:"1",
               date:". 02 May 2019",
               title:"How to bring fold to your startup company with Axtra",
+              component:'ServiceSection'
             },
             {
               id:"2",
               date:". 02 May 2019",
               title:"How to manage a talented and successful de sign team",
+              component:'ServiceSection'
             },
             {
               id:"3",
               date:". 02 May 2019",
               title:"How to bring fold to your startup company with Axtra",
+              component:ServiceSection
             },
             {
               id:"4",
               date:". 02 May 2019",
               title:"How to bring fold to your startup company with Axtra",
+              component:ServiceSection
             },
             {
               id:"5",
               date:". 02 May 2019",
               title:"How to bring fold to your startup company with Axtra",
+              component:ServiceSection
             },
             {
               id:"6",
@@ -128,6 +141,7 @@ import FloatingWhatsapp from '../Home/FloatingWhatsapp.vue';
           commentsToShow: 3
   }
 },
+
 methods:{
   offcanvascontact(){
   $("#open_offcanvas").click(function () {

@@ -28,8 +28,13 @@ const routes = [
     component: () => import("../views/BlogPage.vue"),
   },
   {
-    path: "/services",
-    name: "servicePage",
+    path: "/blogdetail",
+    name: "BlogDetail",
+    component: () => import("../views/BlogDetail"),
+  },
+  {
+    path: "/service",
+    name: "ServicePage",
     component: () => import("../views/ServicePage.vue"),
   },
 ];
