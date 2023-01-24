@@ -75,12 +75,12 @@
           <ul role="menu" class="men">
             <li class="men-li" role="none">
               <a href="/" role="menuitem"
-                >Home</a
+                >HOME</a
               >
             </li>
             <li class="men-li" role="none">
               <a href="/about" role="menuitem"
-                >About</a
+                >ABOUT</a
               >
             </li>
             <li class="men-li" role="none">
