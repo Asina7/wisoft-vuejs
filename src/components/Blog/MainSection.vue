@@ -85,31 +85,31 @@ import FloatingWhatsapp from '../Home/FloatingWhatsapp.vue';
               id:"1",
               date:". 02 May 2019",
               title:"How to bring fold to your startup company with Axtra",
-              component:'ServiceSection'
+              // component:'ServiceSection'
             },
             {
               id:"2",
               date:". 02 May 2019",
               title:"How to manage a talented and successful de sign team",
-              component:'ServiceSection'
+              // component:'ServiceSection'
             },
             {
               id:"3",
               date:". 02 May 2019",
               title:"How to bring fold to your startup company with Axtra",
-              component:ServiceSection
+              // component:ServiceSection
             },
             {
               id:"4",
               date:". 02 May 2019",
               title:"How to bring fold to your startup company with Axtra",
-              component:ServiceSection
+              // component:ServiceSection
             },
             {
               id:"5",
               date:". 02 May 2019",
               title:"How to bring fold to your startup company with Axtra",
-              component:ServiceSection
+              // component:ServiceSection
             },
             {
               id:"6",
