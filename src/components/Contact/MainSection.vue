@@ -144,7 +144,7 @@ $("#close_offcanvas").click(function () {
     font-size: 30px;
     width: 55px;
 }
-@media screen and (max-width:375px){
+@media screen and (max-width:768px){
   #close_offcanvas{
     display:none;
   }

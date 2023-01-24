@@ -42,7 +42,7 @@
           <li>
             <a><router-link to="/Contact">CONTACT</router-link></a>
           </li> -->
-            <li><router-link to="/Contact"><button>Let's Talk</button></router-link></li>
+            <li><router-link to="/contact"><button>Let's Talk</button></router-link></li>
             <li><a href="tel:+971 4 321 0710"><i class="fa-solid fa-phone"> </i>+971 4 321 0710</a></li>
             
             
@@ -84,14 +84,12 @@
               >
             </li>
             <li class="men-li" role="none">
-              <a href="/contact" role="menuitem"
-                >Contact</a
-              >
+              <!-- <a href="/contact" role="menuitem">Contact</a> -->
+              <a><router-link to="/contact">CONTACT</router-link></a>
             </li>
             <li class="men-li" role="none">
-              <a href="/blog" role="menuitem"
-                >Blog</a
-              >
+              <!-- <a href="/blog" role="menuitem">Blog</a> -->
+              <a><router-link to="/blog">BLOGS</router-link></a>
             </li>
           </ul>
 

@@ -74,7 +74,7 @@ import FloatingWhatsapp from '../Home/FloatingWhatsapp.vue';
     blogData :
             [
               {
-                id:"1",
+              id:"1",
               date:". 02 May 2019",
               title:"How to bring fold to your startup company with Axtra",
             },
@@ -152,7 +152,7 @@ $("#close_offcanvas").click(function () {
     font-size: 30px;
     width: 55px;
 }
-@media screen and (max-width:375px){
+@media screen and (max-width:768px){
   #close_offcanvas{
     display:none;
   }

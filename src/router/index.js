@@ -29,7 +29,7 @@ const routes = [
   },
   {
     path: "/services",
-    name: "ServicePage",
+    name: "servicePage",
     component: () => import("../views/ServicePage.vue"),
   },
 ];
