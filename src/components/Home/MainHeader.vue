@@ -21,31 +21,9 @@
         </div>
         <div class="header__nav-2">
           <ul class="main-menu-3 menu-anim list-menu">
-            <!-- <li>
-            <a><router-link to="/">HOME</router-link></a>
-          </li>
-          <li>
-            <a> <router-link to="/About">ABOUT</router-link></a>
-          </li>
-          <li>
-            <a><router-link to="/Pages">PAGES</router-link></a>
-          </li>
-          <li>
-            <a><router-link to="/Services">SERVICES</router-link></a>
-          </li>
-          <li>
-            <a><router-link to="/Team">TEAM</router-link></a>
-          </li>
-          <li>
-            <a><router-link to="/Blog">BLOG</router-link></a>
-          </li>
-          <li>
-            <a><router-link to="/Contact">CONTACT</router-link></a>
-          </li> -->
-            <li><router-link to="/contact"><button>Let's Talk</button></router-link></li>
+            <router-link to="/contact"> <li><button class="hero-btn">Let's Talk</button></li></router-link>
             <li><a href="tel:+971 4 321 0710"><i class="fa-solid fa-phone"> </i>+971 4 321 0710</a></li>
-            
-            
+          
           </ul>
         </div>
         <div class="header__nav-icon-3">
@@ -387,11 +365,20 @@ export default {
   padding: 2rem;
   border-right: 1px solid rgb(53, 51, 51);
 }
-.list-menu button {
+/* .list-menu button {
   border: 1px solid black;
   width: 120px;
   border-radius: 30px;
   padding: 2px;
+} */
+.list-menu .hero-btn {
+  border: 1px solid black;
+  border-radius:20px;
+  width: 150px;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 19px;
 }
 .list-menu button:hover {
   background-color: black;
@@ -477,4 +464,10 @@ export default {
 .offcanvas__links ul li a{
   font-size: 38px;
 }
+@media screen and (max-width: 960px){
+  .search-icon{
+    display: none;
+}
+}
+
 </style>

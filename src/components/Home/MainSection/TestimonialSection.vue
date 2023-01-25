@@ -157,6 +157,10 @@
   cursor: pointer;
   
 }
+.hero-item-btn{
+  width: fit-content;
+}
+
 .hero-item-btn .hero-btn1:hover{
   color: white;
   background: black;

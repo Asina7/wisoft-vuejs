@@ -36,7 +36,7 @@
       position:fixed;
       width:60px;
       height:60px;
-      bottom:100px;
+      bottom:50px;
       right:40px;
       background-color:#256a8f;
       color:#FFF;
@@ -56,7 +56,7 @@
       position:fixed;
       width:60px;
       height:60px;
-      bottom:100px;
+      bottom:50px;
       left:40px;
       background-color:#256a8f;
       color:#FFF;
@@ -65,6 +65,11 @@
       font-size:30px;
       box-shadow: 2px 2px 3px #999;
       z-index:100;
+  }
+  @media only screen and (max-width:768px){
+    .float1,.float{
+      bottom:55px;
+    }
   }
 
  

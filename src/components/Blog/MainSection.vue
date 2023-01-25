@@ -36,8 +36,8 @@
               </div>
 
             </div>
-            <div class="m-auto">
-              <button class="btn btn-primary" v-if="showMoreButton" @click="commentsToShow += 3">Show More</button>
+            <div class="hero-item-btn m-auto">
+              <button class="hero-btn1" v-if="showMoreButton" @click="commentsToShow += 3">Show More</button>
             </div>
           
             
@@ -142,7 +142,21 @@ $("#close_offcanvas").click(function () {
   }
 </script>
 <style scoped>
-
+.hero-item-btn .hero-btn1{
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 150px;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 20px;
+  cursor: pointer;
+  
+}
+.hero-item-btn .hero-btn1:hover{
+  color: white;
+  background: black;
+}
 .line{
   /* display: none!important; */
 }

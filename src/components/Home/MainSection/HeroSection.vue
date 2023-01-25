@@ -23,6 +23,9 @@
                   <div class="hero__text-3">
                     <p class="animation__word_come para-text">Static and dynamic secure code review can prevent a day before your
                       product is even released. We can integrate with your dev environment</p>
+                      <div class="hero-item-btn">
+            <button class="hero-btn">Let's Try</button>
+          </div>
                   </div>
                   <div class="scroll-down">
                     <button><img src="@/assets/imgs/icon/arrow-down-sm.png" alt="arrow icon"></button>
@@ -45,14 +48,9 @@
               </div>
             </div>
           </div>
-      
           </div>
-          <div class="hero-item-btn">
-             <button class=" hero-btn">let's try</button>
-          </div>
+          
         </div>
-        
-
         <div class="hero3-img-ani">
           <img src="@/assets/imgs/hero/3/1.jpg" alt="Hero Image" class="hero3-img">
         </div>
@@ -105,17 +103,17 @@
   text-align: center;
   cursor: pointer;
   margin-top: 20px;
-  cursor: pointer;
-  position: absolute;
-  left: 126px;
-  bottom: 230px;
+  cursor: pointer!important;
+  /* position: absolute; */
+  /* left: 100px; */
+  /* bottom: 230px; */
  
 }
 /* .hero-item-btn .hero-btn:hover{
   color: white;
 } */
-.hero-item-btn  .hero-btn:hover{
-  background-color:rgb(0, 0, 0);
+.hero-item-btn .hero-btn:hover{
+  background-color:rgb(0, 0, 0)!important;
   color: antiquewhite;
 }
 /* text anim */

@@ -54,7 +54,12 @@
                 </div>
 
               
-
+                <div class="footer__copyright">
+                    <p>© 2022 - 2025 | Alrights reserved by <a href="https://wealcoder.com/"
+                        target="_blank">Wealcoder</a>
+                    </p>
+                  </div>
+                  
                 <div class="footer__subscribe">
                   <form action="#">
                     <input type="email" name="email" placeholder="Enter your email">
