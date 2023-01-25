@@ -35,7 +35,9 @@
 
           </div>
         </div>
-        <h6 class="all-reviews">see all reviews</h6>
+        <div class="hero-item-btn">
+                       <button class=" hero-btn1">See All Reviews</button>
+                      </div>
       </section>
     </div>
 </template>
@@ -173,6 +175,23 @@
 .testimonial-box:hover{
   transform: translate(-10px);
   transition: all ease 0.3s;
+}
+
+.hero-item-btn .hero-btn1{
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 150px;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  
+}
+.hero-item-btn .hero-btn1:hover{
+  color: white;
+  background: black;
 }
 
 </style>

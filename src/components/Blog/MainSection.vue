@@ -19,7 +19,7 @@
             </div>
 
             <div class="row reset-grid">
-              <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4" v-for="commentIndex in commentsToShow" v-bind:key="commentIndex.id">
+              <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4" v-for="(blog, index) in blogData.slice(0, commentsToShow)" v-bind:key="index">
                 <article class="blog__item" >
                   <div class="blog__img-wrapper" >
                     <a href="blog-details.html">
@@ -29,24 +29,17 @@
                       </div>
                     </a>
                   </div>
-                  <h4 class="blog__meta"><a href="category.html">UI Design</a>{{blogData[commentIndex].date}}</h4>
-                  <h5><a href="" class="blog__title">{{blogData[commentIndex].title}}</a></h5>
-                  <a href="/blogdetail" class="blog__btn">Read More<span><i
-                        class="fa-solid fa-arrow-right"></i></span></a>
-                        <!-- <a>
-                          <router-link v-bind:to="{name: blogData.component}" class="blog__btn">Read More<span><i class="fa-solid fa-arrow-right"></i></span></router-link>
-                        </a>
-                   -->
-
-                 
-
+                  <h4 class="blog__meta"><a href="category.html">UI Design</a>{{blog.date}}</h4>
+                  <h5><a href="" class="blog__title">{{blog.title}}</a></h5>
+                  <router-link :to="'/post' + index" class="blog__btn">Read More<span><i class="fa-solid fa-arrow-right"></i></span></router-link>
                 </article>
               </div>
 
             </div>
             <div class="m-auto">
-              <button class="btn btn-primary" @click="commentsToShow += 3">Show More</button>
+              <button class="btn btn-primary" v-if="showMoreButton" @click="commentsToShow += 3">Show More</button>
             </div>
+          
             
             
           </div>
@@ -79,60 +72,46 @@ import FloatingWhatsapp from '../Home/FloatingWhatsapp.vue';
     },
     data(){
   return{
+
     blogData :
             [
               {
-              id:"1",
               date:". 02 May 2019",
               title:"How to bring fold to your startup company with Axtra",
-              // component:'ServiceSection'
             },
             {
-              id:"2",
               date:". 02 May 2019",
               title:"How to manage a talented and successful de sign team",
-              // component:'ServiceSection'
             },
             {
-              id:"3",
-              date:". 02 May 2019",
-              title:"How to bring fold to your startup company with Axtra",
-              // component:ServiceSection
-            },
-            {
-              id:"4",
-              date:". 02 May 2019",
-              title:"How to bring fold to your startup company with Axtra",
-              // component:ServiceSection
-            },
-            {
-              id:"5",
-              date:". 02 May 2019",
-              title:"How to bring fold to your startup company with Axtra",
-              // component:ServiceSection
-            },
-            {
-              id:"6",
               date:". 02 May 2019",
               title:"How to bring fold to your startup company with Axtra",
             },
             {
-              id:"7",
               date:". 02 May 2019",
               title:"How to bring fold to your startup company with Axtra",
             },
             {
-              id:"8",
               date:". 02 May 2019",
               title:"How to bring fold to your startup company with Axtra",
             },
             {
-              id:"9",
               date:". 02 May 2019",
               title:"How to bring fold to your startup company with Axtra",
             },
             {
-              id:"10",
+              date:". 02 May 2019",
+              title:"How to bring fold to your startup company with Axtra",
+            },
+            {
+              date:". 02 May 2019",
+              title:"How to bring fold to your startup company with Axtra",
+            },
+            {
+              date:". 02 May 2019",
+              title:"How to bring fold to your startup company with Axtra",
+            },
+            {
               date:". 02 May 2019",
               title:"How to bring fold to your startup company with Axtra",
             },
@@ -141,6 +120,11 @@ import FloatingWhatsapp from '../Home/FloatingWhatsapp.vue';
           commentsToShow: 3
   }
 },
+computed: {
+    showMoreButton() {
+      return this.commentsToShow < this.blogData.length;
+    }
+  },
 
 methods:{
   offcanvascontact(){
