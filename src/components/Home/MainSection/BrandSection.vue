@@ -4,7 +4,7 @@
     <div id="smooth-content">
       <main>
         <section class="brand__area">
-        <div class="container pt-140 pb-140">
+        <div class="container pt-140 pb-100">
           <div class="row">
             <div class="col-xxl-12">
               <h2 class="brand__title-3 title-anim brand-4">We Create Bussiness<br>just ask for these brands 
@@ -30,15 +30,20 @@
                 </div>
               </div>
             </div>
+            
           </div>
+            
+              <google-review></google-review>
+
         </div>
+        
       </section>
+ 
+   
       </main>
       </div>
       </div>
-      <section>
-        <google-review></google-review>
-      </section>
+     
     </div>
 </template>
 

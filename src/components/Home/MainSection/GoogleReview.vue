@@ -10,6 +10,16 @@
 <style scoped>
 .counter__img-3 img{
   width:18%;
+  margin-top:80px;
 }
-
+@media screen and (max-width:768px){
+  .counter__img-3 img{
+    width:50%;
+    margin-top:10px!important;
+  }
+  .counter__img-3 {
+    margin-top: 10px;
+    padding-left: 130px;
+}
+}
 </style>

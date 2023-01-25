@@ -11,16 +11,18 @@
                 <!-- Main Title -->
                   <div class="sec-title-wrapper ">
                     <h2 class="sec-sub-title ">UAE #1</h2>
-                    <h3 class="sec-title main-titlee title-anim shin-anim">Digital Marketing Agency<br>
-                      Create Business Everyday</h3>
+                    <div class="title">
+                      <h3 class="sec-title main-titlee title-anim">Digital Marketing Agency</h3>
+                      <h3 class="sec-title main-titlee title-anim">Create Business Everyday</h3>
+                    </div>
+                    
                   </div>
                  
                   
                 <!-- ends Title -->
                   <div class="hero__text-3">
-                    <p class="animation__word_come">Static and dynamic secure code review can prevent a day before your
-                      product is even released. We
-                      can integrate with your dev environment</p>
+                    <p class="animation__word_come para-text">Static and dynamic secure code review can prevent a day before your
+                      product is even released. We can integrate with your dev environment</p>
                   </div>
                   <div class="scroll-down">
                     <button><img src="@/assets/imgs/icon/arrow-down-sm.png" alt="arrow icon"></button>
@@ -118,41 +120,45 @@
 }
 /* text anim */
 
-.shin-anim {
-  color: hsl(0, 0%, 28%);
-  font-size: 60px;
-  font-weight: bold;
-  font-family: monospace;
-  letter-spacing: 7px;
-  cursor: pointer;
-  /* text-transform: uppercase; */
+
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.shin-anim {
-  /* padding: 64px; */
-  background: linear-gradient(to right, hsl(0, 0%, 30%) 0, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 30%) 20%, hsl(0, 0%, 30%) 0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shine 4s infinite linear;
+.title h3 {
+  font-size: 40px;
+  text-align: center;
+  opacity: 0;
+  transform: translateX(100%);
+  animation: title-animation 2s ease-in-out;
+  animation-fill-mode: forwards;  
 }
 
-@keyframes shine {
+.title h3:nth-child(2) {
+  animation-delay: 2s; 
+}
+
+@keyframes title-animation {
   0% {
-    background-position: 0;
+    opacity: 0;
+    transform: translateX(100%);
   }
- 
-  60% {
-    background-position: 600px;
-  }
- 
   100% {
-    background-position: 900px;
+    opacity: 1;
+    transform: translateX(0);
   }
 }
-@media screen and (max-width: 740px){
-  .shin-anim{
-    animation:none;
-    -webkit-text-fill-color:rgb(67, 64, 64);
-  }
+
+.para-text{
+  /* font-size:20px;  */
+  /* text-align:center;  */
+  opacity:0; 
+  transform: translateX(100%);
+  animation: title-animation 2s ease-in-out; 
+  animation-fill-mode: forwards;
+  animation-delay: 3s; 
 }
 </style>
