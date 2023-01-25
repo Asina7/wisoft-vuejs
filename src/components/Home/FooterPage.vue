@@ -55,8 +55,8 @@
 
               
                 <div class="footer__copyright">
-                    <p>© 2022 - 2025 | Alrights reserved by <a href="https://wealcoder.com/"
-                        target="_blank">Wealcoder</a>
+                    <p>© 2023 | Alrights reserved by <a href=""
+                        target="_blank">wisoftsolutions</a>
                     </p>
                   </div>
                   
