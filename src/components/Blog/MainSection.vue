@@ -31,7 +31,7 @@
                 <h4 class="blog__meta"><a href="">UI Design</a>{{blog.date}}</h4>
                 <h5><a href="" class="blog__title-3">{{blog.title}}
                     Axtra</a></h5>
-                  <router-link :to="'/post' + index" class="blog__btn">Read More<span><i class="fa-solid fa-arrow-right"></i></span></router-link>
+                  <router-link :to="'/blogdetail/' +blog.id" class="blog__btn">Read More<span><i class="fa-solid fa-arrow-right"></i></span></router-link>
                 </div>
             </article>
             </div>
@@ -93,42 +93,52 @@ import FloatingWhatsapp from '../Home/FloatingWhatsapp.vue';
     blogData :
             [
               {
+                id:1,
               date:". 02 May 2019",
               title:"How to bring fold to your startup company with Axtra",
             },
             {
+              id:2,
               date:". 02 May 2019",
               title:"How to manage a talented and successful de sign team",
             },
             {
+              id:3,
               date:". 02 May 2019",
               title:"How to bring fold to your startup company with Axtra",
             },
             {
+              id:4,
               date:". 02 May 2019",
               title:"How to bring fold to your startup company with Axtra",
             },
             {
+              id:5,
               date:". 02 May 2019",
               title:"How to bring fold to your startup company with Axtra",
             },
             {
+              id:6,
               date:". 02 May 2019",
               title:"How to bring fold to your startup company with Axtra",
             },
             {
+              id:7,
               date:". 02 May 2019",
               title:"How to bring fold to your startup company with Axtra",
             },
             {
+              id:8,
               date:". 02 May 2019",
               title:"How to bring fold to your startup company with Axtra",
             },
             {
+              id:9,
               date:". 02 May 2019",
               title:"How to bring fold to your startup company with Axtra",
             },
             {
+              id:10,
               date:". 02 May 2019",
               title:"How to bring fold to your startup company with Axtra",
             },
@@ -154,6 +164,7 @@ $("#close_offcanvas").click(function () {
   $('.offcanvas__area').css('visibility', 'hidden');
 });
 },
+
 }
 
   }
