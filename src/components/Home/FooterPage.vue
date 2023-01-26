@@ -40,7 +40,7 @@
                 <div class="footer__widget-4">
                   <h2 class="project-title">Have a project in your mind?</h2>
                   <div id="btn_wrapper">
-                    <a class="wc-btn-primary btn-hover btn-item"><span></span><router-link to="/Contact">Contact us
+                    <a class="wc-btn-primary btn-hover btn-item"><span></span><router-link to="/contact">Contact us
                      <i class="fa-solid fa-arrow-right"></i></router-link>
                     </a>
                   </div>

@@ -11,9 +11,9 @@
                 <!-- Main Title -->
                   <div class="sec-title-wrapper ">
                     <h2 class="sec-sub-title ">UAE #1</h2>
-                    <div class="title">
-                      <h3 class="sec-title main-titlee title-anim">Digital Marketing Agency</h3>
-                      <h3 class="sec-title main-titlee title-anim">Create Business Everyday</h3>
+                    <div class=" title">
+                      <h3 class="sec-title main-titlee">Digital Marketing Agency</h3>
+                      <h3 class="sec-title main-titlee">Create Business Everyday</h3>
                     </div>
                     
                   </div>
@@ -44,7 +44,7 @@
                 <h4 class="video-title close-video-title">Close <span>video intro</span></h4>
               </div>
               <div class="video">
-                <video src="@/assets/video/hero-3.mp4" loop muted autoplay playsinline></video>
+                <video src="@/assets/video/RewindWisoft.mp4" loop muted autoplay playsinline></video>
               </div>
             </div>
           </div>
@@ -159,4 +159,6 @@
   animation-fill-mode: forwards;
   animation-delay: 3s; 
 }
+
+
 </style>
