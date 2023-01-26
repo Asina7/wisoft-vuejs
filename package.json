@@ -19,6 +19,7 @@
     "swiper": "^8.4.5",
     "vue": "^3.2.45",
     "vue-animated-cursor": "^1.0.3",
+    "vue-parallaxy": "^1.1.1",
     "vue-router": "^4.0.13",
     "vue-scrollmagic": "^1.2.0"
   },

@@ -5,7 +5,7 @@
       <footer class="footer__area" data-scroll-section>
       <div class="footer__top">
         <div class="container footer-line"></div>
-        <img src="@/assets/imgs/thumb/footer.jpg" alt="Footer Image" data-speed="0.5">
+        <img  src="@/assets/imgs/thumb/footer.jpg" alt="Footer Image" data-speed="0.5">
       </div>
 
       <div class="footer__btm">
@@ -98,6 +98,6 @@ import ContactInformation from './MainSection/ContactInformation.vue';
     name : 'FooterPage',
     components:{
       ContactInformation
-    }
+    },
   }
 </script>
