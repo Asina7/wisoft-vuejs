@@ -1,351 +1,188 @@
 <template>
     <div>
+      <main>
+
+<!-- Service area start -->
+<section class="service__area service-v2 pt-110 pb-150">
+  <div class="container">
+    <div class="row">
+      <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
+        <div class="sec-title-wrapper wrap">
+          <h2 class="sec-sub-title title-anim animation__word_come" >service</h2>
+          <h3 class="sec-title title-anim animation__word_come">Solution we <br>provide</h3>
+        </div>
+      </div>
+      <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
+        <div class="service__top-text text-anim animation__word_come">
+          <p>With every single one of our clients we bring forth a deep passion
+            for <span>creative problem solving
+              innovations</span> forward thinking
+            brands boundaries</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="service__list-wrapper">
+      <div class="row">
+        <div class="col-xxl-4 col-xl-4 col-lg-0 col-md-0">
+          <div class="service__img-wrapper">
+            <img src="@/assets/imgs/service/1/1.jpg" alt="Service Image" class="service__img img-1 active">
+            <img src="@/assets/imgs/service/1/2.png" alt="Service Image" class="service__img img-2">
+            <img src="@/assets/imgs/service/1/3.png" alt="Service Image" class="service__img img-3">
+            <img src="@/assets/imgs/service/1/4.png" alt="Service Image" class="service__img img-4">
+
+            <span class="shape-box-1 current"></span>
+            <span class="shape-box-2"></span>
+            <span class="shape-box-3"></span>
+            <span class="shape-box-4"></span>
+          </div>
+        </div>
+        <div class="col-xxl-8 col-xl-8 col-lg-12 col-md-12">
+          <div class="service__list">
+            <a href="service-details.html">
+              <div class="service__item animation_home1_service" data-service="1">
+                <div class="service__number"><span>01</span></div>
+                <div class="service__title-wrapper">
+                  <h4 class="service__title">Web & Mobile
+                    Development</h4>
+                </div>
+                <div class="service__text">
+                  <p>We create, products, brands, apps & websites for the companies all around the world class
+                    digital
+                    products</p>
+                </div>
+                <div class="service__link">
+                  <p><i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+              </div>
+            </a>
+
+            <a href="service-details.html">
+              <div class="service__item  animation_home1_service" data-service="2">
+                <div class="service__number"><span>02</span></div>
+                <div class="service__title-wrapper">
+                  <h4 class="service__title">Interaction <br>Design</h4>
+                </div>
+                <div class="service__text">
+                  <p>We create, products, brands, apps & websites for the companies all around the world class
+                    digital
+                    products</p>
+                </div>
+                <div class="service__link">
+                  <p><i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+              </div>
+            </a>
+
+            <a href="service-details.html">
+              <div class="service__item  animation_home1_service" data-service="3">
+                <div class="service__number"><span>03</span></div>
+                <div class="service__title-wrapper">
+                  <h4 class="service__title">Digital <br>Maketing</h4>
+                </div>
+                <div class="service__text">
+                  <p>We create, products, brands, apps & websites for the companies all around the world class
+                    digital
+                    products</p>
+                </div>
+                <div class="service__link">
+                  <p><i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+              </div>
+            </a>
+
+            <a href="service-details.html">
+              <div class="service__item  animation_home1_service" data-service="4">
+                <div class="service__number"><span>04</span></div>
+                <div class="service__title-wrapper">
+                  <h4 class="service__title">Branding and Strategy</h4>
+                </div>
+                <div class="service__text">
+                  <p>We create, products, brands, apps & websites for the companies all around the world class
+                    digital
+                    products</p>
+                </div>
+                <div class="service__link">
+                  <p><i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Service area end -->
+
+
+<!-- Brand area start -->
+<section class="brand__area brand-color">
+        <div class="container pt-140 pb-100">
+          <div class="row">
+            <div class="col-xxl-12">
+              <h2 class="brand__title-3 title-anim brand-4">We Create Bussiness<br>just ask for these brands 
+              </h2>
+              <div class="brand__list-3">
+                <div class="brand__item-2 fade_bottom">
+                  <img src="@/assets/imgs/brand/1.png" alt="Brand Logo">
+                </div>
+                <div class="brand__item-2 fade_bottom">
+                  <img src="@/assets/imgs/brand/2.png" alt="Brand Logo">
+                </div>
+                <div class="brand__item-2 fade_bottom">
+                  <img src="@/assets/imgs/brand/3.png" alt="Brand Logo">
+                </div>
+                <div class="brand__item-2 fade_bottom">
+                  <img src="@/assets/imgs/brand/4.png" alt="Brand Logo">
+                </div>
+                <div class="brand__item-2 fade_bottom">
+                  <img src="@/assets/imgs/brand/5.png" alt="Brand Logo">
+                </div>
+                <div class="brand__item-2 fade_bottom">
+                  <img src="@/assets/imgs/brand/6.png" alt="Brand Logo">
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
         
-        <!-- Hero area start -->
-        <section class="solution__area">
-          <div class="solution__wrapper">
-            <div class="solution__left">
-              <div class="solution__img-1">
-                <img src="@/assets/imgs/thumb/solution.png" alt="Solution Image">
-              </div>
-              <div class="solution__img-2">
-                <img src="@/assets/imgs/thumb/solution-2.png" alt="Solution Image">
-              </div>
-            </div>
+      </section>
 
-            <div class="solution__mid">
-              <h1 class="solution__title animation__char_come">Digital Solution</h1>
-              <p>We’re designing digital experiences that enrich human lives and it helps to grow your business
-                globally trends.</p>
-            </div>
 
-            <div class="solution__right">
-              <div class="solution__img-3">
-                <img src="@/assets/imgs/thumb/solution-3.png"  alt="Solution Image">
-              </div>
-            </div>
+<!-- CTA area start -->
+<section class="cta__area cta-background">
+  <div class="container line pt-100 pb-110 no-p">
+    <!-- <div class="line-3"></div> -->
+    <div class="row">
+      <div class="col-xxl-12">
+        <div class="cta__content">
+          <p class="cta__sub-title color-cta">Work with us</p>
+          <h2 class="cta__title title-anim color-cta">We would love to hear more about your project</h2>
+          <div id="btn_wrapper">
+            <a href="contact.html" class="wc-btn-primary btn-item btn-hover"><span></span>Let’s talk us <i
+                class="fa-solid fa-arrow-right"></i></a>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- CTA area end -->
 
-          <div class="container pb-130">
-            <div class="row">
-              <div class="col-xxl-12">
-                <div class="solution__btm">
-                  <ul>
-                    <li>Approch</li>
-                    <li>Creativity</li>
-                    <li>Experienced</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="solution__shape">
-            <img src="@/assets/imgs/icon/1.png" alt="Shape Image" class="shape-1">
-            <img src="@/assets/imgs/icon/2.png" alt="Shape Image" class="shape-2">
-            <img src="@/assets/imgs/icon/3.png" alt="Shape Image" class="shape-3">
-            <img src="@/assets/imgs/icon/4.png" alt="Shape Image" class="shape-4">
-            <img src="@/assets/imgs/icon/5.png" alt="Shape Image" class="shape-5">
-          </div>
-        </section>
-        <!-- Hero area end -->
-
-
-        <!-- Service area start -->
-        <section class="service__area-6">
-          <div class="container">
-            <div class="row inherit-row">
-              <div class="col-xxl-12">
-                <div class="content-wrapper">
-                  <div class="left-content">
-                    <ul class="service__list-6">
-                      <li class="active"><a href="#service_1">Interaction <br>Design</a></li>
-                      <li><a href="#service_2">Web & Mobile <br>Development</a></li>
-                      <li><a href="#service_3">Motion & Branding <br>Design</a></li>
-                      <li><a href="#service_4">Digital <br> Maketing</a></li>
-                      <li><a href="#service_5">Concept and <br>Strategy</a></li>
-                      <li><a href="#service_6">Illustrations & <br> Prototype</a></li>
-                    </ul>
-                  </div>
-
-                  <div class="mid-content">
-                    <div class="service__image">
-                      <img src="@/assets/imgs/service/1.jpg" alt="Service Image">
-                    </div>
-                    <div class="service__image">
-                      <img src="@/assets/imgs/service/2.jpg" alt="Service Image">
-                    </div>
-                    <div class="service__image">
-                      <img src="@/assets/imgs/service/3.jpg" alt="Service Image">
-                    </div>
-                    <div class="service__image">
-                      <img src="@/assets/imgs/service/4.jpg" alt="Service Image">
-                    </div>
-                    <div class="service__image">
-                      <img src="@/assets/imgs/service/5.jpg" alt="Service Image">
-                    </div>
-                    <div class="service__image">
-                      <img src="@/assets/imgs/service/4.jpg" alt="Service Image">
-                    </div>
-                  </div>
-
-                  <div class="right-content">
-                    <div class="service__items-6">
-
-                      <div class="service__item-6" id="service_1" data-secid="1">
-                        <div class="image-tab">
-                          <img src="@/assets/imgs/service/1.jpg" alt="Service Image">
-                        </div>
-
-                        <div>
-                          <h2 class="service__title-6 title-anim">User paths or user flows functional models</h2>
-                          <p>This is the second workshop of the UX design methodology. Given all the conclusions drawn
-                            in
-                            the
-                            personae workshop, we will project ourselves towards the production of ideal user journeys.
-                            In
-                            other
-                            words: how each persona can achieve their goal.</p>
-                          <ul>
-                            <li>+ API Development</li>
-                            <li>+ WordPress</li>
-                            <li>+ Cloud Migration</li>
-                            <li>+ Front End Development</li>
-                            <li>+ JavaScript</li>
-                            <li>+ Fluter Framework</li>
-                          </ul>
-                          <div id="btn_wrapper">
-                            <a href="service-details.html" class="wc-btn-secondary btn-item btn-hover"><span></span>Get
-                              free
-                              <br>qoutes <i class="fa-solid fa-arrow-right"></i></a>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="service__item-6" id="service_2" data-secid="2">
-                        <div class="image-tab">
-                          <img src="@/assets/imgs/service/2.jpg" alt="Service Image">
-                        </div>
-
-                        <div>
-                          <h2 class="service__title-6 title-anim">Web & Mobile Development</h2>
-                          <p>This is the second workshop of the UX design methodology. Given all the conclusions drawn
-                            in
-                            the
-                            personae workshop, we will project ourselves towards the production of ideal user journeys.
-                            In
-                            other
-                            words: how each persona can achieve their goal.</p>
-                          <ul>
-                            <li>+ API Development</li>
-                            <li>+ WordPress</li>
-                            <li>+ Cloud Migration</li>
-                            <li>+ Front End Development</li>
-                            <li>+ JavaScript</li>
-                            <li>+ Fluter Framework</li>
-                          </ul>
-                          <div id="btn_wrapper">
-                            <a href="service-details.html" class="wc-btn-secondary btn-item btn-hover"><span></span>Get
-                              free
-                              <br>qoutes <i class="fa-solid fa-arrow-right"></i></a>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="service__item-6" id="service_3" data-secid="3">
-
-                        <div class="image-tab">
-                          <img src="@/assets/imgs/service/3.jpg" alt="Service Image">
-                        </div>
-
-                        <div>
-                          <h2 class="service__title-6 title-anim">UMotion & Branding Design</h2>
-                          <p>This is the second workshop of the UX design methodology. Given all the conclusions drawn
-                            in
-                            the
-                            personae workshop, we will project ourselves towards the production of ideal user journeys.
-                            In
-                            other
-                            words: how each persona can achieve their goal.</p>
-                          <ul>
-                            <li>+ API Development</li>
-                            <li>+ WordPress</li>
-                            <li>+ Cloud Migration</li>
-                            <li>+ Front End Development</li>
-                            <li>+ JavaScript</li>
-                            <li>+ Fluter Framework</li>
-                          </ul>
-                          <div id="btn_wrapper">
-                            <a href="service-details.html" class="wc-btn-secondary btn-item btn-hover"><span></span>Get
-                              free
-                              <br>qoutes <i class="fa-solid fa-arrow-right"></i></a>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="service__item-6" id="service_4" data-secid="4">
-                        <div class="image-tab">
-                          <img src="@/assets/imgs/service/4/service-1.png" alt="Service Image">
-                        </div>
-
-                        <div>
-                          <h2 class="service__title-6 title-anim">User paths or user flows functional models</h2>
-                          <p>This is the second workshop of the UX design methodology. Given all the conclusions drawn
-                            in
-                            the
-                            personae workshop, we will project ourselves towards the production of ideal user journeys.
-                            In
-                            other
-                            words: how each persona can achieve their goal.</p>
-                          <ul>
-                            <li>+ API Development</li>
-                            <li>+ WordPress</li>
-                            <li>+ Cloud Migration</li>
-                            <li>+ Front End Development</li>
-                            <li>+ JavaScript</li>
-                            <li>+ Fluter Framework</li>
-                          </ul>
-                          <div id="btn_wrapper">
-                            <a href="service-details.html" class="wc-btn-secondary btn-item btn-hover"><span></span>Get
-                              free
-                              <br>qoutes <i class="fa-solid fa-arrow-right"></i></a>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="service__item-6" id="service_5" data-secid="5">
-                        <div class="image-tab">
-                          <img src="@/assets/imgs/service/5.jpg" alt="Service Image">
-                        </div>
-
-                        <div>
-                          <h2 class="service__title-6 title-anim">User paths or user flows functional models</h2>
-                          <p>This is the second workshop of the UX design methodology. Given all the conclusions drawn
-                            in
-                            the
-                            personae workshop, we will project ourselves towards the production of ideal user journeys.
-                            In
-                            other
-                            words: how each persona can achieve their goal.</p>
-                          <ul>
-                            <li>+ API Development</li>
-                            <li>+ WordPress</li>
-                            <li>+ Cloud Migration</li>
-                            <li>+ Front End Development</li>
-                            <li>+ JavaScript</li>
-                            <li>+ Fluter Framework</li>
-                          </ul>
-                          <div id="btn_wrapper">
-                            <a href="service-details.html" class="wc-btn-secondary btn-item btn-hover"><span></span>Get
-                              free
-                              <br>qoutes <i class="fa-solid fa-arrow-right"></i></a>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="service__item-6" id="service_6" data-secid="6">
-                        <div class="image-tab">
-                          <img src="@/assets/imgs/service/4.jpg" alt="Service Image">
-                        </div>
-
-                        <div>
-                          <h2 class="service__title-6 title-anim">Illustrations & Prototype</h2>
-                          <p>This is the second workshop of the UX design methodology. Given all the conclusions drawn
-                            in
-                            the
-                            personae workshop, we will project ourselves towards the production of ideal user journeys.
-                            In
-                            other
-                            words: how each persona can achieve their goal.</p>
-                          <ul>
-                            <li>+ API Development</li>
-                            <li>+ WordPress</li>
-                            <li>+ Cloud Migration</li>
-                            <li>+ Front End Development</li>
-                            <li>+ JavaScript</li>
-                            <li>+ Fluter Framework</li>
-                          </ul>
-                          <div id="btn_wrapper">
-                            <a href="service-details.html" class="wc-btn-secondary btn-item btn-hover"><span></span>Get
-                              free
-                              <br>qoutes <i class="fa-solid fa-arrow-right"></i></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Service area end -->
-
-
-        <!-- Brand area start -->
-        <section class="brand__area">
-          <div class="container line pt-140 pb-100">
-            <span class="line-3"></span>
-            <div class="row">
-              <div class="col-xxl-12">
-                <h2 class="brand__title-3 title-anim">We are happy to work with global
-                  largest brands</h2>
-                <div class="brand__list brand-gap">
-                  <div class="brand__item-2 fade_bottom">
-                    <img src="@/assets/imgs/brand/1.png" alt="Brand Logo">
-                  </div>
-                  <div class="brand__item-2 fade_bottom">
-                    <img src="@/assets/imgs/brand/2.png" alt="Brand Logo">
-                  </div>
-                  <div class="brand__item-2 fade_bottom">
-                    <img src="@/assets/imgs/brand/3.png" alt="Brand Logo">
-                  </div>
-                  <div class="brand__item-2 fade_bottom">
-                    <img src="@/assets/imgs/brand/4.png" alt="Brand Logo">
-                  </div>
-                  <div class="brand__item-2 fade_bottom">
-                    <img src="@/assets/imgs/brand/5.png" alt="Brand Logo">
-                  </div>
-                  <div class="brand__item-2 fade_bottom">
-                    <img src="@/assets/imgs/brand/6.png" alt="Brand Logo">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Brand area end -->
-
-
-        <!-- CTA area start -->
-        <section class="cta__area">
-          <div class="container line pt-100 pb-110 no-p">
-            <span class="line-3"></span>
-            <div class="row">
-              <div class="col-xxl-12">
-                <div class="cta__content">
-                  <p class="cta__sub-title">Work with us</p>
-                  <h2 class="cta__title title-anim">We would love to hear more about your project</h2>
-                  <div id="btn_wrapper">
-                    <a href="contact.html" class="wc-btn-primary btn-item btn-hover"><span></span>Let’s talk us <i
-                        class="fa-solid fa-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- CTA area end -->
+</main>
+       
     </div>
 </template>
 
 <script>
   // jquery
   import $ from "jquery";
-  import {ScrollTrigger} from 'gsap/ScrollTrigger';
-  gsap.registerPlugin(ScrollTrigger);
   import { gsap } from 'gsap';
+  import {ScrollTrigger} from 'gsap/ScrollTrigger';
+  // gsap.registerPlugin(ScrollTrigger);
+ 
 
    export default {
     name: 'MainSection',
@@ -358,83 +195,137 @@
       this.scrollSection()
     },
     methods: {
-      scrollSection: function() {
-        // comon -> sidebar -> navigation timeline
-        let device_width = window.innerWidth;
-        if (device_width > 1200) {
-        console.log(device_width);
-    gsap.to(".service__list-6", {
-      scrollTrigger: {
-        trigger: ".service__area-6",
-        pin: ".service__list-6",
-        pinSpacing: true,
-        start: "top top",
-        end: "bottom bottom"
-      }
-    })
+      scrollSection: function(){
+        // 55. Service 1 Animation
+  let home1_services = gsap.utils.toArray(".animation_home1_service")
+  let service__number = gsap.utils.toArray(".animation_home1_service .service__number span")
+  let service__title = gsap.utils.toArray(".animation_home1_service .service__title")
+  let service__text = gsap.utils.toArray(".animation_home1_service .service__text p")
+  let service__link = gsap.utils.toArray(".animation_home1_service .service__link p")
 
-    gsap.to(".service__image-wrap", {
+  home1_services.forEach((service, i) => {
+    gsap.set([service__number[i], service__title[i], service__text[i], service__link[i]], { opacity: 0, x: -50 })
+
+    let home1ServiceTl = gsap.timeline({
       scrollTrigger: {
-        trigger: ".service__area-6",
-        pin: ".mid-content",
-        pinSpacing: true,
-        start: "top top",
+        trigger: service,
+        start: "top center+=300",
         end: "bottom bottom",
         markers: false
-      }
+      },
     })
 
-    let service_images = gsap.utils.toArray(".service__image")
-    let service_imagess = gsap.utils.toArray(".service__image img")
-    let service_items = gsap.utils.toArray(".service__item-6")
+    home1ServiceTl.to(service__number[i], {
+      x: 0,
+      opacity: 1,
+      duration: 1.2
+    })
+    home1ServiceTl.to(service__title[i], {
+      x: 0,
+      opacity: 1,
+      duration: 1.2
+    }, "-=1")
+    home1ServiceTl.to(service__text[i], {
+      x: 0,
+      opacity: 1,
+      duration: 1.2
+    }, "-=1")
+    home1ServiceTl.to(service__link[i], {
+      x: 0,
+      opacity: 1,
+      duration: 1.2
+    }, "-=1")
+  })
+  /////////////////////////////////////////////////////
+  // 16. Service 1
+  $('.service__list a:nth-child(1)').addClass('active').siblings().removeClass('acitve');
 
-    if (service_items) {
-      service_items.forEach((image, i) => {
-        console.log(service_images[i].img)
-        let tl = gsap.timeline({
-          scrollTrigger: {
-            trigger: image,
-            scrub: 1,
-            start: "top top-=600",
-            markers: false,
-          }
-        });
-        tl.to(service_images[i], {
-          zIndex: "1",
-        })
-        tl.to(service_imagess[i], {
-          opacity: 0,
-          duration: 1,
-          scale: 1.2,
-          ease: "power4.out"
-        }, "-=1")
-      })
+  $('.service__item').on('mousemove', function (e) {
+    var service_id = $(this).data("service");
+
+    $('.service__img.img-' + service_id).addClass('active').siblings().removeClass('active');
+    $('.shape-box-' + service_id).addClass('current').siblings().removeClass('current');
+
+    if (service_id != 1) {
+      $('.service__list a:nth-child(1)').removeClass('active');
     }
+  });
 
-    let navItems = gsap.utils.toArray(".service__list-6 li a")
-    if (navItems) {
-      navItems.forEach((nav) => {
-        nav.addEventListener("click", (e) => {
-          e.preventDefault();
-          const ids = nav.getAttribute("href")
-          gsap.to(window, { duration: 0.5, scrollTo: ids, ease: "power4.out" });
-        })
+
+  $('.service__item').on('mouseout', function (e) {
+    var service_id = $(this).data("service");
+
+    $('.service__list a:nth-child(' + service_id + ')').addClass('active').siblings().removeClass('active');
+  });
+  /////////////////////////////////////////////////////
+
+
+      gsap.set(".fade_bottom", { y: 30, opacity: 0 });
+      let device_width = window.innerWidth;
+      if (device_width < 1023) {
+        const fadeArray = gsap.utils.toArray(".fade_bottom")
+        fadeArray.forEach((item, i) => {
+          let fadeTl = gsap.timeline({
+            scrollTrigger: {
+              trigger: item,
+              start: "top center+=200",
+            }
       })
-    }
-
-    // Active Nav
-    $(document).on('scroll', function () {
-      console.log('scroll -----');
-      $('.service__item-6').each(function () {
-        if ($(this).position().top <= $(document).scrollTop() && ($(this).position().top + $(this).outerHeight()) > $(document).scrollTop()) {
-          var sec_id = $(this).data('secid');
-
-          $('.service__list-6 li:nth-child(' + sec_id + ')').addClass('active').siblings().removeClass('active');
-        }
-      });
-    });
+      fadeTl.to(item, {
+        y: 0,
+        opacity: 1,
+        ease: "power2.out",
+        duration: 1.5,
+      })
+    })
   }
+  else {
+    gsap.to(".fade_bottom", {
+      scrollTrigger: {
+        trigger: ".fade_bottom",
+        start: "top center+=300",
+        markers: false
+      },
+      y: 0,
+      opacity: 1,
+      ease: "power2.out",
+      duration: 1,
+      stagger: {
+        each: 0.2
       }
+    })
+  }
+       }
   }
 }
 </script>
+<style>
+ /* .brand-color{
+  background-color: white!important;
+  
+ }
+ .brand-color .brand__title-3{
+  color: black !important;
+ } */
+ /* word animation */
+.animation__word_come {
+  animation: slide-in-middle 1s ease-out both;
+}
+
+@keyframes slide-in-middle {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+ /* .cta__content .color-cta{
+  color: black !important;
+ }
+ .cta-background{
+  background-color: white!important;
+ } */
+</style>

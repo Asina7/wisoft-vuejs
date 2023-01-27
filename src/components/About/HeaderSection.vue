@@ -2,7 +2,7 @@
   <div>
       <header class="header__area">
           <div class="header__inner">
-            <div class="header__logo-2">
+            <div class="header__logo">
           <a href="/" class="logo-dark"
             ><router-link to="/"></router-link><img
               src="@/assets/imgs/logo/wisoft-logo-ver.png"

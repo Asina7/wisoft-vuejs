@@ -1,5 +1,5 @@
 <template>
-    <div class="dark">
+    <div>
       <div id="smooth-wrapper">
       <div id="smooth-content">
       <main>
@@ -17,7 +17,7 @@
 <script>
 import HeaderSection from '../components/About/HeaderSection.vue'
 import MainPage from '../components/Service/MainSection.vue'
-import FooterPage from '../components/Contact/FooterSection.vue'
+import FooterPage from '../components/Home/FooterPage.vue'
 
 export default {
   components: { HeaderSection, MainPage,FooterPage },
