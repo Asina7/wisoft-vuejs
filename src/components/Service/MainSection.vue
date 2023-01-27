@@ -8,7 +8,7 @@
     <div class="row">
       <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
         <div class="sec-title-wrapper wrap">
-          <h2 class="sec-sub-title title-anim animation__word_come" >service</h2>
+          <h2 class="sec-sub-title title-anim animation__word_come" >servicess</h2>
           <h3 class="sec-title title-anim animation__word_come">Solution we <br>provide</h3>
         </div>
       </div>
