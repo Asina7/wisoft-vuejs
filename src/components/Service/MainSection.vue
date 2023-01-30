@@ -8,7 +8,7 @@
     <div class="row">
       <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
         <div class="sec-title-wrapper wrap">
-          <h2 class="sec-sub-title title-anim animation__word_come" >servicess</h2>
+          <h2 class="sec-sub-title title-anim animation__word_come" >service</h2>
           <h3 class="sec-title title-anim animation__word_come">Solution we <br>provide</h3>
         </div>
       </div>
@@ -25,11 +25,13 @@
     <div class="service__list-wrapper">
       <div class="row">
         <div class="col-xxl-4 col-xl-4 col-lg-0 col-md-0">
-          <div class="service__img-wrapper">
+          <div class="service__img-wrapper image-top">
             <img src="@/assets/imgs/service/1/1.jpg" alt="Service Image" class="service__img img-1 active">
             <img src="@/assets/imgs/service/1/2.png" alt="Service Image" class="service__img img-2">
             <img src="@/assets/imgs/service/1/3.png" alt="Service Image" class="service__img img-3">
             <img src="@/assets/imgs/service/1/4.png" alt="Service Image" class="service__img img-4">
+            <img src="@/assets/imgs/service/1/2.png" alt="Service Image" class="service__img img-5">
+            <img src="@/assets/imgs/service/1/3.png" alt="Service Image" class="service__img img-6">
 
             <span class="shape-box-1 current"></span>
             <span class="shape-box-2"></span>
@@ -39,12 +41,13 @@
         </div>
         <div class="col-xxl-8 col-xl-8 col-lg-12 col-md-12">
           <div class="service__list">
-            <a href="service-details.html">
+            
+            <a>
+              <router-link :to="'/servicedetail/digital-marketing'">
               <div class="service__item animation_home1_service" data-service="1">
                 <div class="service__number"><span>01</span></div>
                 <div class="service__title-wrapper">
-                  <h4 class="service__title">Web & Mobile
-                    Development</h4>
+                  <h4 class="service__title">Digital <br> Marketing</h4>
                 </div>
                 <div class="service__text">
                   <p>We create, products, brands, apps & websites for the companies all around the world class
@@ -55,13 +58,15 @@
                   <p><i class="fa-solid fa-arrow-right"></i></p>
                 </div>
               </div>
+            </router-link>
             </a>
 
-            <a href="service-details.html">
-              <div class="service__item  animation_home1_service" data-service="2">
+            <a>
+              <router-link :to="'/servicedetail/social-media-marketing'">
+                <div class="service__item  animation_home1_service" data-service="2">
                 <div class="service__number"><span>02</span></div>
                 <div class="service__title-wrapper">
-                  <h4 class="service__title">Interaction <br>Design</h4>
+                  <h4 class="service__title">Social Media<br>Marketing</h4>
                 </div>
                 <div class="service__text">
                   <p>We create, products, brands, apps & websites for the companies all around the world class
@@ -72,13 +77,15 @@
                   <p><i class="fa-solid fa-arrow-right"></i></p>
                 </div>
               </div>
+              </router-link>
             </a>
 
-            <a href="service-details.html">
+            <a>
+              <router-link :to="'/servicedetail/search-engine-optimization'">
               <div class="service__item  animation_home1_service" data-service="3">
                 <div class="service__number"><span>03</span></div>
                 <div class="service__title-wrapper">
-                  <h4 class="service__title">Digital <br>Maketing</h4>
+                  <h4 class="service__title">Search Engine<br>Optimization</h4>
                 </div>
                 <div class="service__text">
                   <p>We create, products, brands, apps & websites for the companies all around the world class
@@ -89,13 +96,15 @@
                   <p><i class="fa-solid fa-arrow-right"></i></p>
                 </div>
               </div>
+            </router-link>
             </a>
 
-            <a href="service-details.html">
+            <a>
+              <router-link :to="'/servicedetail/creative-services'">
               <div class="service__item  animation_home1_service" data-service="4">
                 <div class="service__number"><span>04</span></div>
                 <div class="service__title-wrapper">
-                  <h4 class="service__title">Branding and Strategy</h4>
+                  <h4 class="service__title">Creative<br>Services</h4>
                 </div>
                 <div class="service__text">
                   <p>We create, products, brands, apps & websites for the companies all around the world class
@@ -106,7 +115,46 @@
                   <p><i class="fa-solid fa-arrow-right"></i></p>
                 </div>
               </div>
+            </router-link>
             </a>
+
+            <a>
+              <router-link :to="'/servicedetail/sms-marketing'">
+              <div class="service__item  animation_home1_service" data-service="5">
+                <div class="service__number"><span>05</span></div>
+                <div class="service__title-wrapper">
+                  <h4 class="service__title">SMS<br>Marketing</h4>
+                </div>
+                <div class="service__text">
+                  <p>We create, products, brands, apps & websites for the companies all around the world class
+                    digital
+                    products</p>
+                </div>
+                <div class="service__link">
+                  <p><i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+              </div>
+            </router-link>
+            </a>
+            <a>
+              <router-link :to="'/servicedetail/technnologies'">
+              <div class="service__item  animation_home1_service" data-service="6">
+                <div class="service__number"><span>06</span></div>
+                <div class="service__title-wrapper">
+                  <h4 class="service__title">Technologies</h4>
+                </div>
+                <div class="service__text">
+                  <p>We create, products, brands, apps & websites for the companies all around the world class
+                    digital
+                    products</p>
+                </div>
+                <div class="service__link">
+                  <p><i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+              </div>
+            </router-link>
+            </a>
+
           </div>
         </div>
       </div>
@@ -321,6 +369,17 @@
     transform: translateY(0);
     opacity: 1;
   }
+}
+.service__item{
+  padding: 15px 0!important;
+}
+.image-top{
+  margin-top:54px;
+}
+@media screen and (max-width:768px){
+  .image-top{
+  margin-top:0;
+}
 }
  /* .cta__content .color-cta{
   color: black !important;

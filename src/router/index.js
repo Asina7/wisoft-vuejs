@@ -18,6 +18,16 @@ const routes = [
     component: () => import("../views/ContactPage.vue"),
   },
   {
+    path: "/career",
+    name: "ContactPage",
+    component: () => import("../views/ContactPage.vue"),
+  },
+  {
+    path: "/casestudy",
+    name: "ContactPage",
+    component: () => import("../views/ContactPage.vue"),
+  },
+  {
     path: "/team",
     name: "TeamPage",
     component: () => import("../views/TeamPage.vue"),
@@ -35,9 +45,14 @@ const routes = [
  
   
   {
-    path: "/service",
+    path: "/services",
     name: "ServicePage",
     component: () => import("../views/ServicePage.vue"),
+  },
+  {
+    path: "/servicedetail/:id",
+    name: "ServiceDetails",
+    component: () => import("../views/ServiceDetails"),
   },
 ];
 

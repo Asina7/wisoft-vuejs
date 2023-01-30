@@ -12,12 +12,12 @@
               alt="Site Logo"
               style="width: 100%; height: 60px"
           /></a>
-          <a href="/" class="logo-light"
+          <!-- <a href="/" class="logo-light"
             ><img
               src="@/assets/imgs/logo/wisoft-logo1.png"
               alt="Site Logo"
               style="width: 100%; height: 60px"
-          /></a>
+          /></a> -->
         </div>
         <div class="header__nav-2">
           <ul class="main-menu-3 menu-anim list-menu">
@@ -50,25 +50,30 @@
 
     <div class="offcanvas__area">
       <div class="mob">
-          <ul role="menu" class="men">
+        <ul role="menu" class="men">
             <li class="men-li" role="none">
-              <a href="/" role="menuitem"
-                >HOME</a
-              >
+              <a><router-link to="/About">About</router-link></a>
             </li>
             <li class="men-li" role="none">
-              <a href="/about" role="menuitem"
-                >ABOUT</a
-              >
+              <a><router-link to="/blog">Blog</router-link></a>
+            </li>
+           
+            <li class="men-li" role="none">
+              <a><router-link to="/career">Career</router-link></a>
             </li>
             <li class="men-li" role="none">
-              <!-- <a href="/contact" role="menuitem">Contact</a> -->
-              <a><router-link to="/contact">CONTACT</router-link></a>
+              <a><router-link to="/casestudy">Case Study</router-link></a>
             </li>
             <li class="men-li" role="none">
-              <!-- <a href="/blog" role="menuitem">Blog</a> -->
-              <a><router-link to="/blog">BLOGS</router-link></a>
+              <a><router-link to="/services">Service</router-link></a>
             </li>
+            <li class="men-li" role="none">
+              <a><router-link to="/team">Team</router-link></a>
+            </li>
+            <li class="men-li" role="none">
+              <a><router-link to="/contact">Contact</router-link></a>
+            </li>
+            
           </ul>
 
           <div class="toggler-menu">
@@ -170,15 +175,18 @@
           <div class="offcanvas__links side-links">
             <ul>
               <li>
-                <a><router-link to="/about">About</router-link></a>
+                <a><router-link to="/About">About</router-link></a>
               </li>
-              <li>
-                <a><router-link to="/contact">Contact</router-link></a>
-              </li>
-              <li><a href="career.html">Career</a></li>
               <li>
                 <a><router-link to="/blog">Blog</router-link></a>
               </li>
+              <!-- <li><a href="career.html">Career</a></li> -->
+              <li><a><router-link to="/career">Career</router-link></a></li>
+                <li><a><router-link to="/casestudy">Case Study</router-link></a></li>
+               <li><a><router-link to="/services">service</router-link></a></li> 
+               <li><a><router-link to="/team">Team</router-link></a></li> 
+              <li><a><router-link to="/Contact">Contact</router-link></a></li>
+              
             </ul>
           </div>
         </div>
@@ -284,6 +292,7 @@
 <script>
 import Cursor_Anim from "../Cursor_Anim.vue";
 import FloatingWhatsapp from "../Home/FloatingWhatsapp.vue";
+import offcanvas from "../Offcanvas.vue"
 import $ from "jquery";
 export default {
   name: "MainHeader",
@@ -291,6 +300,7 @@ export default {
     FloatingWhatsapp,
     // FloatingChat,
     Cursor_Anim,
+   
   },
   data() {
     return {
@@ -393,7 +403,7 @@ export default {
   color: yellow;
 }
 .side-links {
-  margin-top: 120px !important;
+  margin-top: 90px !important;
 }
 .side-links li {
   font-weight: 500;
@@ -462,7 +472,7 @@ export default {
   margin-left: 4px;
 }
 .offcanvas__links ul li a{
-  font-size: 38px;
+  font-size: 25px;
 }
 @media screen and (max-width: 960px){
   .search-icon{

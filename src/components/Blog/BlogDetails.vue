@@ -35,7 +35,36 @@
               <div class="col-xxl-8 col-xl-10 offset-xxl-2 offset-xl-1">
                 <div class="blog__detail-content">
                 <p>{{ blog.desc }}</p>
-               
+                <p>But in order that you may see whence all this born error of those who accuse pleasure and praise
+                    pain, I will open the whole matter, and explain the very things which were said by that discoverer
+                    of truth and, as it were, the architect of a happy life.</p>
+                  <img src="@/assets/imgs/blog/detail/2.jpg" alt="Blog Image">
+                  <h2>JavaScript</h2>
+                  <p>We love to bring designs to life as a developer, and I aim to do this using whatever front end
+                    tools are necessary. My preferred tools are more modern javascript libraries like React.js but I
+                    like to use whatever is best for the websites needs. There are several reasons why a business would
+                    consider a rebrand and it doesn’t necessarily mean the business has been unsuccessful.</p>
+                  <h2>Fremework</h2>
+                  <p>Always ready to push the boundaries, especially when it comes to our own platform, Our analytical
+                    eye to create a site that was visually engaging and also optimised for maximum performance. It also
+                    perfectly reflects the journey to help it tell a story to increase its understanding and drive
+                    action. To create a site that was visually engaging for maximum performance.</p>
+                    <ul>
+                    <li>Brand Development</li>
+                    <li>UX/UI Design</li>
+                    <li>Front-end Development</li>
+                    <li>Copywriting</li>
+                    <li>Shopify Development</li>
+                  </ul>
+                  <p>Just like other pseudo-elements and pseudo-class selectors, :not() can be chained with other
+                    pseudo-classes and pseudo-elements. For example, the following will add a “New!” word to list items
+                    that do not have a .old class name, using the ::after pseudo-element:</p>
+                  <img src="@/assets/imgs/blog/detail/3.jpg" alt="Code">
+                </div>
+                <div class="blog__detail-tags">
+                  <p class="sub-title-anim">tags: <a href="tag.html">design</a>, <a href="tag.html">figma</a>,
+                    <a href="tag.html">update</a>
+                  </p>
                 </div>
               </div>
             </div>
@@ -60,7 +89,7 @@
               <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4" v-for="(blog, index) in blogData.slice(0, commentsToShow)" v-bind:key="index">
                 <article class="blog__item">
                   <div class="blog__img-wrapper">
-                    <a href="blog-details.html">
+                    <a href="">
                       <div class="img-box">
                         <img class="image-box__item" src="@/assets/imgs/blog/1.jpg" alt="Blog Thumbnail">
                         <img class="image-box__item" src="@/assets/imgs/blog/1.jpg" alt="BLog Thumbnail">
@@ -71,7 +100,7 @@
                   <h5><a href="" class="blog__title sub-title-anim">{{blog.title}}
                     </a></h5>
 
-                    <router-link :to="'/post' + index" class="blog__btn">Read More<span><i class="fa-solid fa-arrow-right"></i></span></router-link>
+                    <!-- <router-link :to="'/post' + index" class="blog__btn">Read More<span><i class="fa-solid fa-arrow-right"></i></span></router-link> -->
                   <!-- <a href="blog-details.html" class="blog__btn">Read More <span><i
                         class="fa-solid fa-arrow-right"></i></span></a> -->
                 </article>
@@ -119,34 +148,34 @@ export default {
                 id:1,
               date:". 02 May 2019",
               category:"UI Design",
-              image:"https://www.specbee.com/sites/default/files/inline-images/ui-ux-difference.jpg",
+              image:"https://img.freepik.com/free-photo/top-view-female-hands-work-computer-blue-background_169016-18179.jpg?w=740&t=st=1674827533~exp=1674828133~hmac=ca706048b984ea111c8091bf704c8748d9a5e1aaa2c1d26262d3c2de41a79b29",
               author:"Writer Name",
               writer_pic:"https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
               viewed:"3 Min Read",
               title:"How to bring fold to your startup company with Axtra 1",
-              desc:"We love to bring designs to life as a developer, and I aim to do this using whatever front end tools are necessary. My preferred tools are more modern javascript libraries like React.js but I like to use whatever is best for the websites needs. There are several reasons why a business would consider a rebrand and it doesn’t necessarily mean the business has been unsuccessful.But in order that you may see whence all this born error of those who accuse pleasure and praise pain, I will open the whole matter, and explain the very things which were said by that discoverer of truth and, as it were, the architect of a happy life"
+              desc:"We love to bring designs to life as a developer, and I aim to do this using whatever front end tools are necessary. My preferred tools are more modern javascript libraries like React.js but I like to use whatever is best for the websites needs. There are several reasons why a business would consider a rebrand and it doesn’t necessarily mean the business has been unsuccessful."
             },
               {
                 id:2,
-              date:". 02 May 2019",
+              date:". 02 May 2020",
               category:"Web developement",
               image:"https://www.specbee.com/sites/default/files/inline-images/ui-ux-difference.jpg",
               author:"Writer Name 2",
               writer_pic:"https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
               viewed:"3 Min Read",
               title:"How to bring fold to your startup company with Axtra 2",
-              desc:"We love to bring designs to life as a developer, and I aim to do this using whatever front end tools are necessary. My preferred tools are more modern javascript libraries like React.js but I like to use whatever is best for the websites needs. There are several reasons why a business would consider a rebrand and it doesn’t necessarily mean the business has been unsuccessful.But in order that you may see whence all this born error of those who accuse pleasure and praise pain, I will open the whole matter, and explain the very things which were said by that discoverer of truth and, as it were, the architect of a happy life"
+              desc:"We love to bring designs to life as a developer, and I aim to do this using whatever front end tools are necessary. My preferred tools are more modern javascript libraries like React.js but I like to use whatever is best for the websites needs. There are several reasons why a business would consider a rebrand and it doesn’t necessarily mean the business has been unsuccessful."
             },
               {
                 id:3,
-              date:". 02 May 2019",
+              date:". 02 May 2021",
               category:"Marketing",
               image:"https://www.specbee.com/sites/default/files/inline-images/ui-ux-difference.jpg",
               author:"Writer Name 2",
               writer_pic:"https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
               viewed:"3 Min Read",
               title:"How to bring fold to your startup company with Axtra 3",
-              desc:"We love to bring designs to life as a developer, and I aim to do this using whatever front end tools are necessary. My preferred tools are more modern javascript libraries like React.js but I like to use whatever is best for the websites needs. There are several reasons why a business would consider a rebrand and it doesn’t necessarily mean the business has been unsuccessful.But in order that you may see whence all this born error of those who accuse pleasure and praise pain, I will open the whole matter, and explain the very things which were said by that discoverer of truth and, as it were, the architect of a happy life"
+              desc:"We love to bring designs to life as a developer, and I aim to do this using whatever front end tools are necessary. My preferred tools are more modern javascript libraries like React.js but I like to use whatever is best for the websites needs. There are several reasons why a business would consider a rebrand and it doesn’t necessarily mean the business has been unsuccessful."
             },
                  
           ],
@@ -154,17 +183,20 @@ export default {
   }
 },
 
-// parallex
+
   mounted() {
+    // dynamic component
     let id =this.$route.params.id;
     let current = this.blogData.find(item=>item.id == id);
     this.blog = current;
 
     console.log(current)
-    
+    // parallex
     window.addEventListener('scroll', this.handleScroll);
   },
+  
   methods: {
+    // parallex
     handleScroll() {
       const image = this.$refs.parallaxImage;
       const speed = 0.3;
