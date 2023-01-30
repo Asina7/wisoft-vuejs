@@ -6,32 +6,18 @@
         <section class="hero__area-3">
         <div class="container">
           <div class="row">
-            <div class="col-xxl-12">
-              <div class="hero__inner-3">
-                <!-- Main Title -->
-                  <div class="sec-title-wrapper ">
-                    <h2 class="sec-sub-title ">UAE #1</h2>
-                    <div class=" title">
-                      <h3 class="sec-title main-titlee">Digital Marketing Agency</h3>
-                      <h3 class="sec-title main-titlee">Create Business Everyday</h3>
-                    </div>
-                    
-                  </div>
-                 
-                  
-                <!-- ends Title -->
-                  <div class="hero__text-3">
-                    <p class="animation__word_come para-text">Static and dynamic secure code review can prevent a day before your
-                      product is even released. We can integrate with your dev environment</p>
-                      <div class="hero-item-btn">
-            <button class="hero-btn">Let's Try</button>
-          </div>
-                  </div>
-                  <div class="scroll-down">
-                    <button><img src="@/assets/imgs/icon/arrow-down-sm.png" alt="arrow icon"></button>
-                  </div>
+            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+                <div class="hero__content-6 text-anim">
+                  <h2 class="sec-sub-title">UAE#1</h2>
+                  <img class="hero__arrow-icon" src="@/assets/imgs/hero/4/arrow-icon.png" alt="Arrow Icon">
+                  <h1 class="hero__title-6 animation__char_come text-size" data-speed="1">Magical Axtra Startup Solution
+                  </h1>
+                  <p>Static and dynamic secure code review can prevent a day before your product is even released. We can integrate with your dev environment</p>
+                    <router-link to="/contact">
+                      <button class="btn-hover hero-btn">Let's Talk</button>
+                    </router-link>
                 </div>
-            </div>
+              </div>
           </div>
         </div>
         <div class="wrapper">
@@ -95,28 +81,8 @@
 .wrapper{
   position: relative;
 }
- .hero-item-btn .hero-btn {
-  border: 1px solid black;
-  border-radius:20px;
-  width: 150px;
-  padding: 5px;
-  text-align: center;
-  cursor: pointer;
-  margin-top: 20px;
-  cursor: pointer!important;
-  /* position: absolute; */
-  /* left: 100px; */
-  /* bottom: 230px; */
- 
-}
-/* .hero-item-btn .hero-btn:hover{
-  color: white;
-} */
-.hero-item-btn .hero-btn:hover{
-  background-color:rgb(0, 0, 0)!important;
-  color: antiquewhite;
-}
-/* text anim */
+
+
 
 
 
@@ -159,6 +125,24 @@
   animation-fill-mode: forwards;
   animation-delay: 3s; 
 }
+.hero3-img-ani{
+  padding-top: 135px;
+}
+.hero-btn {
+  border: 1px solid black;
+  border-radius:20px;
+  width: 150px;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 19px;
+}
+.hero-btn:hover {
+  background-color: black;
+  color: antiquewhite;
+}
+.text-size{
 
+}
 
 </style>
