@@ -10,12 +10,12 @@
                 <div class="content-wrapper">
                   <div class="left-content">
                     <ul class="service__list-6">
-                      <li class="active"><a href="#service_1">Interaction <br>Design</a></li>
-                      <li><a href="#service_2">Web & Mobile <br>Development</a></li>
-                      <li><a href="#service_3">Motion & Branding <br>Design</a></li>
-                      <li><a href="#service_4">Digital <br> Maketing</a></li>
-                      <li><a href="#service_5">Concept and <br>Strategy</a></li>
-                      <li><a href="#service_6">Illustrations <br> Prototype</a></li>
+                      <li class="active"><a href="#service_1">Digital<br>Marketing</a></li>
+                      <li><a href="#service_2">Social Media <br>Marketing</a></li>
+                      <li><a href="#service_3">Search Engine <br>Optmization</a></li>
+                      <li><a href="#service_4">Creative <br> Services</a></li>
+                      <li><a href="#service_5">SMS<br>Marketing</a></li>
+                      <li><a href="#service_6">Technologies</a></li>
                     </ul>
                   </div>
 
@@ -110,7 +110,7 @@
                               <br>qoutes <i class="fa-solid fa-arrow-right"></i></a>
                           </div>
                           <div id="btn_wrapper">
-                            <a href="service-details.html" class="wc-btn-secondary btn-item btn-hover"><span></span>Explore 
+                            <a href="/servicedetail" class="wc-btn-secondary btn-item btn-hover"><span></span>Explore 
                               <br>More <i class="fa-solid fa-arrow-right"></i></a>
                           </div>
                           </div>

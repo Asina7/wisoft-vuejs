@@ -5548,6 +5548,7 @@ img {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .hero__area-3 .hero3-img {
     max-width: 800px;
+    padding-top: 30px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -5558,6 +5559,7 @@ img {
 @media only screen and (max-width: 767px) {
   .hero__area-3 .hero3-img {
     position: unset;
+    padding-top: 30px;
   }
 }
 .hero__area-3 .hero3-img-anim {

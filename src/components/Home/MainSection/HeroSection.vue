@@ -6,16 +6,24 @@
         <section class="hero__area-3">
         <div class="container">
           <div class="row">
-            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                <div class="hero__content-6 text-anim">
+            <div class="col-xxl-11 col-xl-11 col-lg-11 col-md-11">
+                <div class="hero__content-6 text-anim hero__inner-3">
                   <h2 class="sec-sub-title">UAE#1</h2>
-                  <img class="hero__arrow-icon" src="@/assets/imgs/hero/4/arrow-icon.png" alt="Arrow Icon">
-                  <h1 class="hero__title-6 animation__char_come text-size" data-speed="1">Magical Axtra Startup Solution
+                  <!-- <img class="hero__arrow-icon" src="@/assets/imgs/hero/4/arrow-icon.png" alt="Arrow Icon"> -->
+                    <h1 class="hero__title-6 animation__char_come text-size" data-speed="1">Digital Marketing Agency<br>Create Business Everyday
                   </h1>
+                
+                 <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                   <p>Static and dynamic secure code review can prevent a day before your product is even released. We can integrate with your dev environment</p>
+                 </div>
+                  
+                  
                     <router-link to="/contact">
-                      <button class="btn-hover hero-btn">Let's Talk</button>
+                      <button class="btn-hover hero-btn">Let's Try</button>
                     </router-link>
+                    <div class="scroll-down">
+                    <button><img src="@/assets/imgs/icon/arrow-down-sm.png" alt="arrow icon"></button>
+                  </div>
                 </div>
               </div>
           </div>
@@ -126,7 +134,7 @@
   animation-delay: 3s; 
 }
 .hero3-img-ani{
-  padding-top: 135px;
+  /* padding-top: 135px; */
 }
 .hero-btn {
   border: 1px solid black;
@@ -142,7 +150,13 @@
   color: antiquewhite;
 }
 .text-size{
-
+  font-weight:500;
+}
+@media only screen and (max-width: 768px) {
+  .hero-btn
+  {
+   margin-bottom: 50px;
+  }
 }
 
 </style>
