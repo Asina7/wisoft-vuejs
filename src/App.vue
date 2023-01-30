@@ -13,12 +13,18 @@ export default {
   components : {
     Cursor_Anim,
     PreloaderAnim,
+  },
+  methods:{
+    
   }
 }
 
 </script>
 <style>
-  
+  body {
+    font-family: 'Raleway', sans-serif;
+}
+
 </style>
 
 

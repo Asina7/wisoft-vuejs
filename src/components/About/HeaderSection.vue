@@ -162,7 +162,7 @@
               <!-- <li><a href="career.html">Career</a></li> -->
               <li><a><router-link to="/career">Career</router-link></a></li>
                 <li><a><router-link to="/casestudy">Case Study</router-link></a></li>
-               <li><a><router-link to="/services">service</router-link></a></li> 
+               <li><a><router-link to="/services">Service</router-link></a></li> 
                <li><a><router-link to="/team">Team</router-link></a></li> 
               <li><a><router-link to="/Contact">Contact</router-link></a></li>
               
@@ -419,7 +419,7 @@ font-size: 40px;
 }
 /* hambourger */
 .head-list {
-  color: yellow;
+  color:#c9f31d;
 }
 .side-links {
   margin-top: 90px !important;
@@ -448,12 +448,12 @@ font-size: 40px;
 }
 .men {
   padding: 20px;
-  color: yellow;
+  color: #c9f31d;
   font-size: 23px;
   margin-top: 40px;
 }
 .men-li a {
-  color: yellow;
+  color: #c9f31d;
 }
 .toggler-menu {
   margin-top: 20px;

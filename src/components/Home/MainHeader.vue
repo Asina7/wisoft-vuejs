@@ -400,7 +400,7 @@ export default {
 }
 /* hambourger */
 .head-list {
-  color: yellow;
+  color: #c9f31d;
 }
 .side-links {
   margin-top: 90px !important;
@@ -429,12 +429,12 @@ export default {
 }
 .men {
   padding: 20px;
-  color: yellow;
+  color: #c9f31d;
   font-size: 23px;
   margin-top: 40px;
 }
 .men-li a {
-  color: yellow;
+  color: #c9f31d;
 }
 .toggler-menu {
   margin-top: 20px;
