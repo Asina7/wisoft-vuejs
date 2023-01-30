@@ -1,6 +1,6 @@
 <template>
     <div>
-        
+        <h2>casestudies</h2>
     </div>
 </template>
 <script>

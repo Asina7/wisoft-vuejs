@@ -183,7 +183,7 @@
               <!-- <li><a href="career.html">Career</a></li> -->
               <li><a><router-link to="/career">Career</router-link></a></li>
                 <li><a><router-link to="/casestudy">Case Study</router-link></a></li>
-               <li><a><router-link to="/services">service</router-link></a></li> 
+               <li><a><router-link to="/services">Service</router-link></a></li> 
                <li><a><router-link to="/team">Team</router-link></a></li> 
               <li><a><router-link to="/Contact">Contact</router-link></a></li>
               
