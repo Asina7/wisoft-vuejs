@@ -18,7 +18,7 @@
             <div class="col-xxl-4 col-xl-4 col-lg-5 col-md-5">
             <div class="portfolio__detail-info">
                 <ul>
-                <li>Category <a href="category.html">Development</a></li>
+                <li>Category <a href="">Development</a></li>
                 <li>Client <span>Webflow</span></li>
                 <li>Start Date <span>23 January 2021</span></li>
                 <li>Handover <span>05 March 2021</span></li>
@@ -146,7 +146,7 @@
   return{
     casestudy:{},
     casestudyData :
-            [
+      [
             {
                 id:1,
               casestudy_title:"Case Study 1",

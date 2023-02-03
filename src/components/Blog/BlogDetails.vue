@@ -62,8 +62,8 @@
                   <img src="@/assets/imgs/blog/detail/3.jpg" alt="Code">
                 </div>
                 <div class="blog__detail-tags">
-                  <p class="sub-title-anim">tags: <a href="tag.html">design</a>, <a href="tag.html">figma</a>,
-                    <a href="tag.html">update</a>
+                  <p class="sub-title-anim">tags: <a href="">design</a>, <a href="">figma</a>,
+                    <a href="">update</a>
                   </p>
                 </div>
               </div>

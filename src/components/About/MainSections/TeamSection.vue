@@ -9,14 +9,14 @@
     <div class="swiper swiper-container gallery team__slider drag-sec">
     <div class="swiper-wrapper">
       <div class="swiper-slide team__slide bg-col" v-for="(image, index) in images" :key="index">
-        <a href="team-details.html">
+        <router-link :to="'/teamdetail/'+image.id">
           <img :src="image.src" alt="Gallery Image">
         <!-- <p class="image-title">{{ image.title }}</p> -->
         <div class="team__info image-title">
             <h4 class="team__member-name">{{ image.title }}</h4>
             <h5 class="team__member-role">Founder & CEO</h5>
         </div>
-        </a>
+      </router-link>
       
       </div>
     </div>
@@ -33,15 +33,15 @@ export default {
   data() {
     return {
       images: [
-        { src: 'https://wealcoder.com/dev/html/axtra/assets/imgs/team/1.jpg', title: 'Image 1' },
-        { src: 'https://wealcoder.com/dev/html/axtra/assets/imgs/team/2.jpg', title: 'Image 2' },
-        { src: 'https://wealcoder.com/dev/html/axtra/assets/imgs/team/3.jpg', title: 'Image 3' },
-        { src: 'https://wealcoder.com/dev/html/axtra/assets/imgs/team/4.jpg', title: 'Image 4' },
-        { src: 'https://wealcoder.com/dev/html/axtra/assets/imgs/team/1.jpg', title: 'Image 1' },
-        { src: 'https://wealcoder.com/dev/html/axtra/assets/imgs/team/2.jpg', title: 'Image 2' },
-        { src: 'https://wealcoder.com/dev/html/axtra/assets/imgs/team/3.jpg', title: 'Image 3' },
-        { src: 'https://wealcoder.com/dev/html/axtra/assets/imgs/team/4.jpg', title: 'Image 4' },
-      ]
+      { id:1,src: 'https://wealcoder.com/dev/html/axtra/assets/imgs/team/2.jpg', title: 'Image 1' },
+         { id:2,src: 'https://wealcoder.com/dev/html/axtra/assets/imgs/team/1.jpg', title: 'Image 2' },
+         { id:3,src: 'https://wealcoder.com/dev/html/axtra/assets/imgs/team/3.jpg', title: 'Image 3' },
+         {id:4, src: 'https://wealcoder.com/dev/html/axtra/assets/imgs/team/4.jpg', title: 'Image 4' },
+         { id:5,src: 'https://wealcoder.com/dev/html/axtra/assets/imgs/team/1.jpg', title: 'Image 1' },
+         { id:6,src: 'https://wealcoder.com/dev/html/axtra/assets/imgs/team/2.jpg', title: 'Image 2' },
+         { id:7,src: 'https://wealcoder.com/dev/html/axtra/assets/imgs/team/3.jpg', title: 'Image 3' },
+         { id:8,src: 'https://wealcoder.com/dev/html/axtra/assets/imgs/team/4.jpg', title: 'Image 4' },
+       ]
     }
   },
   mounted() {

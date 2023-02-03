@@ -8,7 +8,7 @@
   <div id="smooth-wrapper">
     <div id="smooth-content">
       <main>
-        <service-detail></service-detail>
+        <team-detail></team-detail>
         <!-- Hero area start -->
         
       </main>
@@ -24,15 +24,15 @@
 
 </template>
 <script>
-  import ServiceDetail from '@/components/Service/ServiceDetail.vue'
+  import TeamDetail from '@/components/Team/TeamDetail.vue'
   import MainHeader from '../components/About/HeaderSection.vue'
   import FooterPage from '../components/Home/FooterPage.vue'
 
   import FloatingWhatsapp from '@/components/Home/FloatingWhatsapp.vue'
 
 export default {
-  components: { MainHeader,ServiceDetail, FooterPage,FloatingWhatsapp},
-    name : 'ServiceDetail'
+  components: { MainHeader,TeamDetail, FooterPage,FloatingWhatsapp},
+    name : 'TeamDetails'
 }
 </script>
 

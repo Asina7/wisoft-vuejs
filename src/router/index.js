@@ -38,6 +38,11 @@ const routes = [
     component: () => import("../views/TeamPage.vue"),
   },
   {
+    path: "/teamdetail/:id",
+    name: "TeamDetails",
+    component: () => import("../views/TeamDetails.vue"),
+  },
+  {
     path: "/blog",
     name: "BlogPage",
     component: () => import("../views/BlogPage.vue"),

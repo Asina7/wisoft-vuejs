@@ -21,101 +21,17 @@
                </div>
              </div>
            </div>
- 
-           <!-- <div class="swiper team__slider">
-             <div class="swiper-wrapper">
-               <div class="swiper-slide team__slide">
-                 <a href="team-details.html">
-                   <img src="@/assets/imgs/team/1.jpg" alt="Team Member">
-                   <div class="team__info">
-                     <h4 class="team__member-name-6">Saymon D. Halk</h4>
-                     <h5 class="team__member-role-6">Founder & CEO</h5>
-                   </div>
-                 </a>
-               </div>
- 
-               <div class="swiper-slide team__slide">
-                 <a href="team-details.html">
-                   <img src="@/assets/imgs/team/2.jpg" alt="Team Member">
-                   <div class="team__info">
-                     <h4 class="team__member-name-6">Jassica Oliver</h4>
-                     <h5 class="team__member-role-6">Researcher</h5>
-                   </div>
-                 </a>
-               </div>
- 
-               <div class="swiper-slide team__slide">
-                 <a href="team-details.html">
-                   <img src="@/assets/imgs/team/3.jpg" alt="Team Member">
-                   <div class="team__info">
-                     <h4 class="team__member-name-6">Daniyel Adamson</h4>
-                     <h5 class="team__member-role-6">Digital Marketer</h5>
-                   </div>
-                 </a>
-               </div>
- 
-               <div class="swiper-slide team__slide">
-                 <a href="team-details.html">
-                   <img src="@/assets/imgs/team/4.jpg" alt="Team Member">
-                   <div class="team__info">
-                     <h4 class="team__member-name-6">Hardiya Kethrine</h4>
-                     <h5 class="team__member-role-6">Lead Designer</h5>
-                   </div>
-                 </a>
-               </div>
- 
-               <div class="swiper-slide team__slide">
-                 <a href="team-details.html">
-                   <img src="@/assets/imgs/team/5.jpg" alt="Team Member">
-                   <div class="team__info">
-                     <h4 class="team__member-name-6">Saymon D. Halk</h4>
-                     <h5 class="team__member-role-6">Researcher</h5>
-                   </div>
-                 </a>
-               </div>
- 
-               <div class="swiper-slide team__slide">
-                 <a href="team-details.html">
-                   <img src="@/assets/imgs/team/6.jpg" alt="Team Member">
-                   <div class="team__info">
-                     <h4 class="team__member-name-6">Jassica Oliver</h4>
-                     <h5 class="team__member-role-6">Lead Designer</h5>
-                   </div>
-                 </a>
-               </div>
-               <div class="swiper-slide team__slide">
-                 <a href="team-details.html">
-                   <img src="@/assets/imgs/team/7.jpg" alt="Team Member">
-                   <div class="team__info">
-                     <h4 class="team__member-name-6">Jassica Oliver</h4>
-                     <h5 class="team__member-role-6">Lead Designer</h5>
-                   </div>
-                 </a>
-               </div>
-               <div class="swiper-slide team__slide">
-                 <a href="team-details.html">
-                   <img src="@/assets/imgs/team/8.jpg" alt="Team Member">
-                   <div class="team__info">
-                     <h4 class="team__member-name-6">Jassica Oliver</h4>
-                     <h5 class="team__member-role-6">Lead Designer</h5>
-                   </div>
-                 </a>
-               </div>
-             </div>
-           </div> -->
- 
            <div class="swiper swiper-container gallery team__slider drag-sec">
     <div class="swiper-wrapper">
       <div class="swiper-slide team__slide bg-col" v-for="(image, index) in images" :key="index">
-        <a href="team-details.html">
+        <router-link :to="'/teamdetail/'+image.id">
           <img :src="image.src" alt="Gallery Image">
         <!-- <p class="image-title">{{ image.title }}</p> -->
         <div class="team__info image-title">
             <h4 class="team__member-name team-title1">{{ image.title }}</h4>
             <h5 class="team__member-role team-title1">Founder & CEO</h5>
         </div>
-        </a>
-      
+      </router-link>
       </div>
     </div>
   </div>
@@ -196,7 +112,7 @@
                    <p class="cta__sub-title">Work with us</p>
                    <h2 class="cta__title title-anim">We would love to hear more about your project</h2>
                    <div id="btn_wrapper">
-                     <a href="contact.html" class="wc-btn-primary btn-item btn-hover"><span></span>Let’s talk us <i
+                     <a href="/contact" class="wc-btn-primary btn-item btn-hover"><span></span>Let’s talk us <i
                          class="fa-solid fa-arrow-right"></i></a>
                    </div>
                  </div>
@@ -298,14 +214,14 @@
    data() {
      return {
        images: [
-         { src: 'https://wealcoder.com/dev/html/axtra/assets/imgs/team/1.jpg', title: 'Image 1' },
-         { src: 'https://wealcoder.com/dev/html/axtra/assets/imgs/team/2.jpg', title: 'Image 2' },
-         { src: 'https://wealcoder.com/dev/html/axtra/assets/imgs/team/3.jpg', title: 'Image 3' },
-         { src: 'https://wealcoder.com/dev/html/axtra/assets/imgs/team/4.jpg', title: 'Image 4' },
-         { src: 'https://wealcoder.com/dev/html/axtra/assets/imgs/team/1.jpg', title: 'Image 1' },
-         { src: 'https://wealcoder.com/dev/html/axtra/assets/imgs/team/2.jpg', title: 'Image 2' },
-         { src: 'https://wealcoder.com/dev/html/axtra/assets/imgs/team/3.jpg', title: 'Image 3' },
-         { src: 'https://wealcoder.com/dev/html/axtra/assets/imgs/team/4.jpg', title: 'Image 4' },
+         { id:1,src: 'https://wealcoder.com/dev/html/axtra/assets/imgs/team/1.jpg', title: 'Image 1' },
+         { id:2,src: 'https://wealcoder.com/dev/html/axtra/assets/imgs/team/2.jpg', title: 'Image 2' },
+         { id:3,src: 'https://wealcoder.com/dev/html/axtra/assets/imgs/team/3.jpg', title: 'Image 3' },
+         {id:4, src: 'https://wealcoder.com/dev/html/axtra/assets/imgs/team/4.jpg', title: 'Image 4' },
+         { id:5,src: 'https://wealcoder.com/dev/html/axtra/assets/imgs/team/1.jpg', title: 'Image 1' },
+         { id:6,src: 'https://wealcoder.com/dev/html/axtra/assets/imgs/team/2.jpg', title: 'Image 2' },
+         { id:7,src: 'https://wealcoder.com/dev/html/axtra/assets/imgs/team/3.jpg', title: 'Image 3' },
+         { id:8,src: 'https://wealcoder.com/dev/html/axtra/assets/imgs/team/4.jpg', title: 'Image 4' },
        ]
      }
    },
