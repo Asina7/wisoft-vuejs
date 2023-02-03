@@ -14,7 +14,7 @@
                   </h1>
                 
                  <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                  <p>Static and dynamic secure code review can prevent a day before your product is even released. We can integrate with your dev environment</p>
+                  <p >Static and dynamic secure code review can prevent a day before your product is even released. We can integrate with your dev environment</p>
                  </div>
                   
                   
@@ -77,65 +77,23 @@
 </script>
 
 <style>
-
-
-.sec-title-wrapper .main-titlee{
-  font-size: 54px !important;
-  color: rgb(0, 0, 0);
+h1{
+    animation: ani 2s;
+    text-align: center;
 }
 
-
-/* css */
-.wrapper{
-  position: relative;
+@keyframes ani{
+    from{
+        letter-spacing: 10px;
+        filter: blur(5px);
+        opacity: 0;
+    }to{
+        letter-spacing: 0;
+        filter: blur(0);
+        opacity: 1px;
+    }
 }
 
-
-
-
-
-.title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.title h3 {
-  font-size: 40px;
-  text-align: center;
-  opacity: 0;
-  transform: translateX(100%);
-  animation: title-animation 2s ease-in-out;
-  animation-fill-mode: forwards;  
-}
-
-.title h3:nth-child(2) {
-  animation-delay: 2s; 
-}
-
-@keyframes title-animation {
-  0% {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.para-text{
-  /* font-size:20px;  */
-  /* text-align:center;  */
-  opacity:0; 
-  transform: translateX(100%);
-  animation: title-animation 2s ease-in-out; 
-  animation-fill-mode: forwards;
-  animation-delay: 3s; 
-}
-.hero3-img-ani{
-  /* padding-top: 135px; */
-}
 .hero-btn {
   border: 1px solid black;
   border-radius:20px;
@@ -158,5 +116,7 @@
    margin-bottom: 50px;
   }
 }
+
+
 
 </style>

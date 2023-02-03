@@ -381,10 +381,5 @@
   margin-top:0;
 }
 }
- /* .cta__content .color-cta{
-  color: black !important;
- }
- .cta-background{
-  background-color: white!important;
- } */
+ 
 </style>

@@ -89,12 +89,13 @@ export default {
     height: 640px!important;
 }
 .drag-sec {
-  cursor: grab;
-  cursor: url(@/assets/imgs/logo/site-logo-white-2.png) 16 16, auto;
+  cursor: grab!important;
+  cursor: url(@/assets/imgs/icon/cursor2.png) 32 32, auto !important;
+
   
 }
 .drag-sec img:hover {
-  cursor: url(@/assets/imgs/logo/site-logo-white-2.png) 16 16, auto;
+  cursor: url(@/assets/imgs/icon/cursor2.png) 32 32, auto !important;
   
 }
 @media only screen and (max-width: 767px){
