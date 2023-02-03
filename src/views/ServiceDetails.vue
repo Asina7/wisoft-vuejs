@@ -32,7 +32,7 @@
 
 export default {
   components: { MainHeader,ServiceDetail, FooterPage,FloatingWhatsapp},
-    name : 'ServiceDetail'
+    name : 'ServiceDetails'
 }
 </script>
 
