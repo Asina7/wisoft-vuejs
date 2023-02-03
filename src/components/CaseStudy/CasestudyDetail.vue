@@ -236,27 +236,6 @@ mounted() {
      
 },
 methods: {
-
-  methods : {
-    getData(){
-      axios.post('http://localhost:3000/users',
-      {
-        name : this.formData.name,
-        email : this.formData.email,
-        phone:this.formData.phone,
-        subject : this.formData.subject,
-        message : this.formData.message
-      }
-      )
-      .then((response)=>{
-          console.log(response.data)
-      }).catch((error)=>{
-          console.log(error)
-          this.errorMSg = 'Error retriving data...'
-      })
-  },
-
-methods:{
   offcanvascontact(){
   $("#open_offcanvas").click(function () {
   $('.offcanvas__area').css('opacity', '1');
@@ -267,10 +246,9 @@ $("#close_offcanvas").click(function () {
   $('.offcanvas__area').css('visibility', 'hidden');
 });
 },
-}
 
 
-    },
+    
 
     // parallex
     
