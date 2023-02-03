@@ -130,15 +130,24 @@
           </div>
         </section>
         <!-- CTA area end -->
-
-
-
 </main>
+<FloatingWhatsapp></FloatingWhatsapp>
+<div class="offcanvas__close">
+        <router-link :to="{ path: '/blog' }">
+          <button type="button" id="close_offcanvas">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </router-link>
+        </div>
     </div>
 </template>
 
 <script>
+import FloatingWhatsapp from '@/components/Home/FloatingWhatsapp.vue';
 export default {
+  components :{
+      FloatingWhatsapp,
+    },
   data(){
   return{
    blog:{},
@@ -196,13 +205,23 @@ export default {
   },
   
   methods: {
+    // close button
+    offcanvascontact(){
+  $("#open_offcanvas").click(function () {
+  $('.offcanvas__area').css('opacity', '1');
+  $('.offcanvas__area').css('visibility', 'visible');
+});
+$("#close_offcanvas").click(function () {
+  $('.offcanvas__area').css('opacity', '0');
+  $('.offcanvas__area').css('visibility', 'hidden');
+});
+},
     // parallex
     handleScroll() {
       const image = this.$refs.parallaxImage;
       const speed = 0.3;
       const yPos = window.pageYOffset * speed;
       image.style.transform = `translate3d(0, ${yPos}px, 0)`;
-
     }
   },
   beforeDestroy() {
@@ -237,6 +256,18 @@ export default {
   height: 60px;
   object-fit: cover;
   border-radius: 50%;
+}
+.offcanvas__close button {
+    font-size: 30px;
+    width: 55px;
+    position:fixed;
+    top:20px;
+    right:20px;
+}
+@media screen and (max-width:768px){
+  #close_offcanvas{
+    display:none;
+  }
 }
 </style>
 

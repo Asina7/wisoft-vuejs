@@ -64,6 +64,7 @@
               </div>
             </div>
           </div>
+          <FloatingWhatsapp></FloatingWhatsapp>
         </div>
         
       </section>
@@ -78,8 +79,12 @@
 </template>
 <script>
 import axios from 'axios'
+import FloatingWhatsapp from '@/components/Home/FloatingWhatsapp.vue';
 export default {
 name : 'MainSection',
+components :{
+      FloatingWhatsapp,
+    },
 data(){
   return{
     formData :{
@@ -143,6 +148,9 @@ $("#close_offcanvas").click(function () {
 .offcanvas__close button {
     font-size: 30px;
     width: 55px;
+    position:fixed;
+    top:20px;
+    right:20px;
 }
 @media screen and (max-width:768px){
   #close_offcanvas{

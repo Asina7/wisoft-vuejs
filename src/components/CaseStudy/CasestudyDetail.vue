@@ -133,15 +133,25 @@
         </div>
         </div>
     </div>
-
     </section>
+    <FloatingWhatsapp></FloatingWhatsapp>
 <!-- Portfolio area end -->
-
         </main>
+        <div class="offcanvas__close">
+        <router-link :to="{ path: '/casestudy' }">
+          <button type="button" id="close_offcanvas">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </router-link>
+        </div>
     </div>
 </template>
 <script> 
+import FloatingWhatsapp from '@/components/Home/FloatingWhatsapp.vue';
     export default {
+      components :{
+      FloatingWhatsapp,
+    },
     data(){
   return{
     casestudy:{},
@@ -226,6 +236,42 @@ mounted() {
      
 },
 methods: {
+
+  methods : {
+    getData(){
+      axios.post('http://localhost:3000/users',
+      {
+        name : this.formData.name,
+        email : this.formData.email,
+        phone:this.formData.phone,
+        subject : this.formData.subject,
+        message : this.formData.message
+      }
+      )
+      .then((response)=>{
+          console.log(response.data)
+      }).catch((error)=>{
+          console.log(error)
+          this.errorMSg = 'Error retriving data...'
+      })
+  },
+
+methods:{
+  offcanvascontact(){
+  $("#open_offcanvas").click(function () {
+  $('.offcanvas__area').css('opacity', '1');
+  $('.offcanvas__area').css('visibility', 'visible');
+});
+$("#close_offcanvas").click(function () {
+  $('.offcanvas__area').css('opacity', '0');
+  $('.offcanvas__area').css('visibility', 'hidden');
+});
+},
+}
+
+
+    },
+
     // parallex
     
     handleScroll() {
@@ -272,6 +318,17 @@ methods: {
       }
     }
     
-
+    .offcanvas__close button {
+    font-size: 30px;
+    width: 55px;
+    position:fixed;
+    top:20px;
+    right:20px;
+}
+@media screen and (max-width:768px){
+  #close_offcanvas{
+    display:none;
+  }
+}
 
 </style>

@@ -9,12 +9,12 @@
               alt="Site Logo"
               style="width:40px; height: 80px"
           /></a>
-          <!-- <a href="/" class="logo-light"
+          <a href="/" class="logo-light"
             ><img
-              src="@/assets/imgs/logo/wisoft-logo-ver.png"
+              src="@/assets/imgs/logo/wisoft-logo1.png"
               alt="Site Logo"
               style="width:40px; height: 80px"
-          /></a> -->
+          /></a>
         </div>
           <div class="header__nav-icon">
               <button  id="open_offcanvas"><img src="@/assets/imgs/icon/menu-white.png" alt="Menubar Icon"></button>
@@ -316,55 +316,15 @@ if (header_search) {
 </script>
 
 <style scoped>
-/* .list-menu {
- display: flex;
- flex-direction: row-reverse;
- margin-top: 10px;
- 
-}
-.menu-top{
-margin: 10px;
-}
-.list-menu button{
-border: 1px solid black;
-width:120px;
-border-radius: 30px;
-padding: 3px;
-}
-.list-menu button:hover{
-background-color: black;
-color: antiquewhite;
-}
-.list-menu li{
-margin: 0px;
-padding: 0 15px !important;
-}
-
-
-.offcanvas__menu{
-margin: 30px;
-margin-left: 0;
-}
-.offcanvas__menu ul li {
-color: yellow;
-}
-.offcanvas__menu ul li a {
-color: grey;
-}
-.offcanvas__menu ul li a:hover {
-color: white;
-}
-
-.menu-anim li{
-
-margin: 10px 0 10px 0;
-}
-.offcanvas__mid{
-
-}
-.offcanvas__links li a{
-font-size: 40px;
-} */
+@media only screen and (max-width: 768px) {
+    .offcanvas__logo img:nth-of-type(2) {
+      display: block;
+    }
+    
+    .offcanvas__logo img:nth-of-type(1) {
+      display: none;
+    }
+  }
 
 .list-menu {
   display: flex;
@@ -424,8 +384,15 @@ font-size: 40px;
   display: none;
 }
 
+
+@media screen and (min-width: 768px) {
+.offcanvas__logo img{
+  
+}
+}
 /*  */
 @media screen and (min-width: 960px) {
+
   .v {
     display: block;
   }

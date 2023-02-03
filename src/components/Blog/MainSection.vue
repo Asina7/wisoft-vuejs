@@ -7,8 +7,8 @@
         <div class="row ">
             <div class="col-xxl-12">
             <div class="sec-title-wrapper text-anim pt-130">
-                <h2 class="sec-sub-title">Recent Blog</h2>
-                <h3 class="sec-title title-anim">Read Updated <br>Journal</h3>
+                <h2 class="sec-sub-title text-bb">Recent Blog</h2>
+                <h3 class="sec-title title-anim text-cc">Read Updated <br>Journal</h3>
                 <p>Read our blog and try to see everything from every perspective. Our passion lies in making
                 everything
                 accessible and aesthetic for everyone. </p>
@@ -72,9 +72,9 @@
         </div>
 
         
-        <div class="float-icon">
+        <!-- <div class="float-icon">
           
-        </div>
+        </div> -->
         <FloatingWhatsapp></FloatingWhatsapp>
     </div>
 </template>
@@ -187,6 +187,12 @@ $("#close_offcanvas").click(function () {
 }
 .line{
   /* display: none!important; */
+}
+.text-cc{
+  font-size: 50px;
+}
+.text-bb{
+  font-size: 30px;
 }
 .offcanvas__close button {
     font-size: 30px;

@@ -8,8 +8,8 @@
     <div class="row">
       <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
         <div class="sec-title-wrapper wrap">
-          <h2 class="sec-sub-title title-anim animation__word_come" >service</h2>
-          <h3 class="sec-title title-anim animation__word_come">Solution we <br>provide</h3>
+          <h2 class="sec-sub-title title-anim animation__word_come font-ss" >service</h2>
+          <h3 class="sec-title title-anim animation__word_come font-ss">Solution we <br>provide</h3>
         </div>
       </div>
       <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
@@ -220,7 +220,14 @@
 <!-- CTA area end -->
 
 </main>
-       
+<FloatingWhatsapp></FloatingWhatsapp>
+<div class="offcanvas__close">
+        <router-link :to="{ path: '/' }">
+          <button type="button" id="close_offcanvas">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </router-link>
+        </div>
     </div>
 </template>
 
@@ -231,9 +238,12 @@
   import {ScrollTrigger} from 'gsap/ScrollTrigger';
   // gsap.registerPlugin(ScrollTrigger);
  
-
+  import FloatingWhatsapp from '@/components/Home/FloatingWhatsapp.vue';
    export default {
     name: 'MainSection',
+    components :{
+      FloatingWhatsapp,
+    },
     data () {
       return {
         
@@ -243,6 +253,17 @@
       this.scrollSection()
     },
     methods: {
+
+      offcanvascontact(){
+  $("#open_offcanvas").click(function () {
+  $('.offcanvas__area').css('opacity', '1');
+  $('.offcanvas__area').css('visibility', 'visible');
+});
+$("#close_offcanvas").click(function () {
+  $('.offcanvas__area').css('opacity', '0');
+  $('.offcanvas__area').css('visibility', 'hidden');
+});
+},
       scrollSection: function(){
         // 55. Service 1 Animation
   let home1_services = gsap.utils.toArray(".animation_home1_service")
@@ -359,6 +380,9 @@
 .animation__word_come {
   animation: slide-in-middle 1s ease-out both;
 }
+.font-ss{
+  font-size: 50px;
+}
 
 @keyframes slide-in-middle {
   0% {
@@ -380,6 +404,18 @@
   .image-top{
   margin-top:0;
 }
+}
+.offcanvas__close button {
+    font-size: 30px;
+    width: 55px;
+    position:fixed;
+    top:20px;
+    right:20px;
+}
+@media screen and (max-width:768px){
+  #close_offcanvas{
+    display:none;
+  }
 }
  
 </style>

@@ -123,8 +123,14 @@
          <!-- CTA area end -->
  
        </main>
- 
- 
+       <FloatingWhatsapp></FloatingWhatsapp>
+       <div class="offcanvas__close">
+        <router-link :to="{ path: '/' }">
+          <button type="button" id="close_offcanvas">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </router-link>
+        </div> 
  
  
      </div>
@@ -134,8 +140,11 @@
  </template>
  <script>
  import Swiper from 'swiper';
- 
+ import FloatingWhatsapp from '@/components/Home/FloatingWhatsapp.vue';
  export default {
+  components :{
+      FloatingWhatsapp,
+    },
    data() {
      return {
        images: [
@@ -149,6 +158,18 @@
          { id:8,src: 'https://wealcoder.com/dev/html/axtra/assets/imgs/team/4.jpg', title: 'Image 4' },
        ]
      }
+   },
+   method:{
+    offcanvascontact(){
+  $("#open_offcanvas").click(function () {
+  $('.offcanvas__area').css('opacity', '1');
+  $('.offcanvas__area').css('visibility', 'visible');
+});
+$("#close_offcanvas").click(function () {
+  $('.offcanvas__area').css('opacity', '0');
+  $('.offcanvas__area').css('visibility', 'hidden');
+});
+},
    },
    mounted() {
      new Swiper('.swiper-container', {
@@ -222,6 +243,18 @@
    width: 340.75px!important;
  }
  }
+ .offcanvas__close button {
+    font-size: 30px;
+    width: 55px;
+    position:fixed;
+    top:20px;
+    right:20px;
+}
+@media screen and (max-width:768px){
+  #close_offcanvas{
+    display:none;
+  }
+}
  </style>
  
  

@@ -76,10 +76,10 @@
 }
 </script>
 
-<style>
+<style scoped>
 h1{
     animation: ani 2s;
-    text-align: center;
+    /* text-align: center; */
 }
 
 @keyframes ani{
@@ -109,6 +109,7 @@ h1{
 }
 .text-size{
   font-weight:500;
+  font-size: 70px;
 }
 @media only screen and (max-width: 768px) {
   .hero-btn

@@ -176,7 +176,14 @@
 <!-- CTA area end -->
 
 </main>
-
+<FloatingWhatsapp></FloatingWhatsapp>
+<div class="offcanvas__close">
+        <router-link :to="{ path: '/' }">
+          <button type="button" id="close_offcanvas">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </router-link>
+        </div>
     </div>
 </template>
 <script>
@@ -184,14 +191,29 @@
   import { gsap } from 'gsap';
   import {ScrollTrigger} from 'gsap/ScrollTrigger';
   gsap.registerPlugin(ScrollTrigger);
+  import FloatingWhatsapp from '@/components/Home/FloatingWhatsapp.vue';
 export default {
     name:"CaseStudy",
+    components :{
+      FloatingWhatsapp,
+    },
     
     mounted () {
       this.paralexcasestudy()
     },
     
     methods: {
+
+      offcanvascontact(){
+  $("#open_offcanvas").click(function () {
+  $('.offcanvas__area').css('opacity', '1');
+  $('.offcanvas__area').css('visibility', 'visible');
+});
+$("#close_offcanvas").click(function () {
+  $('.offcanvas__area').css('opacity', '0');
+  $('.offcanvas__area').css('visibility', 'hidden');
+});
+},
       paralexcasestudy: function(){
      
         // ---
@@ -247,5 +269,16 @@ export default {
 }
 </script>
 <style>
-  
+  .offcanvas__close button {
+    font-size: 30px;
+    width: 55px;
+    position:fixed;
+    top:20px;
+    right:20px;
+}
+@media screen and (max-width:768px){
+  #close_offcanvas{
+    display:none;
+  }
+}
 </style>

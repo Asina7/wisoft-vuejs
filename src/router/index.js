@@ -19,8 +19,8 @@ const routes = [
   },
   {
     path: "/career",
-    // name: "ContactPage",
-    // component: () => import("../views/ContactPage.vue"),
+    name: "CareerPage",
+    component: () => import("../views/CareerPage.vue"),
   },
   {
     path: "/casestudy",
