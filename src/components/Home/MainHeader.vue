@@ -52,7 +52,7 @@
       <div class="mob">
         <ul role="menu" class="men">
             <li class="men-li" role="none">
-              <a><router-link to="/About">About</router-link></a>
+              <a><router-link to="/about">About</router-link></a>
             </li>
             <li class="men-li" role="none">
               <a><router-link to="/blog">Blog</router-link></a>
@@ -175,7 +175,7 @@
           <div class="offcanvas__links side-links">
             <ul>
               <li>
-                <a><router-link to="/About">About</router-link></a>
+                <a><router-link to="/about">About</router-link></a>
               </li>
               <li>
                 <a><router-link to="/blog">Blog</router-link></a>

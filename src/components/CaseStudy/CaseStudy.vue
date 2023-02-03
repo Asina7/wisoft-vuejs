@@ -27,123 +27,123 @@
           <div class="portfolio__wrapper-6">
             <div class="portfolio__list-6">
               <div class="portfolio__item-6" data-portfitem="1">
-                <a href="portfolio-details.html">
+                <router-link :to="'/casestudydetail/1'">
                   <img src="@/assets/imgs/portfolio/6/1.jpg" alt="Portfolio Image" data-speed="0.4">
                   <div class="portfolio__content-6">
                     <h4 class="portfolio__title-6">Lionpro Agency</h4>
                     <h5 class="portfolio__date">02 May 2021</h5>
                   </div>
-                </a>
+                </router-link>
               </div>
 
               <div class="portfolio__item-6" data-portfitem="2">
-                <a href="portfolio-details.html">
+                <router-link :to="'/casestudydetail/2'">
                   <img src="@/assets/imgs/portfolio/6/2.jpg" alt="Portfolio Image" data-speed="0.4">
                   <div class="portfolio__content-6">
                     <h4 class="portfolio__title-6">Lionpro Agency</h4>
                     <h5 class="portfolio__date">02 May 2021</h5>
                   </div>
-                </a>
+                </router-link>
               </div>
 
               <div class="portfolio__item-6" data-portfitem="3">
-                <a href="portfolio-details.html">
+                <router-link :to="'/casestudydetail/3'">
                   <img src="@/assets/imgs/portfolio/6/3.jpg" alt="Portfolio Image" data-speed="0.4">
                   <div class="portfolio__content-6">
                     <h4 class="portfolio__title-6">Lionpro Agency</h4>
                     <h5 class="portfolio__date">02 May 2021</h5>
                   </div>
-                </a>
+                </router-link>
               </div>
 
               <div class="portfolio__item-6" data-portfitem="4">
-                <a href="portfolio-details.html">
+                <router-link :to="'/casestudydetail/4'">
                   <img src="@/assets/imgs/portfolio/6/4.jpg" alt="Portfolio Image" data-speed="0.4">
                   <div class="portfolio__content-6">
                     <h4 class="portfolio__title-6">Lionpro Agency</h4>
                     <h5 class="portfolio__date">02 May 2021</h5>
                   </div>
-                </a>
+                </router-link>
               </div>
 
               <div class="portfolio__item-6" data-portfitem="5">
-                <a href="portfolio-details.html">
+                <router-link :to="'/casestudydetail/5'">
                   <img src="@/assets/imgs/portfolio/6/5.jpg" alt="Portfolio Image" data-speed="0.4">
                   <div class="portfolio__content-6">
                     <h4 class="portfolio__title-6">Lionpro Agency</h4>
                     <h5 class="portfolio__date">02 May 2021</h5>
                   </div>
-                </a>
+                </router-link>
               </div>
 
               <div class="portfolio__item-6" data-portfitem="6">
-                <a href="portfolio-details.html">
+                <router-link :to="'/casestudydetail/6'">
                   <img src="@/assets/imgs/portfolio/6/6.jpg" alt="Portfolio Image" data-speed="0.4">
                   <div class="portfolio__content-6">
                     <h4 class="portfolio__title-6">Lionpro Agency</h4>
                     <h5 class="portfolio__date">02 May 2021</h5>
                   </div>
-                </a>
+                </router-link>
               </div>
 
               <div class="portfolio__item-6" data-portfitem="7">
-                <a href="portfolio-details.html">
+                <router-link :to="'/casestudydetail/7'">
                   <img src="@/assets/imgs/portfolio/6/7.jpg" alt="Portfolio Image" data-speed="0.4">
                   <div class="portfolio__content-6">
                     <h4 class="portfolio__title-6">Lionpro Agency</h4>
                     <h5 class="portfolio__date">02 May 2021</h5>
                   </div>
-                </a>
+                </router-link>
               </div>
 
               <div class="portfolio__item-6" data-portfitem="8">
-                <a href="portfolio-details.html">
+                <router-link :to="'/casestudydetail/8'">
                   <img src="@/assets/imgs/portfolio/6/2.jpg" alt="Portfolio Image" data-speed="0.4">
                   <div class="portfolio__content-6">
                     <h4 class="portfolio__title-6">Lionpro Agency</h4>
                     <h5 class="portfolio__date">02 May 2021</h5>
                   </div>
-                </a>
+                </router-link>
               </div>
 
               <div class="portfolio__item-6" data-portfitem="9">
-                <a href="portfolio-details.html">
+                <router-link :to="'/casestudydetail/9'">
                   <img src="@/assets/imgs/portfolio/6/3.jpg" alt="Portfolio Image" data-speed="0.4">
                   <div class="portfolio__content-6">
                     <h4 class="portfolio__title-6">Lionpro Agency</h4>
                     <h5 class="portfolio__date">02 May 2021</h5>
                   </div>
-                </a>
+                </router-link>
               </div>
 
               <div class="portfolio__item-6" data-portfitem="10">
-                <a href="portfolio-details.html">
+                <router-link :to="'/casestudydetail/10'">
                   <img src="@/assets/imgs/portfolio/6/5.jpg" alt="Portfolio Image" data-speed="0.4">
                   <div class="portfolio__content-6">
                     <h4 class="portfolio__title-6">Lionpro Agency</h4>
                     <h5 class="portfolio__date">02 May 2021</h5>
                   </div>
-                </a>
+                </router-link>
               </div>
 
               <div class="portfolio__item-6" data-portfitem="11">
-                <a href="portfolio-details.html">
+                <router-link :to="'/casestudydetail/11'">
                   <img src="@/assets/imgs/portfolio/6/7.jpg" alt="Portfolio Image" data-speed="0.4">
                   <div class="portfolio__content-6">
                     <h4 class="portfolio__title-6">Lionpro Agency</h4>
                     <h5 class="portfolio__date">02 May 2021</h5>
                   </div>
-                </a>
+                </router-link>
               </div>
 
               <div class="portfolio__item-6" data-portfitem="12">
-                <a href="portfolio-details.html">
+                <router-link :to="'/casestudydetail/12'">
                   <img src="@/assets/imgs/portfolio/6/1.jpg" alt="Portfolio Image" data-speed="0.4">
                   <div class="portfolio__content-6">
                     <h4 class="portfolio__title-6">Lionpro Agency</h4>
                     <h5 class="portfolio__date">02 May 2021</h5>
                   </div>
-                </a>
+                </router-link>
               </div>
             </div>
           </div>
@@ -186,55 +186,66 @@
   gsap.registerPlugin(ScrollTrigger);
 export default {
     name:"CaseStudy",
+    
     mounted () {
       this.paralexcasestudy()
     },
+    
     methods: {
       paralexcasestudy: function(){
-        var total_portfolio_item = $('.portfolio__item-6').length;
-        if (total_portfolio_item) {
-    $('.portfolio__total').html(total_portfolio_item);
-  }
-
-  $(document).on('scroll', function () {
-    $('.portfolio__item-6').each(function () {
-      if ($(this).position().top <= $(document).scrollTop() && ($(this).position().top + $(this).outerHeight()) > $(document).scrollTop()) {
-
-        var item_num = $(this).data('portfitem');
-        $('.portfolio__current').html(item_num);
-        $(this).addClass('active').siblings().removeClass('active');
+     
+        // ---
+      const portfolio_listss = gsap.utils.toArray(".portfolio__item-6 img")
+        if (portfolio_listss) {
+          portfolio_listss.forEach((item, i) => {
+            gsap.from(item, {
+              scrollTrigger: {
+                trigger: item,
+                start: "top center",
+                scrub: 1.5,
+              },
+              scale: 2.5,
+              duration: 1,
+            })
+          })
+        }
+        // ---
+      var total_portfolio_item = $('.portfolio__item-6').length;
+      if (total_portfolio_item) {
+        $('.portfolio__total').html(total_portfolio_item);
       }
-    });
-  });
-        // ---------
-     ScrollTrigger.create({
-    trigger: ".portfolio__wrapper-6",
-    start: "top top",
-    end: "bottom bottom",
-    pin: ".portfolio__title-wrap-6",
-    pinSpacing: false,
-  });
+
+
+      // --
+      ScrollTrigger.create({
+        trigger: ".portfolio__wrapper-6",
+        start: "top top",
+        end: "bottom bottom",
+        pin: ".portfolio__title-wrap-6",
+        pinSpacing: false,
+      });
   // ----
-  const portfolio_listss = gsap.utils.toArray(".portfolio__item-6 img")
-  if (portfolio_listss) {
-    portfolio_listss.forEach((item, i) => {
-      gsap.from(item, {
-        scrollTrigger: {
-          trigger: item,
-          start: "top center",
-          scrub: 1.5,
-        },
-        scale: 2.5,
-        duration: 1,
-      })
-    })
-  }
-      }
+      // --
+      $(document).on('scroll', function () {
+        $('.portfolio__item-6').each(function () {
+          if ($(this).position().top <= $(document).scrollTop() && ($(this).position().top + $(this).outerHeight()) > $(document).scrollTop()) {
+            var item_num = $(this).data('portfitem');
+            $('.portfolio__current').html(item_num);
+            $(this).addClass('active').siblings().removeClass('active');
+          }
+        });
+      });
+        }
     },
+    created () {
+    const hasRefreshed = localStorage.getItem('hasRefreshed')
+    if (!hasRefreshed) {
+      location.reload()
+      localStorage.setItem('hasRefreshed', 'true')
+    }
+  },
 }
 </script>
 <style>
-  .sec-title{
-    font-weight: 500;
-  }
+  
 </style>

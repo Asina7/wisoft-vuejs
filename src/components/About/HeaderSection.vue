@@ -28,10 +28,10 @@
 
  <!-- Offcanvas area start -->
  <div class="offcanvas__area">
-      <div class="mob">
-        <ul role="menu" class="men">
+  <div class="mob">
+          <ul role="menu" class="men">
             <li class="men-li" role="none">
-              <a><router-link to="/About">About</router-link></a>
+              <a><router-link to="/about">About</router-link></a>
             </li>
             <li class="men-li" role="none">
               <a><router-link to="/blog">Blog</router-link></a>
@@ -154,7 +154,7 @@
           <div class="offcanvas__links side-links">
             <ul>
               <li>
-                <a><router-link to="/About">About</router-link></a>
+                <a><router-link to="/about">About</router-link></a>
               </li>
               <li>
                 <a><router-link to="/blog">Blog</router-link></a>
@@ -162,7 +162,7 @@
               <!-- <li><a href="career.html">Career</a></li> -->
               <li><a><router-link to="/career">Career</router-link></a></li>
                 <li><a><router-link to="/casestudy">Case Study</router-link></a></li>
-               <li><a><router-link to="/services">Service</router-link></a></li> 
+               <li><a><router-link to="/services">service</router-link></a></li> 
                <li><a><router-link to="/team">Team</router-link></a></li> 
               <li><a><router-link to="/Contact">Contact</router-link></a></li>
               
@@ -279,11 +279,6 @@ export default {
 FloatingWhatsapp,
 // FloatingChat,
 },
-data() {
-    return {
-      activesub:""
-    };
-  },
   mounted (){
 this.offcanvas()
 },
@@ -316,14 +311,6 @@ if (header_search) {
   });
 }
 },
-handleClick:function(ac){
-      if(this.activesub == ac){
-        this.activesub="";
-      }else{
-        this.activesub = ac;
-      }
-      
-    }
 }
 }
 </script>
@@ -419,7 +406,7 @@ font-size: 40px;
 }
 /* hambourger */
 .head-list {
-  color:#c9f31d;
+  color: yellow;
 }
 .side-links {
   margin-top: 90px !important;
@@ -448,12 +435,12 @@ font-size: 40px;
 }
 .men {
   padding: 20px;
-  color: #c9f31d;
+  color: yellow;
   font-size: 23px;
   margin-top: 40px;
 }
 .men-li a {
-  color: #c9f31d;
+  color: yellow;
 }
 .toggler-menu {
   margin-top: 20px;

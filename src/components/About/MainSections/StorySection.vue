@@ -35,7 +35,7 @@
                 </div>
               </div>
               <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
-                <div class="story__img-wrapper img-anim">
+                <div class="story__img-wrapper img-anim parallax-image-story">
                   <img src="@/assets/imgs/story/2.jpg" alt="Story Thumbnail" data-speed="auto">
                 </div>
               </div>
@@ -43,6 +43,7 @@
                 <div class="story__img-wrapper">
                   <img src="@/assets/imgs/story/3.jpg" alt="Story Thumbnail">
                   <img src="@/assets/imgs/story/4.jpg" alt="Story Thumbnail">
+                  
                 </div>
               </div>
             </div>
@@ -52,3 +53,16 @@
 
     </div>
 </template>
+
+<script>  
+export default{
+  mounted (){
+    
+  }
+}
+
+</script>
+<style>  
+  
+</style>
+

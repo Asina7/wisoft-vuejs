@@ -31,8 +31,8 @@
         </div>
       </div>
       <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8">
-        <div class="development__img paralx-mobil" style="overflow: hidden;">
-          <img class="para-img" ref="parallaxImage" src="@/assets/imgs/thumb/dev-1.jpg" alt="Development Image" data-speed="auto" style="position: absolute;">
+        <div class="development__img" >
+          <img class="para-img" ref="parallaxImage" src="@/assets/imgs/thumb/dev-1.jpg" alt="Development Image" >
         </div>
       </div>
       <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
