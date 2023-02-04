@@ -116,6 +116,9 @@ h1{
   {
    margin-bottom: 50px;
   }
+  .text-size{
+    font-size: 40px!important;
+  }
 }
 
 

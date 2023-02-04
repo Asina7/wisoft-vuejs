@@ -1,60 +1,114 @@
 <template>
-    <div>
-        <!-- Brand area start -->
-        <section class="brand__area">
-          <div class="container g-0 line pt-140 pb-140">
-            <span class="line-3"></span>
-            <div class="row g-0">
-              <div class="col-xxl-12">
-                <div class="sec-title-wrapper">
-                  <h2 class="sec-sub-title title-anim">Internation Brands</h2>
-                  <h3 class="sec-title title-anim">We are happy to work with global <br>
-                    largest brands</h3>
-                </div>
+  <div>
+    <div id="smooth-wrapper">
+  <div id="smooth-content">
+    <main>
+      <section class="brand__area">
+      <div class="container pt-140 pb-100">
+        <div class="row">
+          <div class="col-xxl-12">
+            <h2 class="brand__title-3 title-anim brand-4">We are happy to work with global <br> largest brands
+            </h2>
+            <div class="brand__list-3">
+              <div class="brand__item-2 fade_bottom">
+                <img src="@/assets/imgs/brand/1.png" alt="Brand Logo">
               </div>
-
-              <div class="brand__list">
-                <div class="brand__item fade_bottom">
-                  <img src="@/assets/imgs/brand/1.png" alt="Brand Logo">
-                </div>
-                <div class="brand__item fade_bottom">
-                  <img src="@/assets/imgs/brand/2.png" alt="Brand Logo">
-                </div>
-                <div class="brand__item fade_bottom">
-                  <img src="@/assets/imgs/brand/3.png" alt="Brand Logo">
-                </div>
-                <div class="brand__item fade_bottom">
-                  <img src="@/assets/imgs/brand/4.png" alt="Brand Logo">
-                </div>
-                <div class="brand__item fade_bottom">
-                  <img src="@/assets/imgs/brand/5.png" alt="Brand Logo">
-                </div>
-                <div class="brand__item fade_bottom">
-                  <img src="@/assets/imgs/brand/6.png" alt="Brand Logo">
-                </div>
-                <div class="brand__item fade_bottom">
-                  <img src="@/assets/imgs/brand/3.png" alt="Brand Logo">
-                </div>
-                <div class="brand__item fade_bottom">
-                  <img src="@/assets/imgs/brand/4.png" alt="Brand Logo">
-                </div>
-                <div class="brand__item fade_bottom">
-                  <img src="@/assets/imgs/brand/5.png" alt="Brand Logo">
-                </div>
-                <div class="brand__item fade_bottom">
-                  <img src="@/assets/imgs/brand/6.png" alt="Brand Logo">
-                </div>
-                <div class="brand__item fade_bottom">
-                  <img src="@/assets/imgs/brand/1.png" alt="Brand Logo">
-                </div>
-                <div class="brand__item fade_bottom">
-                  <img src="@/assets/imgs/brand/2.png" alt="Brand Logo">
-                </div>
+              <div class="brand__item-2 fade_bottom">
+                <img src="@/assets/imgs/brand/2.png" alt="Brand Logo">
+              </div>
+              <div class="brand__item-2 fade_bottom">
+                <img src="@/assets/imgs/brand/3.png" alt="Brand Logo">
+              </div>
+              <div class="brand__item-2 fade_bottom">
+                <img src="@/assets/imgs/brand/4.png" alt="Brand Logo">
+              </div>
+              <div class="brand__item-2 fade_bottom">
+                <img src="@/assets/imgs/brand/5.png" alt="Brand Logo">
+              </div>
+              <div class="brand__item-2 fade_bottom">
+                <img src="@/assets/imgs/brand/6.png" alt="Brand Logo">
               </div>
             </div>
           </div>
-        </section>
-        <!-- Brand area end -->
+          
+        </div>
 
+      </div>
+      
+    </section>
+
+ 
+    </main>
     </div>
+    </div>
+   
+  </div>
 </template>
+
+<script> 
+  import $ from "jquery";
+  import gsap from "gsap";
+  import { scrollTrigger } from "gsap/all";
+ 
+  //gsap.registerPlugin(scrollTrigger)
+  export default {
+  name : "BrandSection",
+  components:{
+
+  },
+  data(){
+    return{
+
+    }
+  },
+  mounted (){
+    this.brandAnimation()
+  },
+  methods: {
+     brandAnimation: function(){
+    gsap.set(".fade_bottom", { y: 30, opacity: 0 });
+    let device_width = window.innerWidth;
+    if (device_width < 1023) {
+      const fadeArray = gsap.utils.toArray(".fade_bottom")
+      fadeArray.forEach((item, i) => {
+        let fadeTl = gsap.timeline({
+          scrollTrigger: {
+            trigger: item,
+            start: "top center+=200",
+          }
+    })
+    fadeTl.to(item, {
+      y: 0,
+      opacity: 1,
+      ease: "power2.out",
+      duration: 1.5,
+    })
+  })
+}
+else {
+  gsap.to(".fade_bottom", {
+    scrollTrigger: {
+      trigger: ".fade_bottom",
+      start: "top center+=300",
+      markers: false
+    },
+    y: 0,
+    opacity: 1,
+    ease: "power2.out",
+    duration: 1,
+    stagger: {
+      each: 0.2
+    }
+  })
+}
+     }
+  }}
+</script>
+
+<style scoped>
+.brand-4{
+font-weight: 900;
+font-size: 50px;
+color: rgb(0, 0, 0);
+}
+</style>
