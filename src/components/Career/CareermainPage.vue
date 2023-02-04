@@ -10,7 +10,7 @@
       <div class="row">
         <div class="col-xxl-10 col-xl-9 col-lg-9 col-md-9">
           <div class="sec-title-wrapper">
-            <h2 class="sec-title-2 animation__char_come" style="color:black">Join our team & let’s work together</h2>
+            <h2 class="sec-title-2 animation__char_come" style="color:black" data-speed="0.1"> let’s work together</h2>
           </div>
         </div>
         <div class="col-xxl-2 col-xl-3 col-lg-3 col-md-3">
@@ -206,4 +206,23 @@ export default {
     display:none;
   }
 }
+
+h2{
+    animation: ani 1s;
+    /* text-align: center; */
+}
+
+@keyframes ani{
+    from{
+        letter-spacing: 3px;
+        filter: blur(5px);
+        opacity: 0;
+    }to{
+        letter-spacing: 0;
+        filter: blur(0);
+        opacity: 1px;
+    }
+}
+
+
 </style>

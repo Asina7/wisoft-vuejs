@@ -12,7 +12,7 @@
             <div class="row">
               <div class="col-xxl-12">
                 <div class="hero__about-content">
-                  <h1 class="hero-title animation__word_come">We’re a full service creative and digital agency, working
+                  <h1 class="hero-title animation__word_come" data-speed="0.1">We’re a full service creative and digital agency, working
                     globally with leargest brands.</h1>
                   <div class="hero__about-info">
                     <div class="hero__about-btn">
@@ -93,5 +93,22 @@ $("#close_offcanvas").click(function () {
   #close_offcanvas{
     display:none;
   }
+}
+
+h1{
+    animation: ani 1s;
+    /* text-align: center; */
+}
+
+@keyframes ani{
+    from{
+        letter-spacing: 3px;
+        filter: blur(5px);
+        opacity: 0;
+    }to{
+        letter-spacing: 0;
+        filter: blur(0);
+        opacity: 1px;
+    }
 }
 </style>
