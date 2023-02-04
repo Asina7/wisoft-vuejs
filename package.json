@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@vue/preload-webpack-plugin": "^2.0.0",
+    "aos": "^2.3.4",
     "axios": "^1.2.1",
     "bootstrap-vue": "^2.23.1",
     "chroma-js": "^2.4.2",
@@ -21,7 +22,8 @@
     "vue-animated-cursor": "^1.0.3",
     "vue-parallaxy": "^1.1.1",
     "vue-router": "^4.0.13",
-    "vue-scrollmagic": "^1.2.0"
+    "vue-scrollmagic": "^1.0.1",
+    "vuelidate": "^0.7.7"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

@@ -161,7 +161,8 @@
   </div>
 
   <!-- Modal 2 -->
-  <div class="modal__application" id="application_form2">
+  <job-form></job-form>
+  <!-- <div class="modal__application" id="application_form2">
     <div class="modal__apply">
       <button class="modal__close-2" id="apply_close2"><i class="fa-solid fa-xmark"></i></button>
       <div class="form-top">
@@ -196,7 +197,7 @@
             class="fa-solid fa-arrow-right"></i></button>
       </div>
     </div>
-  </div>
+  </div> -->
   <FloatingWhatsapp></FloatingWhatsapp>
        <div class="offcanvas__close">
         <router-link :to="{ path: '/career' }">
@@ -209,9 +210,12 @@
 </template>
 <script>
 import FloatingWhatsapp from '@/components/Home/FloatingWhatsapp.vue';
+import JobForm from './JobForm.vue';
+
 export default {
     components :{
       FloatingWhatsapp,
+      JobForm,
     },
     data(){
         return{

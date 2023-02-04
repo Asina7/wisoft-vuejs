@@ -34,11 +34,11 @@
             <div class="video-intro">
               <input id="video_check" type="checkbox">
               <div class="intro-title">
-                <h4 class="video-title">Watch <span>video intro</span></h4>
-                <h4 class="video-title close-video-title">Close <span>video intro</span></h4>
+                <h4 class="video-title" @click="toggleSound">Watch <span>video intro</span></h4>
+                <h4 class="video-title close-video-title" style="color:brown" @click="toggleSound">Close <span>video intro</span></h4>
               </div>
               <div class="video">
-                <video src="@/assets/video/RewindWisoft.mp4" loop muted autoplay playsinline></video>
+                <video ref="videoPlayer" :muted="muted" src="@/assets/video/RewindWisoft.mp4" loop autoplay playsinline></video>
               </div>
             </div>
           </div>
@@ -64,15 +64,49 @@
     name: 'HeroSection',
     data () {
       return {
-        
+        muted: true,
       }
     },
+    mounted(){
+      this.HeroSectionvideo()
+      // this.toggleSound()
+    },
     methods: {
-      HeroSectionAnimation: function(){
-        
+      toggleSound () {
+      this.muted = !this.muted;
+    },
+      HeroSectionvideo: function(){
+        const radio_buttons = document.querySelector("#video_check");
+  const video_start = document.querySelector(".hero__area-3");
 
-    }
+  if (radio_buttons) {
+    radio_buttons.addEventListener('click', function () {
+      let video = document.querySelector(".video-title")
+      let videoClose = document.querySelector(".video-title.close-video-title")
+      if (radio_buttons.checked) {
+        document.querySelector(".wrapper").style.zIndex = "1";
+        video.style.display = "none";
+        videoClose.style.display = "block";
+        video_start.classList.add('start-video');
+        document.querySelector('.header__area-3').classList.add('bg-white');
+
+      }
+      else {
+        document.querySelector(".wrapper").style.zIndex = "999";
+        video.style.display = "block";
+        videoClose.style.display = "none";
+        video_start.classList.remove('start-video');
+        document.querySelector('.header__area-3').classList.remove('bg-white');
+      }
+    });
   }
+  /////////////////////////////////////////////////////
+    },
+ 
+  
+  },
+  
+ 
 }
 </script>
 
@@ -117,7 +151,7 @@ h1{
    margin-bottom: 50px;
   }
   .text-size{
-    font-size: 40px!important;
+    font-size: 40px;
   }
 }
 

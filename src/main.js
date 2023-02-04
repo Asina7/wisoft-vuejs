@@ -6,6 +6,8 @@ import 'jquery'
 
 
 
+
+
 // swiper
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -23,5 +25,5 @@ import "./assets/css/master.css"
 // import "./assets/scss/master.css"
 
 
-
+// Vue.use(Vuelidate)
 createApp(App).use(router).mount('#app');
