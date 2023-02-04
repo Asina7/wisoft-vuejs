@@ -258,12 +258,47 @@ $("#close_offcanvas").click(function () {
 },
    },
     mounted() {
-  
+      this.jobApply();
   // dynamic component
   let id =this.$route.params.id;
   let current = this.joblistss.find(item=>item.id == id);
   this.jobdata = current;
 },
+    methods: {
+    jobApply() {
+      const job_apply = document.querySelector(".job__apply");
+      if (job_apply) {
+        // application Modal 1
+        const modal_application = document.querySelector("#application_form");
+        const apply_trigger = document.querySelector(".job__apply");
+        const apply_close = document.querySelector("#apply_close");
+
+        apply_trigger.addEventListener("click", function () {
+          modal_application.classList.add("modal-show");
+        });
+        apply_close.addEventListener("click", function () {
+          modal_application.classList.remove("modal-show");
+        });
+
+        // application Modal 2
+        const modal_application_2 = document.querySelector("#application_form2");
+        const apply_trigger_2 = document.querySelector(".apply-trigger");
+        const apply_close_2 = document.querySelector("#apply_close2");
+        const back_form1 = document.querySelector("#back_form1");
+
+        apply_trigger_2.addEventListener("click", function () {
+          modal_application_2.classList.add("modal-show");
+        });
+        apply_close_2.addEventListener("click", function () {
+          modal_application_2.classList.remove("modal-show");
+          modal_application.classList.remove("modal-show");
+        });
+        back_form1.addEventListener("click", function () {
+          modal_application_2.classList.remove("modal-show");
+        });
+      }
+    }
+  },
 
 
 }

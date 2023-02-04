@@ -86,38 +86,7 @@
               <h5 class="job__link"><span><i class="fa-solid fa-arrow-right"></i></span></h5>
             </div>
             </router-link>
-          <!-- <a href="job-details.html">
-            <div class="job__item">
-              <p class="job__no">02</p>
-              <h3 class="job__title">Frontend Developer</h3>
-              <h4 class="job__open">(07 Open Roles)</h4>
-              <h5 class="job__link"><span><i class="fa-solid fa-arrow-right"></i></span></h5>
-            </div>
-          </a>
-          <a href="job-details.html">
-            <div class="job__item">
-              <p class="job__no">03</p>
-              <h3 class="job__title">Product Manager</h3>
-              <h4 class="job__open">(15 Open Roles)</h4>
-              <h5 class="job__link"><span><i class="fa-solid fa-arrow-right"></i></span></h5>
-            </div>
-          </a>
-          <a href="job-details.html">
-            <div class="job__item">
-              <p class="job__no">04</p>
-              <h3 class="job__title">JavaScript Engineer</h3>
-              <h4 class="job__open">(03 Open Roles)</h4>
-              <h5 class="job__link"><span><i class="fa-solid fa-arrow-right"></i></span></h5>
-            </div>
-          </a>
-          <a href="job-details.html">
-            <div class="job__item">
-              <p class="job__no">05</p>
-              <h3 class="job__title">Joomla Developer</h3>
-              <h4 class="job__open">(09 Open Roles)</h4>
-              <h5 class="job__link"><span><i class="fa-solid fa-arrow-right"></i></span></h5>
-            </div>
-          </a> -->
+         
         </div>
       </div>
     </div>
@@ -214,7 +183,10 @@ export default {
                 },
             ]
         }
-    }
+    },
+ 
+ 
+
 }
 </script>
 <style>
@@ -223,11 +195,11 @@ export default {
         color: black;
     }
     .offcanvas__close button {
-    font-size: 30px;
-    width: 55px;
-    position:fixed;
-    top:20px;
-    right:20px;
+        font-size: 30px;
+        width: 55px;
+        position:fixed;
+        top:20px;
+        right:20px;
 }
 @media screen and (max-width:768px){
   #close_offcanvas{
