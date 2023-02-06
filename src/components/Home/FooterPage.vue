@@ -3,7 +3,7 @@
     <div id="smooth-wrapper">
     <div id="smooth-content">
       <footer class="footer__area" data-scroll-section>
-      <div class="footer__top">
+      <div class="footer__top ">
         <div class="container footer-line"></div>
         <img  src="@/assets/imgs/thumb/footer.jpg" alt="Footer Image" data-speed="0.5">
       </div>
@@ -61,8 +61,8 @@
                   </div>
                   
                 <div class="footer__subscribe">
-                  <form action="#">
-                    <input type="email" name="email" placeholder="Enter your email">
+                  <form @submit.prevent="handleSubmit">
+                    <input type="email" v-model="email" name="email" placeholder="Enter your email">
                     <button type="submit" class="subs-btn"><i class="fa-solid fa-paper-plane"></i></button>
                   </form>
                 </div>
@@ -94,10 +94,47 @@
 </style>
 <script> 
 import ContactInformation from './MainSection/ContactInformation.vue';
+// import nodemailer from 'nodemailer';
   export default{
     name : 'FooterPage',
     components:{
       ContactInformation
     },
+    data() {
+    return {
+      email: ''
+    }
+  },
+  methods: {
+    async handleSubmit() {
+      try {
+        // Create a transporter object using your email provider's SMTP details
+        const transporter = nodemailer.createTransport({
+          host: 'smtp.example.com',
+          port: 587,
+          secure: false,
+          auth: {
+            user: 'youremail@example.com',
+            pass: 'yourpassword'
+          }
+        })
+
+        // Define the email details
+        const mailOptions = {
+          from: 'youremail@example.com',
+          to: this.email,
+          subject: 'Email from your Vue.js website',
+          text: 'This is an example email sent from a Vue.js website'
+        }
+
+        // Send the email
+        const info = await transporter.sendMail(mailOptions)
+        alert(`Email sent: ${info.messageId}`)
+      } catch (error) {
+        console.error(error)
+        alert(`error sending email: ${error.message}`)
+      }
+    }
+  }
   }
 </script>

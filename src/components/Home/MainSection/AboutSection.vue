@@ -7,7 +7,7 @@
             <div class="container pt-140 pb-110">
               <div class="row">
                 <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                  <div class="about__img-3">
+                  <div class="about__img-3" ref="parallaxImage">
                     <img src="@/assets/imgs/about/1/1.jpg" alt="About Thumbnail" data-speed="auto">
                   </div>
                 </div>
@@ -55,6 +55,10 @@ export default {
   },
   mounted() {
     this.AboutSectionAnimation();
+    window.addEventListener('scroll', this.handleScroll)
+  },
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.handleScroll)
   },
   methods: {
     AboutSectionAnimation: function() {
@@ -79,6 +83,18 @@ export default {
           ease: "power3.out",
         });
       });
+    },
+    handleScroll() {
+      const windowY = window.pageYOffset
+      const el = this.$refs.parallaxImage
+      const elRect = el.getBoundingClientRect()
+      const elY = elRect.top + windowY
+
+      const speed = 0.3 // adjust speed as desired
+      const yPosition = -(windowY - elY) * speed
+      
+
+      el.style.transform = `translate3d(0, ${yPosition}px, 0)`
     }
   }
 };

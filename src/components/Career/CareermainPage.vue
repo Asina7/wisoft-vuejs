@@ -51,7 +51,7 @@
         </div>
       </div>
       <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
-        <div class="career__gallery-img img-anim">
+        <div class="career__gallery-img img-anim" ref="parallaxImage">
           <img src="@/assets/imgs/career/3.jpg" alt="Image" data-speed="auto">
         </div>
       </div>
@@ -184,7 +184,26 @@ export default {
             ]
         }
     },
- 
+    mounted (){
+    window.addEventListener('scroll', this.handleScroll)
+  },
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.handleScroll)
+  },
+  methods: {
+    handleScroll() {
+      const windowY = window.pageYOffset
+      const el = this.$refs.parallaxImage
+      const elRect = el.getBoundingClientRect()
+      const elY = elRect.top + windowY
+
+      const speed = 0.3 // adjust speed as desired
+      const yPosition = -(windowY - elY) * speed
+      
+
+      el.style.transform = `translate3d(0, ${yPosition}px, 0)`
+    }
+  }
  
 
 }

@@ -35,10 +35,10 @@
                 </div>
               </div>
               <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
-                <div class="story__img-wrapper img-anim parallax-image-story">
-                  <img src="@/assets/imgs/story/2.jpg" alt="Story Thumbnail" data-speed="auto">
-                </div>
+              <div class="story__img-wrapper img-anim" ref="parallaxImage">
+                <img src="@/assets/imgs/story/2.jpg" alt="Story Thumbnail">
               </div>
+            </div>
               <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
                 <div class="story__img-wrapper">
                   <img src="@/assets/imgs/story/3.jpg" alt="Story Thumbnail">
@@ -57,12 +57,31 @@
 <script>  
 export default{
   mounted (){
-    
+    window.addEventListener('scroll', this.handleScroll)
+  },
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.handleScroll)
+  },
+  methods: {
+    handleScroll() {
+      const windowY = window.pageYOffset
+      const el = this.$refs.parallaxImage
+      const elRect = el.getBoundingClientRect()
+      const elY = elRect.top + windowY
+
+      const speed = 0.3 // adjust speed as desired
+      const yPosition = -(windowY - elY) * speed
+      
+
+      el.style.transform = `translate3d(0, ${yPosition}px, 0)`
+    }
   }
 }
 
 </script>
 <style>  
-  
+  .story__img-wrapper {
+  position: relative;
+}
 </style>
 
