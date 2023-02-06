@@ -403,7 +403,7 @@ export default {
   color: #c9f31d;
 }
 .side-links {
-  margin-top: 90px !important;
+  /* margin-top: 90px !important; */
 }
 .side-links li {
   font-weight: 500;

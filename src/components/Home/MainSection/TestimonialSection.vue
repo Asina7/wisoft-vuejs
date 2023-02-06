@@ -27,7 +27,9 @@
                       &
                       etc.</p>
                       <div class="hero-item-btn">
-                       <button class=" hero-btn1">Explore More</button>
+                        <router-link :to="'/casestudy'">
+                          <button class=" hero-btn1">Explore More</button>
+                        </router-link>
                       </div>
                   </div>
                   

@@ -42,7 +42,7 @@
  
            <div class="team__join-btn">
              <div id="btn_wrapper">
-               <a href="contact.html" class="wc-btn-primary btn-item btn-hover"><span></span> Join our <br>talented team
+               <a href="/contact" class="wc-btn-primary btn-item btn-hover"><span></span> Join our <br>talented team
                  <i class="fa-solid fa-arrow-right"></i></a>
              </div>
            </div>

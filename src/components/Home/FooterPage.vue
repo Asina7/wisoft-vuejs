@@ -124,7 +124,7 @@ import ContactInformation from './MainSection/ContactInformation.vue';
           from: 'youremail@example.com',
           to: this.email,
           subject: 'Email from your Vue.js website',
-          text: 'This is an example email sent from a Vue.js website'
+          text: 'sample text'
         }
 
         // Send the email

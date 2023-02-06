@@ -162,7 +162,7 @@
               <!-- <li><a href="career.html">Career</a></li> -->
               <li><a><router-link to="/career">Career</router-link></a></li>
                 <li><a><router-link to="/casestudy">Case Study</router-link></a></li>
-               <li><a><router-link to="/services">service</router-link></a></li> 
+               <li><a><router-link to="/services">Service</router-link></a></li> 
                <li><a><router-link to="/team">Team</router-link></a></li> 
               <li><a><router-link to="/Contact">Contact</router-link></a></li>
               
@@ -369,7 +369,7 @@ if (header_search) {
   color: yellow;
 }
 .side-links {
-  margin-top: 90px !important;
+  /* margin-top: 90px !important; */
 }
 .side-links li {
   font-weight: 500;

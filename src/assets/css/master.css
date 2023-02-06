@@ -5204,7 +5204,7 @@ img {
 }
 .offcanvas__close button {
   font-size: 30px;
-  width: 10px;
+  width: 50px;
   height: 60px;
   color: var(--white);
   background: #232323;

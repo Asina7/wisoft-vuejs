@@ -93,7 +93,7 @@
                 </div>
               </div>
               <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-4">
-                <div class="job__detail-sidebar">
+                <div class="job__detail-sidebar" style="position:fixed">
                   <ul>
                     <li><span>Experience</span> 5+ Years Experience</li>
                     <li><span>Working Hours</span> 08 AM to 05 PM</li>

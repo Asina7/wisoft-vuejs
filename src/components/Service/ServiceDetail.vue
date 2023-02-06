@@ -175,7 +175,7 @@
           <p class="cta__sub-title">Work with us</p>
           <h2 class="cta__title title-anim">We would love to hear more about your project</h2>
           <div id="btn_wrapper">
-            <a href="contact.html" class="wc-btn-primary btn-hover btn-item"><span></span>Let’s talk us <i
+            <a href="/contact" class="wc-btn-primary btn-hover btn-item"><span></span>Let’s talk us <i
                 class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>

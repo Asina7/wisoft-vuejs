@@ -49,7 +49,7 @@
                         </div>
 
                         <div>
-                          <h2 class="service__title-6 title-anim">User paths or user flows functional models</h2>
+                          <h2 class="service__title-6 title-anim">Digital Marketing</h2>
                           <p>This is the second workshop of the UX design methodology. Given all the conclusions drawn
                             in
                             the
@@ -67,12 +67,12 @@
                           </ul>
                           <div class="service-2btn">
                             <div id="btn_wrapper">
-                            <a href="service-details.html" class="wc-btn-secondary btn-item btn-hover"><span></span>Get
+                            <a href="/contact" class="wc-btn-secondary btn-item btn-hover"><span></span>Get
                               free
                               <br>qoutes <i class="fa-solid fa-arrow-right"></i></a>
                           </div>
                           <div id="btn_wrapper">
-                            <a href="service-details.html" class="wc-btn-secondary btn-item btn-hover"><span></span>
+                            <a href="/servicedetail/digital-marketing" class="wc-btn-secondary btn-item btn-hover"><span></span>
                               Explore 
                               <br>More <i class="fa-solid fa-arrow-right"></i></a>
                           </div>
@@ -105,12 +105,12 @@
                           </ul>
                           <div class="service-2btn">
                             <div id="btn_wrapper">
-                            <a href="service-details.html" class="wc-btn-secondary btn-item btn-hover"><span></span>Get
+                            <a href="/contact" class="wc-btn-secondary btn-item btn-hover"><span></span>Get
                               free
                               <br>qoutes <i class="fa-solid fa-arrow-right"></i></a>
                           </div>
                           <div id="btn_wrapper">
-                            <a href="/servicedetail" class="wc-btn-secondary btn-item btn-hover"><span></span>Explore 
+                            <a href="/servicedetail/social-media-marketing" class="wc-btn-secondary btn-item btn-hover"><span></span>Explore 
                               <br>More <i class="fa-solid fa-arrow-right"></i></a>
                           </div>
                           </div>
@@ -144,12 +144,12 @@
                           </ul>
                           <div class="service-2btn">
                             <div id="btn_wrapper">
-                            <a href="service-details.html" class="wc-btn-secondary btn-item btn-hover"><span></span>Get
+                            <a href="/conatct" class="wc-btn-secondary btn-item btn-hover"><span></span>Get
                               free
                               <br>qoutes <i class="fa-solid fa-arrow-right"></i></a>
                           </div>
                           <div id="btn_wrapper">
-                            <a href="service-details.html" class="wc-btn-secondary btn-item btn-hover"><span></span>
+                            <a href="/servicedetail/search-engine-optimization" class="wc-btn-secondary btn-item btn-hover"><span></span>
                               Explore
                               <br>More <i class="fa-solid fa-arrow-right"></i></a>
                           </div>
@@ -181,12 +181,12 @@
                           </ul>
                           <div class="service-2btn">
                             <div id="btn_wrapper">
-                            <a href="service-details.html" class="wc-btn-secondary btn-item btn-hover"><span></span>Get
+                            <a href="/contact" class="wc-btn-secondary btn-item btn-hover"><span></span>Get
                               free
                               <br>qoutes <i class="fa-solid fa-arrow-right"></i></a>
                           </div>
                           <div id="btn_wrapper">
-                            <a href="service-details.html" class="wc-btn-secondary btn-item btn-hover"><span></span>Explore
+                            <a href="/servicedetail/creative-services" class="wc-btn-secondary btn-item btn-hover"><span></span>Explore
                               
                               <br>More <i class="fa-solid fa-arrow-right"></i></a>
                           </div>
@@ -218,12 +218,12 @@
                           </ul>
                           <div class="service-2btn">
                             <div id="btn_wrapper">
-                            <a href="service-details.html" class="wc-btn-secondary btn-item btn-hover"><span></span>Get
+                            <a href="/contact" class="wc-btn-secondary btn-item btn-hover"><span></span>Get
                               free
                               <br>qoutes <i class="fa-solid fa-arrow-right"></i></a>
                           </div>
                           <div id="btn_wrapper">
-                            <a href="service-details.html" class="wc-btn-secondary btn-item btn-hover"><span></span>Explore
+                            <a href="/servicedetail/sms-marketing" class="wc-btn-secondary btn-item btn-hover"><span></span>Explore
                               <br>More <i class="fa-solid fa-arrow-right"></i></a>
                           </div>
                           </div>
@@ -254,12 +254,12 @@
                           </ul>
                           <div class="service-2btn">
                             <div id="btn_wrapper">
-                            <a href="service-details.html" class="wc-btn-secondary btn-item btn-hover"><span></span>Get
+                            <a href="/contact" class="wc-btn-secondary btn-item btn-hover"><span></span>Get
                               free
                               <br>qoutes <i class="fa-solid fa-arrow-right"></i></a>
                           </div>
                           <div id="btn_wrapper">
-                            <a href="service-details.html" class="wc-btn-secondary btn-item btn-hover"><span></span>
+                            <a href="/servicedetail/technnologies" class="wc-btn-secondary btn-item btn-hover"><span></span>
                               Explore
                               <br>More <i class="fa-solid fa-arrow-right"></i></a>
                           </div>
