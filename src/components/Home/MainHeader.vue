@@ -284,7 +284,9 @@
           </button>
         </div>
       </div>
+      <div v-if="isDesktop">
       <floating-whatsapp></floating-whatsapp>
+    </div>
     </div>
   </div>
 </template>
@@ -306,6 +308,11 @@ export default {
     return {
       activesub:""
     };
+  },
+  computed: {
+    isDesktop() {
+      return window.innerWidth > 768;
+    }
   },
   mounted() {
     this.offcanvas();
@@ -347,6 +354,7 @@ export default {
       
     }
   },
+  
 };
 </script>
 <style scoped>
@@ -444,12 +452,14 @@ export default {
 .to-wrapper{
   display: flex;
   justify-content: space-between;
-  padding:5px 23px;
+  /* padding:5px 23px; */
+  height: 40px;
   
 }
 .to-wrapper a{
   color: white;
-  font-size: 28px;
+  font-size: 19px;
+  
 }
 .to-wrapper button{
   color: white;
@@ -460,12 +470,11 @@ export default {
 
 }
 .cj li{
-  margin: 5px 0px;
-  
+  /* margin: 5px 0px; */
 }
 .cj li a{
-  color: #fff;
-  font-size: 22px;
+  color: #c9f31d;;
+  font-size: 15px;
   transition: all .3s ease;
 }
 .cj li a:hover{

@@ -36,8 +36,8 @@
           </div>
         </div>
         <div class="hero-item-btn">
-                       <button class=" hero-btn1">See All Reviews</button>
-                      </div>
+          <button class=" hero-btn1">See All Reviews</button>
+        </div>
       </section>
     </div>
 </template>
@@ -120,6 +120,7 @@
   padding: 20px;
   margin: 10px;
   cursor: pointer;
+  height:300px;
  }
  .profile-img{
   width: 50px;

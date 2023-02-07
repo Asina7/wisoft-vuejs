@@ -144,8 +144,7 @@
                           </ul>
                           <div class="service-2btn">
                             <div id="btn_wrapper">
-                            <a href="/conatct" class="wc-btn-secondary btn-item btn-hover"><span></span>Get
-                              free
+                            <a href="/conatct" class="wc-btn-secondary btn-item btn-hover"><span></span>Get free
                               <br>qoutes <i class="fa-solid fa-arrow-right"></i></a>
                           </div>
                           <div id="btn_wrapper">
