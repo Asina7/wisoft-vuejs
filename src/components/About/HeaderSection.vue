@@ -36,7 +36,6 @@
             <li class="men-li" role="none">
               <a><router-link to="/blog">Blog</router-link></a>
             </li>
-           
             <li class="men-li" role="none">
               <a><router-link to="/career">Career</router-link></a>
             </li>
@@ -386,7 +385,7 @@ handleClick:function(ac){
 }
 /* hambourger */
 .head-list {
-  color: yellow;
+  color: #c9f31d;
 }
 .side-links {
   /* margin-top: 90px !important; */
@@ -422,12 +421,12 @@ handleClick:function(ac){
 }
 .men {
   padding: 20px;
-  color: yellow;
+  color: #c9f31d;
   font-size: 23px;
   margin-top: 40px;
 }
 .men-li a {
-  color: yellow;
+  color: #c9f31d;
 }
 .toggler-menu {
   margin-top: 20px;
@@ -459,7 +458,7 @@ handleClick:function(ac){
   
 }
 .cj li a{
-  color: #c9f31d;;
+  color: #c9f31d;
   font-size: 15px;
   transition: all .3s ease;
 }

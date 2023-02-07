@@ -313,6 +313,10 @@ $("#close_offcanvas").click(function () {
   #close_offcanvas{
     display:none;
   }
+  .faq__list .accordion-body, .faq__list-6 .accordion-body, .faq__list-3 .accordion-body {
+ 
+  color: gray;
+}
 }
 
 </style>

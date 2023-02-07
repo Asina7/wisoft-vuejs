@@ -93,7 +93,7 @@
                 </div>
               </div>
               <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-4">
-                <div class="job__detail-sidebar" style="position:fixed">
+                <div class="job__detail-sidebar exp-card">
                   <ul>
                     <li><span>Experience</span> 5+ Years Experience</li>
                     <li><span>Working Hours</span> 08 AM to 05 PM</li>
@@ -308,7 +308,7 @@ $("#close_offcanvas").click(function () {
 }
 </script>
 <style>
-     .offcanvas__close button {
+  .offcanvas__close button {
     font-size: 30px;
     width: 55px;
     position:fixed;
@@ -319,5 +319,14 @@ $("#close_offcanvas").click(function () {
   #close_offcanvas{
     display:none;
   }
+}
+.exp-card{
+  position: fixed;
+}
+@media screen and (max-width:768px){
+  .exp-card{
+  position: sticky;
+  
+}
 }
 </style>
