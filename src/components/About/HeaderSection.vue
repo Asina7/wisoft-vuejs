@@ -1,145 +1,159 @@
 <template>
   <div>
-      <header class="header__area">
-          <div class="header__inner">
-            <div class="header__logo">
+    <header class="header__area">
+      <div class="header__inner">
+        <div class="header__logo">
           <a href="/" class="logo-dark"
-            ><router-link to="/"></router-link><img
+            ><router-link to="/"></router-link
+            ><img
               src="@/assets/imgs/logo/wisoft-logo-ver.png"
               alt="Site Logo"
-              style="width:40px; height: 80px"
+              style="width: 40px; height: 80px"
           /></a>
           <a href="/" class="logo-light"
             ><img
               src="@/assets/imgs/logo/wisoft-logo1.png"
               alt="Site Logo"
-              style="width:40px; height: 80px"
+              style="width: 40px; height: 80px"
           /></a>
         </div>
-          <div class="header__nav-icon">
-              <button  id="open_offcanvas"><img src="@/assets/imgs/icon/menu-white.png" alt="Menubar Icon"></button>
-          </div>
-          <div class="header__support">
-               <a href="/contact"><p>Enquire Now</p></a>
-          </div>
-          </div>
-      </header>
-      <!-- Header section Ends -->
-
- <!-- Offcanvas area start -->
- <div class="offcanvas__area">
-  <div class="mob">
-          <ul role="menu" class="men">
-            <li class="men-li" role="none">
-              <a><router-link to="/about">About</router-link></a>
-            </li>
-            <li class="men-li" role="none">
-              <a><router-link to="/blog">Blog</router-link></a>
-            </li>
-            <li class="men-li" role="none">
-              <a><router-link to="/career">Career</router-link></a>
-            </li>
-            <li class="men-li" role="none">
-              <a><router-link to="/casestudy">Case Study</router-link></a>
-            </li>
-            <li class="men-li" role="none">
-              <a><router-link to="/services">Service</router-link></a>
-            </li>
-            <li class="men-li" role="none">
-              <a><router-link to="/team">Team</router-link></a>
-            </li>
-            <li class="men-li" role="none">
-              <a><router-link to="/contact">Contact</router-link></a>
-            </li>
-            
-          </ul>
-
-          <div class="toggler-menu">
-            <ul>
-              <li>
-                <div class="to-wrapper">
-                  <a href="">Digital Marketing</a>
-                  <button class="to-bu" @click="handleClick(1)">{{activesub==1?"-":"+"}}</button>
-                </div>
-                <ul class="cj" v-if="activesub == 1">
-                  <li><a>Lead Generation</a></li>
-                      <li><a>Content Marketing</a></li>
-                      <li><a>Marketing Automation</a></li>
-                      <li><a>Pay per click Advertising</a></li>
-                     <li><a>Programmatic Advertising</a></li>
-                </ul>
-                </li>
-              <li>
-                <div class="to-wrapper">
-                  <a href=""> Technologies</a>
-                  <button class="to-bu" @click="handleClick(2)">{{activesub==2?"-":"+"}}</button>
-                </div>
-                <ul class="cj" v-if="activesub == 2">
-                  <li><a>UI/UX Design Services</a></li>
-                      <li><a>Website Development</a></li>
-                      <li><a>Mobile App Development</a></li>
-                      <li><a>Web Annual Maintainance</a></li>
-                      <li><a>E-commerce Development</a></li>
-                      <li><a>CRM, Payment Gateway & Third Party System Integrations</a></li>
-                </ul>
-                </li>
-                <li>
-                <div class="to-wrapper">
-                  <a href="">Creative Services</a>
-                  <button class="to-bu" @click="handleClick(3)">{{activesub==3?"-":"+"}}</button>
-                </div>
-                <ul class="cj" v-if="activesub == 3">
-                  <li><a>Logo Design & Brand Identity</a></li>
-                      <li><a>Graphic Design</a></li>
-                      <li><a>UI/UX Design</a></li>
-                      <li><a>Compaing Design</a></li>
-                      <li><a>Concept Design</a></li>
-                </ul>
-                </li>
-                <li>
-                <div class="to-wrapper">
-                  <a href="">Search Engine Optimization</a>
-                  <button class="to-bu" @click="handleClick(4)">{{activesub==4?"-":"+"}}</button>
-                </div>
-                <ul class="cj" v-if="activesub == 4">
-                  <li><a>Local & Regional SEO</a></li>
-                      <li><a>Content Optimization</a></li>
-                      <li><a>Web Page Optimization</a></li>
-                      <li><a>Authority Link Developement</a></li>
-                      <li><a>SEO Analytics and Reporting</a></li>
-                      <li><a>Mobile Optimization</a></li>
-                </ul>
-                </li>
-                <li>
-                <div class="to-wrapper">
-                  <a href=""> Social Media Marketing</a>
-                  <button class="to-bu" @click="handleClick(5)">{{activesub==5?"-":"+"}}</button>
-                </div>
-                <ul class="cj" v-if="activesub == 5">
-                  <li><a>Social Media Stategy</a></li>
-                      <li><a>Community Management</a></li>
-                      <li><a>Conent Creation</a></li>
-                      <li><a>Monitoring & Reporting</a></li>
-                      <li><a>Digital Agency dark</a></li>
-                </ul>
-                </li>
-                <li>
-                <div class="to-wrapper">
-                  <a href="">SMS Marketing</a>
-                  <button class="to-bu" @click="handleClick(6)">{{activesub==6?"-":"+"}}</button>
-                </div>
-                <ul class="cj" v-if="activesub == 6">
-                  <li><a>Global SMS Platform</a></li>
-                      <li><a>SMS Marketing</a></li>
-                      <li><a>2 Way SMS System</a></li>
-                </ul>
-                </li>
-            </ul>
-          </div>
+        <div class="header__nav-icon">
+          <button id="open_offcanvas">
+            <img src="@/assets/imgs/icon/menu-white.png" alt="Menubar Icon" />
+          </button>
         </div>
-      <div class="offcanvas__body body-canvas">
-       
+        <div class="header__support">
+          <a href="/contact"><p>Enquire Now</p></a>
+        </div>
+      </div>
+    </header>
+    <!-- Header section Ends -->
 
+    <!-- Offcanvas area start -->
+    <div class="offcanvas__area">
+      <div class="mob">
+        <ul role="menu" class="men">
+          <li class="men-li" role="none">
+            <a><router-link to="/about">About</router-link></a>
+          </li>
+          <li class="men-li" role="none">
+            <a><router-link to="/blog">Blog</router-link></a>
+          </li>
+          <li class="men-li" role="none">
+            <a><router-link to="/career">Career</router-link></a>
+          </li>
+          <li class="men-li" role="none">
+            <a><router-link to="/casestudy">Case Study</router-link></a>
+          </li>
+          <li class="men-li" role="none">
+            <a><router-link to="/services">Service</router-link></a>
+          </li>
+          <li class="men-li" role="none">
+            <a><router-link to="/team">Team</router-link></a>
+          </li>
+          <li class="men-li" role="none">
+            <a><router-link to="/contact">Contact</router-link></a>
+          </li>
+        </ul>
+
+        <div class="toggler-menu">
+          <ul>
+            <li>
+              <div class="to-wrapper">
+                <a href="">Digital Marketing</a>
+                <button class="to-bu" @click="handleClick(1)">
+                  {{ activesub == 1 ? "-" : "+" }}
+                </button>
+              </div>
+              <ul class="cj" v-if="activesub == 1">
+                <li><a>Lead Generation</a></li>
+                <li><a>Content Marketing</a></li>
+                <li><a>Marketing Automation</a></li>
+                <li><a>Pay per click Advertising</a></li>
+                <li><a>Programmatic Advertising</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="to-wrapper">
+                <a href=""> Technologies</a>
+                <button class="to-bu" @click="handleClick(2)">
+                  {{ activesub == 2 ? "-" : "+" }}
+                </button>
+              </div>
+              <ul class="cj" v-if="activesub == 2">
+                <li><a>UI/UX Design Services</a></li>
+                <li><a>Website Development</a></li>
+                <li><a>Mobile App Development</a></li>
+                <li><a>Web Annual Maintainance</a></li>
+                <li><a>E-commerce Development</a></li>
+                <li>
+                  <a>CRM, Payment Gateway & Third Party System Integrations</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="to-wrapper">
+                <a href="">Creative Services</a>
+                <button class="to-bu" @click="handleClick(3)">
+                  {{ activesub == 3 ? "-" : "+" }}
+                </button>
+              </div>
+              <ul class="cj" v-if="activesub == 3">
+                <li><a>Logo Design & Brand Identity</a></li>
+                <li><a>Graphic Design</a></li>
+                <li><a>UI/UX Design</a></li>
+                <li><a>Compaing Design</a></li>
+                <li><a>Concept Design</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="to-wrapper">
+                <a href="">Search Engine Optimization</a>
+                <button class="to-bu" @click="handleClick(4)">
+                  {{ activesub == 4 ? "-" : "+" }}
+                </button>
+              </div>
+              <ul class="cj" v-if="activesub == 4">
+                <li><a>Local & Regional SEO</a></li>
+                <li><a>Content Optimization</a></li>
+                <li><a>Web Page Optimization</a></li>
+                <li><a>Authority Link Developement</a></li>
+                <li><a>SEO Analytics and Reporting</a></li>
+                <li><a>Mobile Optimization</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="to-wrapper">
+                <a href=""> Social Media Marketing</a>
+                <button class="to-bu" @click="handleClick(5)">
+                  {{ activesub == 5 ? "-" : "+" }}
+                </button>
+              </div>
+              <ul class="cj" v-if="activesub == 5">
+                <li><a>Social Media Stategy</a></li>
+                <li><a>Community Management</a></li>
+                <li><a>Conent Creation</a></li>
+                <li><a>Monitoring & Reporting</a></li>
+                <li><a>Digital Agency dark</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="to-wrapper">
+                <a href="">SMS Marketing</a>
+                <button class="to-bu" @click="handleClick(6)">
+                  {{ activesub == 6 ? "-" : "+" }}
+                </button>
+              </div>
+              <ul class="cj" v-if="activesub == 6">
+                <li><a>Global SMS Platform</a></li>
+                <li><a>SMS Marketing</a></li>
+                <li><a>2 Way SMS System</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="offcanvas__body body-canvas">
         <div class="offcanvas__left v">
           <div class="offcanvas__logo">
             <a href="/"
@@ -159,12 +173,21 @@
                 <a><router-link to="/blog">Blog</router-link></a>
               </li>
               <!-- <li><a href="career.html">Career</a></li> -->
-              <li><a><router-link to="/career">Career</router-link></a></li>
-                <li><a><router-link to="/casestudy">Case Study</router-link></a></li>
-               <li><a><router-link to="/services">Service</router-link></a></li> 
-               <li><a><router-link to="/team">Team</router-link></a></li> 
-              <li><a><router-link to="/Contact">Contact</router-link></a></li>
-              
+              <li>
+                <a><router-link to="/career">Career</router-link></a>
+              </li>
+              <li>
+                <a><router-link to="/casestudy">Case Study</router-link></a>
+              </li>
+              <li>
+                <a><router-link to="/services">Service</router-link></a>
+              </li>
+              <li>
+                <a><router-link to="/team">Team</router-link></a>
+              </li>
+              <li>
+                <a><router-link to="/Contact">Contact</router-link></a>
+              </li>
             </ul>
           </div>
         </div>
@@ -185,7 +208,6 @@
                     </ul>
                   </li>
 
-                
                   <li class="head-list">
                     Technologies
                     <ul>
@@ -195,13 +217,18 @@
                       <li><a>Mobile App Development</a></li>
                       <li><a>Web Annual Maintainance</a></li>
                       <li><a>E-commerce Development</a></li>
-                      <li><a>CRM, Payment Gateway & Third Party System Integrations</a></li>
+                      <li>
+                        <a
+                          >CRM, Payment Gateway & Third Party System
+                          Integrations</a
+                        >
+                      </li>
                     </ul>
                   </li>
                 </div>
                 <div>
                   <li class="head-list">
-                   Creative Services
+                    Creative Services
                     <ul>
                       <!-- <li><a href="index.html">Digital Maketing</a></li> -->
                       <li><a>Logo Design & Brand Identity</a></li>
@@ -212,7 +239,7 @@
                     </ul>
                   </li>
                   <li class="head-list">
-                   Search Engine Optimization
+                    Search Engine Optimization
                     <ul>
                       <!-- <li><a href="index.html">Digital Maketing</a></li> -->
                       <li><a>Local & Regional SEO</a></li>
@@ -223,15 +250,11 @@
                       <li><a>Mobile Optimization</a></li>
                     </ul>
                   </li>
-
-                  
-                  
                 </div>
                 <div>
                   <li class="head-list">
                     Social Media Marketing
                     <ul>
-                     
                       <li><a>Social Media Stategy</a></li>
                       <li><a>Community Management</a></li>
                       <li><a>Conent Creation</a></li>
@@ -247,7 +270,6 @@
                       <li><a>Global SMS Platform</a></li>
                       <li><a>SMS Marketing</a></li>
                       <li><a>2 Way SMS System</a></li>
-                    
                     </ul>
                   </li>
                 </div>
@@ -263,87 +285,85 @@
         </div>
       </div>
       <div v-if="isDesktop">
-      <floating-whatsapp></floating-whatsapp>
+        <floating-whatsapp></floating-whatsapp>
+      </div>
     </div>
-    </div>
-<!-- offcancas area ends -->
+    <!-- offcancas area ends -->
   </div>
 </template>
 
-
 <script>
-import FloatingWhatsapp from '../Home/FloatingWhatsapp.vue'
+import FloatingWhatsapp from "../Home/FloatingWhatsapp.vue";
 import $ from "jquery";
 export default {
-  name : 'HeaderSection',
+  name: "HeaderSection",
   components: {
-FloatingWhatsapp,
-// FloatingChat,
-},
-  mounted (){
-this.offcanvas()
-},
-computed: {
+    FloatingWhatsapp,
+    // FloatingChat,
+  },
+  mounted() {
+    this.offcanvas();
+  },
+  computed: {
     isDesktop() {
       return window.innerWidth > 768;
-    }
+    },
   },
-data() {
+  data() {
     return {
-      activesub:""
+      activesub: "",
     };
   },
-methods: {
-offcanvas: function(){
-  $("#open_offcanvas").click(function () {
-  $('.offcanvas__area').css('opacity', '1');
-  $('.offcanvas__area').css('visibility', 'visible');
-});
-$("#close_offcanvas").click(function () {
-  $('.offcanvas__area').css('opacity', '0');
-  $('.offcanvas__area').css('visibility', 'hidden');
-});
-// search icon js
+  methods: {
+    offcanvas: function () {
+      $("#open_offcanvas").click(function () {
+        $(".offcanvas__area").css("opacity", "1");
+        $(".offcanvas__area").css("visibility", "visible");
+      });
+      $("#close_offcanvas").click(function () {
+        $(".offcanvas__area").css("opacity", "0");
+        $(".offcanvas__area").css("visibility", "hidden");
+      });
+      // search icon js
 
-let header_search = document.querySelector(".header__search");
-let search_icon = document.querySelector("#search_icon");
-let search_close = document.querySelector("#search_close");
-if (header_search) {
-  search_icon.addEventListener("click", function () {
-    header_search.classList.add('open-search');
-    search_icon.style.display = 'none';
-    search_close.style.display = 'block';
-  });
+      let header_search = document.querySelector(".header__search");
+      let search_icon = document.querySelector("#search_icon");
+      let search_close = document.querySelector("#search_close");
+      if (header_search) {
+        search_icon.addEventListener("click", function () {
+          header_search.classList.add("open-search");
+          search_icon.style.display = "none";
+          search_close.style.display = "block";
+        });
 
-  search_close.addEventListener("click", function () {
-    header_search.classList.remove('open-search');
-    search_icon.style.display = 'block';
-    search_close.style.display = 'none';
-  });
-}
-},
-handleClick:function(ac){
-      if(this.activesub == ac){
-        this.activesub="";
-      }else{
+        search_close.addEventListener("click", function () {
+          header_search.classList.remove("open-search");
+          search_icon.style.display = "block";
+          search_close.style.display = "none";
+        });
+      }
+    },
+    handleClick: function (ac) {
+      if (this.activesub == ac) {
+        this.activesub = "";
+      } else {
         this.activesub = ac;
-      } 
-    }
-},
-
-}
+      }
+    },
+  },
+};
 </script>
 
 <style scoped>
 @media only screen and (max-width: 768px) {
-    .offcanvas__logo img:nth-of-type(2) {
-      display: block;
-    }
-    
-    .offcanvas__logo img:nth-of-type(1) {
-      display: none;
-    }
+  .offcanvas__logo img:nth-of-type(2) {
+    display: block;
   }
+
+  .offcanvas__logo img:nth-of-type(1) {
+    display: none;
+  }
+}
 
 .list-menu {
   display: flex;
@@ -403,15 +423,12 @@ handleClick:function(ac){
   display: none;
 }
 
-
 @media screen and (min-width: 768px) {
-.offcanvas__logo img{
-  
-}
+  .offcanvas__logo img {
+  }
 }
 /*  */
 @media screen and (min-width: 960px) {
-
   .v {
     display: block;
   }
@@ -431,41 +448,36 @@ handleClick:function(ac){
 .toggler-menu {
   margin-top: 20px;
   padding: 10px;
- 
 }
-.to-wrapper{
+.to-wrapper {
   display: flex;
   justify-content: space-between;
   /* padding:5px 23px; */
   height: 40px;
-  
 }
-.to-wrapper a{
+.to-wrapper a {
   color: white;
   font-size: 19px;
 }
-.to-wrapper button{
+.to-wrapper button {
   color: white;
   font-size: 34px;
 }
-.cj{
+.cj {
   padding: 0px 25px;
-
 }
-.cj li{
+.cj li {
   /* margin: 5px 0px; */
-  
-  
 }
-.cj li a{
+.cj li a {
   color: #c9f31d;
   font-size: 15px;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
-.cj li a:hover{
+.cj li a:hover {
   margin-left: 4px;
 }
-.offcanvas__links ul li a{
+.offcanvas__links ul li a {
   font-size: 25px;
 }
 </style>

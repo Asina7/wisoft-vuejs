@@ -1,11 +1,13 @@
 
 import { createApp } from 'vue'
+
+import {createHead} from '@vueuse/head'
 import App from './App.vue'
 import router from './router'
 import 'jquery'
 
 
-
+const head = createHead();
 
 
 // swiper
@@ -21,9 +23,10 @@ import "./assets/css/meanmenu.min.css"
  import "./assets/css/progressbar.css"
 import "./assets/css/swiper-bundle.min.css"
 import "./assets/css/master.css"
+
 // scss
 // import "./assets/scss/master.css"
 
 
 // Vue.use(Vuelidate)
-createApp(App).use(router).mount('#app');
+createApp(App).use(head).use(router).mount('#app');

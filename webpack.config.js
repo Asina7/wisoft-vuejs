@@ -59,12 +59,12 @@ module.exports = {
   },
   plugins: [
     new VueLoaderPlugin(),
-   // new MiniCssExtractPlugin(),
-    // new htmlWebpackPlugin({
-    //     template: path.resolve(__dirname, "public", "index.html"),
-    //     favicon: "./public/favicon.icon",
-    //   }),
-    //  new CleanWebpackPlugin(),
+   new MiniCssExtractPlugin(),
+    new htmlWebpackPlugin({
+        template: path.resolve(__dirname, "public", "index.html"),
+        favicon: "./public/favicon.icon",
+      }),
+     new CleanWebpackPlugin(),
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',
